@@ -1,0 +1,14 @@
+{
+    "no":{
+        "christian":"Christian",
+        "work":"Arbeid",
+        "resume":"Resumé",
+        "interests":"Interesser"
+    },
+    "en":{
+        "christian":"Christian",
+        "work":"Work",
+        "resume":"Resumé",
+        "interests":"Interests"
+    }
+}

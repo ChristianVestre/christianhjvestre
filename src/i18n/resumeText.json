@@ -1,0 +1,335 @@
+{
+    "items": [
+        {
+            "no": {
+                "headline": "Master i Teknologiledelse",
+                "text": "Master i Management and Technology på det Tekniske Universitet i Munchen. Den er veldig fleksibel master med plenty av spesialiseringsmuligheter. Jeg valgte  innovasjon og entreprenørskap og  informatikk, som passet mine interesser. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge, hvor vi skulle lage en mock startup etter lean startup og design thinking metodologiene, vi lagde en alarm app (se under Arbeid). Andre interessante fag var Economics of innovation og  Out of the box, practical approaches to decision making.",
+                "logo": "resume/tumlogo",
+                "from": "Fra okt. 18",
+                "to": "Til aug. 20"
+            },
+            "en": {
+                "headline": "Master in Management and Technology",
+                "text": "test",
+                "logo": "resume/tumlogo",
+                "from": "From oct. 18",
+                "to": "To aug. 20"
+            }
+        },
+        {
+            "no": {
+                "headline": "Økonomiansvarlig Ansa Tyskland Sør",
+                "text": "Ansa er studentorganisasjonen for nordmenn som studerer i utlandet. Jeg var ansvarlig for budsjettering, regnskap og controlling. I tillegg, som del av lokallagsstyret var jeg med på å planlegge og gjennomføre arrangementer som julebord, 17 mai, skiturer og rafting.",
+                "logo": "resume/ansalogo",
+                "from": "Fra okt. 18",
+                "to": "Til sep. 20"
+            },
+            "en": {
+                "headline": "Treasurer for Ansa Southern Germany",
+                "text": "test",
+                "logo": "resume/ansalogo",
+                "from": "From oct. 18",
+                "to": "Til sep. 20"
+            }
+        },
+        {
+            "no": {
+                "headline": "Freelancearbeid ved siden av studiene hos CamperBoys",
+                "text": "Camperboys GmbH er en Campervanutleier start-up grunnlagt i 2018 av et par venner av meg, som holder til på Flyplassen i Munchen. Jeg utviklet en prototype av en reiseapp ved hjelp av koderammeverket Flutter. Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med gode resultater og et investerings avkasting på 20x. Mens jeg jobbet der vant vi den tyske turistforeningens innovasjonspris for startups “Springbrett” i 2019 og vi tok del i LMU universitetet i Munchen sin startup accelerator.",
+                "logo": "resume/camperboyslogo",
+                "from": "Fra okt. 18",
+                "to": "Til jan. 20"
+            },
+            "en": {
+                "headline": "Freelance work while studying at CamperBoys",
+                "logo": "resume/holidulogo",
+                "text": "",
+                "from": "Fra okt. 18",
+                "to": "Til jan. 20"
+            }
+        },
+        {
+            "no": {
+                "headline": "Junior Data Analytiker",
+                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet for det meste i områder rundt markedsføring. Forberedelse av data som ble forespurt fra andre og utvikling av algoritmer for å forutsi fremtidige verdier og etterspørsel av produkter. I tillegg arbeidet jeg på prosjekter som product manager og som designer.",
+                "logo": "resume/holidulogo",
+                "from": "Fra aug. 17",
+                "to": "Til okt. 18"
+            },
+            "en": {
+                "headline": "Junior Data Analyst",
+                "text": "test",
+                "logo": "resume/holidulogo",
+                "from": "From aug. 17",
+                "to": "To okt. 18"
+            }
+        },
+        {
+            "no": {
+                "headline": "Junior online marketing manager for det nordiske markedet",
+                "text": "Jeg jobbet i marketsføringsteamet hos Holidu, hvor jeg var ansvarlig for å styre  søkemotormarkedsføringen så vell som displaymarketsføringen for Norge, Sverige og Storbritannia. Det involverte mye manuelt arbeid, særlig excel arbeid som jeg tok initiativ til å automatisere etter å ha lært meg selv et begynnernivå i programmering under praktikantoppholdet mitt i samme selskapet.",
+                "logo": "resume/holidulogo",
+                "from": "Fra apr. 17",
+                "to": "Til jul. 17"
+            },
+            "en": {
+                "headline": "Junior Data Analyst",
+                "text": "test",
+                "logo": "resume/holidulogo",
+                "from": "Fra apr. 17",
+                "to": "To jul. 17"
+            }
+        },
+        {
+            "no": {
+                "headline": "Norsk country manager praktikant",
+                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
+                "logo": "resume/holidulogo",
+                "from": "Fra okt. 16",
+                "to": "Til mar. 17"
+            },
+            "en": {
+                "headline": "Norwegian country manager intern",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/holidulogo",
+                "from": "From oct. 16",
+                "to": "To mar. 17"
+            }
+        },
+        {
+            "no": {
+                "headline": "Sommerjob hos Folkehelseinstituttet ",
+                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
+                "logo": "resume/fhilogo",
+                "from": "Fra jun. 16",
+                "to": "Til aug. 16"
+            },
+            "en": {
+                "headline": "Summerinternship at the Norwegian agency for public health",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/fhilogo",
+                "from": "From jun. 16",
+                "to": "To aug. 16"
+            }
+        },
+        {
+            "no": {
+                "headline": "Bachelor (3. år) i samfunnsøkonomi og ledelse",
+                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
+                "logo": "resume/up1logo",
+                "from": "Fra jun. 16",
+                "to": "Til aug. 16"
+            },
+            "en": {
+                "headline": "Bachelor (3rd year) in Economics and Management",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/up1logo",
+                "from": "From jun. 16",
+                "to": "To aug. 16"
+            }
+        },
+        {
+            "no": {
+                "headline": "Sommerskole ved Copenhagen Business School",
+                "text": "Etter å ha gått et par år på økonomiutdanningen, jeg savnet å lære om mer på kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology, og møtte andre studenter fra hele verden som var samlet der. Det hele utgjorde en kjempeopplevelse.",
+                "logo": "resume/cbslogo",
+                "from": "Fra jun. 15",
+                "to": "Til aug. 15"
+            },
+            "en": {
+                "headline": "Summerschool at copenhagen business school",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/cbslogo",
+                "from": "From jun. 15",
+                "to": "To aug. 15"
+            }
+        },
+        {
+            "no": {
+                "headline": "Bachelor (1. & 2. år) i samfunnsøkonomi og ledelse",
+                "text": "Bacheloren jeg gikk på var en del av et norskt program som hjalp norske studenter med å tilpasse seg studier i Frankrike på  Université de Toulouse 1 Capitole. Siden studieprogrammet var 100% på Fransk, vi fikk også en del ekstra fransktimer. Selve studiet var krevende og veldig matematisk, med matte og statistikkfag hvert semester, utover veldig matematisk innrettet mikro- og makroøkonomi.",
+                "logo": "resume/ut1logo",
+                "from": "Fra sep. 13",
+                "to": "Til jun. 15"
+            },
+            "en": {
+                "headline": "Summerschool at copenhagen business school",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/ut1logo",
+                "from": "From sep. 13",
+                "to": "To jun. 15"
+            }
+        },
+        {
+            "no": {
+                "headline": "Forbredelsesår til bachelor i Samfunnsøkonomi og ledelse",
+                "text": "Vi dro ned til Université de Toulouse 1 Capitole og hadde intensivt med franskkurs og mer avansert matematikk og statistikk enn hva vi hadde hatt på videregående skole for å forbrede oss på samfunnsøkonomistudier i Frankrike.",
+                "logo": "resume/ut1logo",
+                "from": "Fra aug. 12",
+                "to": "Til jun. 13"
+            },
+            "en": {
+                "headline": "Summerschool at copenhagen business school",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/ut1logo",
+                "from": "From aug. 12",
+                "to": "Til jun. 13"
+            }
+        },
+        {
+            "no": {
+                "headline": "Sommerjobb hos Direktoratet for forvaltning og IKT",
+                "text": "Jeg var sommervikar hos Difi sommerne 12,13, 15 og 16. Det første året jobbet jeg med å gjøre istand arkivet og sortere alle publikasjonene Difi har gitt ut. De andre årene jobbet jeg i anskaffelsesavdelingen med å lage rapporter med statistikker over offentlige innkjøpsvaner.",
+                "logo": "resume/difilogo",
+                "from": "Fra jun. 12",
+                "to": "Til aug. 16"
+            },
+            "en": {
+                "headline": "Summerschool at copenhagen business school",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/difilogo",
+                "from": "From jun. 12",
+                "to": "To aug. 16"
+            }
+        },
+        {
+            "no": {
+                "headline": "Årsenhet i fransk på universitetet i Oslo",
+                "text": "Jeg gjorde det dårlig i Fransk på videregående skole, så da jeg trengte mer tid for å finne ut av hva jeg ville studere, tok jeg en årsenhet i Fransk for å forbedre språket. Studiet innhold språkfag selvfølgelig, men også ting som fransk historie og litteratur.",
+                "logo": "resume/uiologo",
+                "from": "Fra sep. 11",
+                "to": "Til jun. 12"
+            },
+            "en": {
+                "headline": "Summerschool at copenhagen business school",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/uiologo",
+                "from": "From sep. 11",
+                "to": "To jun. 12"
+            }
+        },
+        {
+            "no": {
+                "headline": "Videregående skole på Lambertseter VGS i Oslo",
+                "text": "Studiespesialisering i realfag med valgfag som fysikk, IKT, Psykologi og Historie og Filosofi. Jeg gikk ut med snitt på 4.8 etter å ha gjort det forholdsvis svakt i språkfag som Nynorsk og Fransk.",
+                "logo": "resume/lambertlogo",
+                "from": "Fra aug. 08",
+                "to": "Til jun. 11"
+            },
+            "en": {
+                "headline": "Summerschool at copenhagen business school",
+                "text": "Norwegian country manager intern",
+                "logo": "resume/lambertlogo",
+                "from": "From aug. 08",
+                "to": "To jun. 11"
+            }
+        }
+    ],
+    "skills": {
+        "languages": {
+            "no": {
+                "headline": "Språk",
+                "content": [
+                    {
+                        "main": "Norsk",           
+                        "percent": 100
+                    },
+                    {
+                        "main": "Engelsk",
+                        "percent": 92
+                    },
+                    {
+                        "main": "Tysk",
+                        "percent": 78
+                    },
+                    {
+                        "main": "Fransk",
+                        "percent": 82
+                    }
+                ]
+            },
+            "en": {
+                "headline": "Languages",
+                "content": [
+                    {
+                        "main": "Norwegian",
+                        "percent": 100
+                    },
+                    {
+                        "main": "English",
+                        "percent": 92
+                    },
+                    {
+                        "main": "Tysk",
+                        "percent": 78
+                    },
+                    {
+                        "main": "Fransk",
+                        "percent": 82
+                    }
+                ]
+            }
+        },
+        "programming": {
+            "no": {
+                "headline": "Programeringsspråk",
+                "content": [
+                    {
+                        "main": "Javascript (Node, React)",
+                        "percent": 86
+                    },
+                    {
+                        "main": "Python (Pandas, Scikit)",
+                        "percent":80
+                    },
+                    {
+                        "main": "SQL",
+                        "percent":77
+                    },
+                    {
+                        "main": "R (R studio)",
+                        "percent":67
+                    },
+                    {
+                        "main": "Dart (Flutter)",
+                        "percent":60
+                    },
+                    {
+                        "main": "Java (Android)",
+                        "percent":42
+                    }
+
+                ]
+            },
+            "en": {
+                "headline": "Programming languages",
+                "content": [
+                    {
+                        "main": "Javascript",
+                        "percent": 86
+                    },
+                    {
+                        "main": "Python",
+                        "percent":80
+                    },
+                    {
+                        "main": "SQL",
+                        "percent":77
+                    },
+                    {
+                        "main": "R (R studio)",
+                        "percent":67
+                    },
+                    {
+                        "main": "Dart (Flutter)",
+                        "percent":60
+                    },
+                    {
+                        "main": "Java (Android)",
+                        "percent":42
+                    }
+                ]
+            }
+        }
+    }
+}

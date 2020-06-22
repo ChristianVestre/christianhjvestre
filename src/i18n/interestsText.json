@@ -1,0 +1,158 @@
+{
+    "subMenu": {
+        "no": [
+            {
+                "headline": "AI/Maskinlæring",
+                "dataKey": "aimachinelearning"
+            },
+            {
+                "headline": "Antropologi",
+                "dataKey": "anthropology"
+            },
+            {
+                "headline": "Design",
+                "dataKey": "design"
+            },
+            {
+                "headline": "Web utvikling",
+                "dataKey": "webdevelopment"
+            },
+            {
+                "headline": "Kognisjon",
+                "dataKey": "cognition"
+            },
+            {
+                "headline": "Organisasjonsstudier",
+                "dataKey": "organisationsstudies"
+            },
+            {
+                "headline": "Samfunnsøkonomi",
+                "dataKey": "economics"
+            },
+            {
+                "headline": "Språk",
+                "dataKey": "language"
+            }
+        ],
+        "en": [
+            {
+                "headline": "AI/Machine learning",
+                "dataKey": "aimachinelearning"
+            },
+            {
+                "headline": "Anthropology",
+                "dataKey": "anthropology"
+            },
+            {
+                "headline": "Design",
+                "dataKey": "design"
+            },
+            {
+                "headline": "Web develpment",
+                "dataKey": "webdevelopment"
+            },
+            {
+                "headline": "Cognition",
+                "dataKey": "cognition"
+            },
+            {
+                "headline": "Organisation studies",
+                "dataKey": "organisationsstudies"
+            },
+            {
+                "headline": "Economics",
+                "dataKey": "economics"
+            },
+            {
+                "headline": "Language",
+                "dataKey": "language"
+            }
+        ]
+    },
+    "content": {
+        "no": {
+            "anthropology": {
+                "headline": "Antropologi for å forstå verden rundt deg",
+                "text": "test",
+                "image": ""
+            },
+            "aimachinelearning": {
+                "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
+                "text": "test",
+                "image": ""
+            },
+            "design": {
+                "headline": "Design er hvordan man løser åpne spørsmål",
+                "text": "test",
+                "image": ""
+            },
+            "webdevelopment": {
+                "headline": "Web utvikling handler om å gi en best mulig kundeopplevelse",
+                "text": "test",
+                "image": ""
+            },
+            "cognition": {
+                "headline": "Hvordan lærer vi mennesker?",
+                "text": "test",
+                "image": ""
+            },
+            "organisationsstudies": {
+                "headline": "Hvordan få folk til å jobbe sammen på best mulig måte?",
+                "text": "test",
+                "image": ""
+            },
+            "economics": {
+                "headline": "Samfunnsøkonomi handler om hvordan verden funker",
+                "text": "test",
+                "image": ""
+            },
+            "language": {
+                "headline": "Språk er innsikt i hvordan folk tenker forskjellig i forskjellige kulturer",
+                "text": "test",
+                "image": ""
+            }
+        },
+        "en": {
+            "anthropology": {
+                "headline": "Antropology helps you understand the world around you",
+                "text": "test",
+                "image": ""
+            },
+            "aimachinelearning": {
+                "headline": "AI is the future, there is no getting around that",
+                "text": "test",
+                "image": ""
+            },
+            "design": {
+                "headline": "Antropologi for å forstå verden rundt deg",
+                "text": "test",
+                "image": ""
+            },
+            "webdevelopment": {
+                "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
+                "text": "test",
+                "image": ""
+            },
+            "cognition": {
+                "headline": "Antropologi for å forstå verden rundt deg",
+                "text": "test",
+                "image": ""
+            },
+            "organisationsstudies": {
+                "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
+                "text": "test",
+                "image": ""
+            },
+            "economics": {
+                "headline": "Antropologi for å forstå verden rundt deg",
+                "text": "test",
+                "image": ""
+            },
+            "language": {
+                "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
+                "text": "test",
+                "image": ""
+            }
+        }
+    }
+}
