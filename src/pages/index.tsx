@@ -1,287 +1,58 @@
-import { useContext } from "react";
-import { DataContext } from "../context/dataContext";
-import { LanguageToggle } from "../components/desktop/shared/languageToggle";
-import { MenuButton } from "../components/desktop/christian/menuButton";
-import { UiContext } from "../context/uiContext";
+import Head from 'next/head'
+import sizes from 'react-sizes';
+import { UiContextProvider } from '../context/uiContext';
+import { DataContextProvider } from '../context/dataContext';
+import { DChristian } from '../components/desktop/christian/christian';
+import { MChristian } from '../components/mobile/christian/christian';
+import { useState, useLayoutEffect } from 'react';
 
-export default () => {
-    const [{ christian, language }, setDataState] = useContext(DataContext) as any;
-    const [{ style },] = useContext(UiContext) as any;
-    return (
-        <div className="christianContainer">
-            <nav id="navBarDesktop" className="navBarDesktop">
-                <div className="menuPlacement">
-                    <MenuButton page={"/index"} text={christian.menu[language].christian} />
-                    <MenuButton page={"/work"} text={christian.menu[language].work} />
-                    <MenuButton page={"/resume"} text={christian.menu[language].resume} />
-                    <MenuButton page={"/interests"} text={christian.menu[language].interests} />
-                </div>
-                <LanguageToggle setDataState={setDataState} language={language} />
-            </nav>
-            <nav id="navBarMobile">
-                    <div className="menu"></div>
-                    <h4 className="noselect">Christian Vestre</h4>
-                    <LanguageToggle setDataState={setDataState} language={language} />
-            </nav>
-            <div className="headlinePlacement" id="headlinePlacement">
-                <h1 className="noselect">Christian Vestre</h1>
-            </div>
-            <div className="imageContainer">
-                <img src="/Christian.png" className="noselect" />
-            </div>
-            <div className="textPlacement">
-                <h2 className="noselect">{christian.text[language].headline}</h2>
-                <p className="noselect">{christian.text[language].content}</p>
-            </div>
-            <div className="border"/>
-            <style jsx>{`
 
-                    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap');
-                    #navBarMobile { display: none; }
-                    .border{
-                        position:absolute;
-                        height:100vh;
-                        width:80vw;
-                        top:0;
-                        right:0;
-                        border:solid 0.5em ${style.standard.border};
-                    }
-                    .christianContainer{
-                        height:100vh;
-                        width:100vw;
-                        display: grid;
-                        grid-template-columns:1.3fr 2fr 1.7fr ;
-                        grid-template-rows:repeat(3,1fr);
-                        grid-template-areas:
-                        'headline headline headline'
-                        'nav img text'
-                        'nav img text';
-                    }
-                    .noselect{
-                        -webkit-touch-callout: none; /* iOS Safari */
-                        -webkit-user-select: none; /* Safari */
-                        -khtml-user-select: none; /* Konqueror HTML */
-                        -moz-user-select: none; /* Old versions of Firefox */
-                        -ms-user-select: none; /* Internet Explorer/Edge */
-                        user-select: none;
-                    }
-                    .bar{
-                        display:grid;
-                        grid-columns:1 / span 3;
-                        grid-rows:2 / span 2;
-                        border:solid 0.5em black;
-                    }
-                    p{
-                        width:60%;
-                        font-size:1.4em;
-                        text-align: justify;
-                        text-justify: inter-word;
-                        white-space: pre-line;
-                        margin:0;
-                        padding:0;
-                        color:#535353;
-                    }
-                    h2{
-                        font-size:5em;
-                        padding:0;
-                        margin:0;
-                        text-align:center;
-                        color:#535353;
-                    }
-                    .textPlacement{
-                        grid-area:text;
-                        display:flex;
-                        align-items:center;
-                        justify-content:flex-start;
-                        flex-direction:column;
-                        margin:0;
-                        padding:0;
-                        overflow-y:auto;
-                        overflow-x:hidden;
 
-                    }
-                    .imageContainer{
-                        grid-area:img;
-                        border:solid 0.5 black;
-                        display:flex;
-                        align-items:flex-end;
-                        justify-content:center;
-                        height:100%;
-                        width:100%;
-                    }
-                    img{
+function Home({desktop,data}) {
+  return (
+    <div className="container">
+      <Head>
+        <title>Christian Vestre</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+      </Head>
+                {
+                desktop ?
+                          
+                          <DChristian/>
+                    :
+                          <MChristian/>
+                }
 
-                        width:auto;
-                        height:90%;
-                        bottom:0;
-                    }
-                    .headlinePlacement{
-                        grid-area:headline;
-                        display:flex;
-                        align-content:center;
-                        justify-content:center;
-                        
-                    }
-                    h1{
-                        padding:0;
-                        margin:0;
-                        font-size:8em;
-                        max-width:4em;
-                        font-family: 'Work Sans', sans-serif;
-                        font-weight:100;
-                        text-decoration:underline;
-                        text-decoration-color: #535353;
-                        color:#535353;
-                    }
-                    h3{
-                        padding-left:1em;
-                        font-size:4em;
-                        padding:0;
-                        padding-top:1em;
-                        margin:0;
-                        font-family: 'Work Sans', sans-serif;
-                        color:#535353;
-                    }
-                    .menuPlacement{
-                    }
-                    .navBarDesktop{
-                        grid-area:nav;
-                        height:100%;
-                        width:100%;
-                        display:flex;
-                        align-items:center;
-                        justify-content:flex-start;
-                        overflow-x:hidden;
-                    }
 
-                    @media only screen and (max-width: 760px) {
-                        #navBarDesktop { display: none; }
-                        #headlinePlacement{display:none;}
-                        .border{
-                            display:none;
-                        }
-                        .christianContainer{
-                            height:auto;
-                            width:100vw;
-                            display: grid;
-                            grid-template-columns:1fr;
-                            grid-template-rows:0.2fr 1.2fr 1fr ;
-                            grid-template-areas:
-                            'nav'
-                            'text'
-                            'img';
-                        }
-                        
-                        #navBarMobile{
-                            grid-area:nav;
-                            height:10vh;
-                            width:100vw;
-                            border-bottom: solid 0.5em ${style.standard.border};
-                            display:grid;
-                            grid-template-columns:1fr 1fr 1fr;
-                            justify-content:center;
-                            align-items:center;
-                        }
-                        .menu{
-                            height:100%;
-                            width:100%;
-                            background:blue;
-                        }
-                        p{
-                            width:80%;
-                            font-size:1.1em;
-                            text-align: justify;
-                            text-justify: inter-word;
-                            white-space: pre-line;
-                            margin:0;
-                            padding:0;
-                            overflow:show;
-                            color:#535353;
+      <style jsx>{`
 
-                        }
-                        h2{
-                            font-size:5em;
-                            padding:0;
-                            margin:0;
-                            text-align:center;
-                            color:#535353;
-                        }
-                        .textPlacement{
-                            grid-area:text;
-                            display:flex;
-                            flex-direction:column;
-                            align-items:center;
-                            padding-bottom:5vh;
-                        }
-                        img{
-                            margin-bottom:0.45em;
-                            max-width:20em;
-                            max-height:60vh;
-                        }
-                        .headlinePlacement{
-                            position:relative;
-                            left:50%;
-                            transform:translate(-50%,0);
-                            display:flex;
-                            align-items:center;
-                            justify-content:center;
-                        }
-                        .imageContainer{
-                            grid-area:img;
-                            border:solid 0.5 black;
-                            display:flex;
-                            align-items:flex-end;
-                            justify-content:center;
-                            height:100%;
-                            width:100%;
-                        }
-                        h4{
-                            padding:0;
-                            margin:0;
-                            font-size:1.4em;
-                            font-family: 'Work Sans', sans-serif;
-                            font-weight:600;
-                            text-decoration:underline;
-                            text-decoration-color: #535353;
-                            color:#535353;
-                        }
-                        .content{
-                            grid-area:text;
-                            width:80%;
-                            height:100%;
-                            border: solid 0.5em #EBD5B3;
-                        }
-                        h3{
-                            padding-left:1em;
-                            font-size:4em;
-                            padding:0;
-                            padding-top:1em;
-                            margin:0;
-                            font-family: 'Work Sans', sans-serif;
-                            color:#535353;
+      `}</style>
 
-                        }
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+            width:100vw;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+        }
 
-                    }
-                `}
-            </style>
-            <style jsx global>{`
-                    html,
-                    body {
-                    padding: 0;
-                    margin: 0;
-                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-                        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-                        sans-serif;
-                        width:100vw;
-                        min-height: 100vh;
-                        min-height: -webkit-fill-available;
-                    }
-
-                    * {
-                    box-sizing: border-box;
-                    }
-            `}</style>
-        </div>
-    )
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
+    </div>
+  )
 }
+
+const mapSizesToProps = ({ width }) => ({
+  desktop: (width && width < 800) ? false : true,
+});
+
+//{id:1, text:"gi"},{id:3,text:"rext"}
+export default Home;
