@@ -1,10 +1,10 @@
 import { LanguageToggle } from "../shared/languageToggle"
 import { useContext, useState } from 'react';
-import { DataContext } from "../../../context/dataContext";
+import { DataContext } from "../../context/dataContext";
 import { MenuRow } from '../shared/menuRow';
 import { SubMenu } from "./subMenu";
 import { InterestsContainer } from "./interestsContainer";
-import { UiContext } from "../../../context/uiContext";
+import { UiContext } from "../../context/uiContext";
 
 export const DInterests = () => {
     const [{interests, menu,language},setDataState] = useContext(DataContext) as any;
@@ -14,7 +14,7 @@ export const DInterests = () => {
     return (
         <div className="container">
             <MenuRow imageSrc="ChristianReading.png" menuText={menu} language={language}/>
-            <LanguageToggle setDataState={setDataState} language={language}/>
+            <LanguageToggle setDataState={setDataState} language={language} fontSize={4}/>
             <SubMenu subMenu={interests.subMenu[language]} setInterestsState={setInterestsState} interestsState={interestsState} style={style}/>
             <InterestsContainer style={style} content={interests.content[language][interestsState]}/>
         

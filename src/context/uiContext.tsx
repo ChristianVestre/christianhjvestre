@@ -4,7 +4,7 @@ const UiContext = React.createContext([{}, () => { }]);
 
 
 const UiContextProvider = ({children}) => {
-
+    let isMobile = typeof document != 'undefined' ? window.matchMedia('(max-width: 760px)').matches : false;
     const toggleDrawer = (open: boolean) => (
         event: React.KeyboardEvent | React.MouseEvent,
     ) => {
@@ -22,6 +22,7 @@ const UiContextProvider = ({children}) => {
 
     const [uiState, setUiState] = useState({
         style: {
+            isMobile:isMobile,
             selectedPage:"/index",
             standard:{
                 text:"#535353",

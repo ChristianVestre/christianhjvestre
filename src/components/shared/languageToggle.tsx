@@ -1,4 +1,4 @@
-export const LanguageToggle = ({language, setDataState}) => {
+export const LanguageToggle = ({language, setDataState,fontSize}) => {
 
 
 
@@ -20,7 +20,7 @@ export const LanguageToggle = ({language, setDataState}) => {
                 }
                 button{
                     outline:none;
-                    font-size:2em;
+                    font-size:${fontSize + "em"};
                     background:transparent;
                     border:none;
                     -webkit-touch-callout: none; /* iOS Safari */
@@ -43,7 +43,7 @@ export const LanguageToggle = ({language, setDataState}) => {
                     margin:0;
 
                     padding:0;
-                    font-size:2em;
+                    font-size:${fontSize + "em"};
                     bottom:0;
                     -webkit-touch-callout: none; /* iOS Safari */
                     -webkit-user-select: none; /* Safari */

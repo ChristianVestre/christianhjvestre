@@ -1,10 +1,11 @@
 import Slider from "react-slick";
 import css from 'styled-jsx/css'
+import { useState } from 'react';
 var Scroll = require('react-scroll');
 
 
-export const WorkExhibit = ({ data, style,refKey }) => {
-    console.log(refKey)
+export const WorkExhibit = ({ data, style,refKey,index }) => {
+    const [open, setOpenState] = useState(false)
     const settings = {
         dots: true,
         infinite: true,
@@ -28,6 +29,9 @@ export const WorkExhibit = ({ data, style,refKey }) => {
                 <div className="contentContainer">
                     <p>{data.content}</p>
                 </div>
+                <button className="readMore">
+                    <p>read more</p>
+                </button>
             </div>
             <div className="carusel">
                 <div className="sliderContainer">
@@ -46,17 +50,24 @@ export const WorkExhibit = ({ data, style,refKey }) => {
                 </div>
             </div>
             <style jsx>{`
+                .readMore{
+                    display:hide;
+                }
                 .sliderContainer{
                     bottom:0;
                     width:90%;
+                    margin:0;
+                    padding:0;
                 }
                 .carusel{
-                    width:65%;
+                    width:60vw;
                     height:70vh;
                     display:flex;
                     align-items:center;
                     justify-content:flex-end;
                     flex-direction:column;
+                    margin:0;
+                    padding:0;
                     padding-bottom:4%;
                 }
                 img{
@@ -69,18 +80,18 @@ export const WorkExhibit = ({ data, style,refKey }) => {
                     display:flex;
                     align-content:center;
                     justify-content:center;
-
                 }
                 .container{
+                    grid-area:${'workExhibit' + index};
                     display:flex;
                     flex-direction:row;
                     width:100%;
-                    height:90%;
-                    border:0.5em solid ${style.standard.border};
+                    height:90vh;
+                    border:0.5vw solid ${style.standard.border};
                     margin:0;
-
                     padding:0;
                     align-items:center;
+
                 }
                 .textContainer{
                     display:flex;
@@ -95,7 +106,6 @@ export const WorkExhibit = ({ data, style,refKey }) => {
                     justify-content:center;
                     align-content:flex-start;
                     padding-bottom:5vh;
-
                 }
                 .contentContainer{
                     overflow-y:scroll;
@@ -117,6 +127,107 @@ export const WorkExhibit = ({ data, style,refKey }) => {
                     text-justify: inter-word;
                     white-space: pre-line;
                 }
+                @media only screen and (max-width: 760px) {
+                .sliderContainer{
+                    bottom:0;
+                    width:90vw;
+                    height:90%,
+                }
+                .readMore{
+                }
+                button{
+                    outline:none;
+                    background:transparent;
+                    background-color: Transparent;
+                    background-repeat:no-repeat;
+                    border: none;
+                    cursor:pointer;
+                    overflow: hidden;
+                }
+                button:active{
+                    outline:none;
+                }
+                button::-moz-focus-inner {
+                    outline: none !important;
+                }
+                .carusel{
+                    width:90vw;
+                    height:50vh;
+                    display:flex;
+                    align-items:center;
+                    justify-content:flex-end;
+                    flex-direction:column;
+                    padding-bottom:4%;
+                }
+                img{
+                    width:auto;
+                    height:50vh;
+                    padding:2em 1.5em 0 1.5em
+                }
+                .imageContainer{
+                    width:4vw;
+                    height:50vh;
+                    display:flex;
+                    align-content:center;
+                    justify-content:center;
+
+                }
+                .container{
+                    grid-area:${'workExhibit' + index};
+                    display:flex;
+                    flex-direction:column;
+                    width:100vw;
+                    height:100vh;
+                    border:0.5em solid ${style.standard.border};
+                    border-right:0;
+                    border-left:0;
+                    margin:0;
+                    padding:0;
+                    align-items:center;
+                }
+                .textContainer{
+                    display:flex;
+                    flex-direction:column;
+                    width:100%;
+                    height:40vh;
+                    align-content:space-between;
+                    padding-left:5vw;
+                }
+                .headlineContainer{
+                    display:flex;
+                    justify-content:center;
+                    align-content:flex-start;
+                    padding-bottom:5vh;
+
+                }
+                .contentContainer{
+                    overflow-y:scroll;
+                    justify-content:center;
+                    align-content:center;
+                    display:flex;
+                }
+                h2{
+                    font-size:1.6em;
+                    padding:0;
+                    margin:0;
+                    font-family:'Open sans';
+                    font-weight:600;
+                    color:${style.standard.text}
+                }
+                p{
+                    width:80%;
+                    padding:0;
+                    margin:0;
+                    font-size:1.2em;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    white-space: pre-line;
+                    font-family:'Open sans';
+                    font-weight:300;
+                    color:${style.standard.text}
+                }
+                }
+
                 `}</style>
         </div>
     )

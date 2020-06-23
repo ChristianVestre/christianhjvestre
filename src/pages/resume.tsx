@@ -2,7 +2,7 @@ import Head from 'next/head'
 import sizes from 'react-sizes';
 import { UiContextProvider } from '../context/uiContext';
 import { DataContextProvider } from '../context/dataContext';
-import { DResume } from '../components/desktop/resume/resume';
+import { DResume } from '../components/resume/resume';
 
 function Resume({ desktop, data }) {
     return (

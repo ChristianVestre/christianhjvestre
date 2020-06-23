@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
-import { UiContext } from '../../../context/uiContext';
+import { UiContext } from '../../context/uiContext';
 
 export const MenuButton = ({ page, text }) => {
 
@@ -11,7 +11,6 @@ export const MenuButton = ({ page, text }) => {
         e.preventDefault()
         router.push(page, page == "/index" ? "/" : page)
     }
-    console.log(router.pathname)
 
     const pathname = router.pathname == "/" ? "/index":router.pathname
     return (

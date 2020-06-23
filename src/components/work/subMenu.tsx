@@ -3,7 +3,7 @@
 import { SubMenuButton } from "./subMenuButton"
 import { useState } from "react"
 
-export const SubMenu = ({data,language, handleClick}) => {
+export const SubMenu = ({data,language, handleClick, style}) => {
 
     return(
         <div className="subMenuContainer">
@@ -12,12 +12,13 @@ export const SubMenu = ({data,language, handleClick}) => {
                         key={i}
                         headline={d[language].headline}
                         handleClick={handleClick}
-
+                        style={style}
                         />
             })}
             
             <style jsx>{`
                 .subMenuContainer{
+                    grid-area:subMenu;
                     padding-top:2vh;
                     height:18vh;
                     display:flex;

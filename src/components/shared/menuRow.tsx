@@ -5,24 +5,23 @@ export const MenuRow = ({imageSrc, menuText, language}) => {
 
 
     return (
-        <div>
-            <div className="menuContainer">
+        <nav className="menuContainer" id="menuContainer">
             <MenuRowButton page="/index" text={menuText[language].christian} />
             <MenuRowButton page="/work" text={menuText[language].work}/>
             <ImageContainer src={imageSrc}/>
             <MenuRowButton page="/resume" text={menuText[language].resume}/>
             <MenuRowButton page="/interests" text={menuText[language].interests}/>
-            </div>
             <style jsx>{`
                         .menuContainer{
+                            grid-area:nav;
                             display:flex;
                             flex-direction:row;
                             width:100%;
-                            justify-content:space-evenly;
-                            height:20vh;
+                            height:100%;
+                            justify-content:space-evenly;   
                         }
             
             `}</style>
-        </div>
+        </nav>
     )
 }

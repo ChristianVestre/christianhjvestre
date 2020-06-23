@@ -1,10 +1,10 @@
 import { LanguageToggle } from "../shared/languageToggle"
 import { useContext } from "react";
-import { DataContext } from "../../../context/dataContext";
+import { DataContext } from "../../context/dataContext";
 import { ImageContainer } from "../shared/imageContainer";
 import { MenuRow } from "../shared/menuRow";
 import { ResumeContent } from "./resumeContent";
-import { UiContext } from "../../../context/uiContext";
+import { UiContext } from "../../context/uiContext";
 import { SkillsContent } from "./skillsContent";
 
 export const DResume = () => {
@@ -14,7 +14,7 @@ export const DResume = () => {
     return (
         <div className="resumeContainer">
             <MenuRow imageSrc="/ChristianResume.png" menuText={menu} language={language}></MenuRow>
-            <LanguageToggle setDataState={setDataState} language={language}/>
+            <LanguageToggle setDataState={setDataState} language={language} fontSize={4}/>
             <div className="contentContainer">
                 <ResumeContent resume={resume.items} language={language} style={style}/>
                 <SkillsContent style={style} data={resume.skills} language={language}/>

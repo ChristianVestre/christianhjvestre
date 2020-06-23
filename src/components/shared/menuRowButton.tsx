@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { UiContext } from '../../../context/uiContext';
+import { UiContext } from '../../context/uiContext';
 import { useContext } from 'react';
 import { useRouter } from 'next/router'
 
