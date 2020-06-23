@@ -10,7 +10,7 @@ export const MobileNavBar = ({style,setDataState,language,setDrawerState}) => {
             <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
             <style jsx>{`
             .navBarMobile{
-                grid-area:nav;
+                            grid-area:nav;
                             height:10vh;
                             width:100vw;
                             border-bottom: solid 0.5em ${style.standard.border};
@@ -18,6 +18,11 @@ export const MobileNavBar = ({style,setDataState,language,setDrawerState}) => {
                             grid-template-columns:1fr 1fr 1fr;
                             justify-content:center;
                             align-items:center;
+                        }
+                        @media only screen and (min-width: 760px) {
+                            .navBarMobile{
+                                display:none;
+                            }
                         }
                 
                 `}

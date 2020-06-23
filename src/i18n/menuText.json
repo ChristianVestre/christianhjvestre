@@ -3,12 +3,14 @@
         "christian":"Christian",
         "work":"Arbeid",
         "resume":"Resumé",
-        "interests":"Interesser"
+        "interests":"Interesser",
+        "readMore":"les mer"
     },
     "en":{
         "christian":"Christian",
         "work":"Work",
         "resume":"Resumé",
-        "interests":"Interests"
+        "interests":"Interests",
+        "readMore":"read more"
     }
 }

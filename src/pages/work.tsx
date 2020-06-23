@@ -58,15 +58,12 @@ export default () => {
             </React.Fragment> : null
             }
             <style jsx>{`
-            .container > :global(.mobileNavBar){
-                    display:none;
-                }
             .container{
                 width:100%;
                 height:100%;
                 display:grid;
                 grid-template-columns:1fr;
-                grid-template-rows:1fr 0.2fr repeat(5,0.65fr);
+                grid-template-rows:0.2fr 0.2fr repeat(5,0.65fr);
                 grid-template-areas:
                 'nav'
                 'subMenu'
@@ -76,6 +73,9 @@ export default () => {
                 'workExhibit3'  
                 'workExhibit4';
             }
+            .container > :global(.mobileNavBar){
+                    display:none;
+                }
             .languageToggleContainer{
                 position:absolute;
                 top:1vh;

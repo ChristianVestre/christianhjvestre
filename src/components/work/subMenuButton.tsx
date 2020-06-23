@@ -9,12 +9,12 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
 
                 .centeringContainer{
                     display:flex;   
-                    width:"15vw";
+                    width:15vw;
                 }
                 .subMenuText{
                     margin:0;
                     padding:0;
-                    font-size:"1.3em";
+                    font-size:1.3em;
                     font-family: 'Open sans';
                     font-weight: 300;
                     color:${style.standard.text}
@@ -41,10 +41,10 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                 }
                 @media only screen and (max-width: 760px) {
                 .centeringContainer{
-                    width:"35vw";
+                    width:35vw;
                 }
                 .subMenuText{
-                    font-size:"0.9em";
+                    font-size:0.9em;
                 }
                 }
                 `}</style>
