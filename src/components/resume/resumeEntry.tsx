@@ -4,6 +4,7 @@ export const ResumeEntry = ({data,style}) => {
         <article className="resumeEntryContainer">
             <section className="datesContainer">
                 <p className="fromDates">{data.from}</p>
+                <div className="dash"/>
                 <p className="toDates">{data.to}</p>
             </section>
             <section className="graphicsContainer">
@@ -18,13 +19,11 @@ export const ResumeEntry = ({data,style}) => {
                     <img src={data.logo + ".png"}/>
                 </picture>
             </section>
-            <section className="contentContainer">
-                <div className="headlineContainer">
-                    <h3>{data.headline}</h3>
-                </div>
-                <div className="textContainer">
-                    <p>{data.text}</p>
-                </div>
+            <section className="headlineContainer">
+                <h3>{data.headline}</h3>
+            </section>
+            <section className="textContainer">
+                <p>{data.text}</p>
             </section>
 
             <style jsx>{`
@@ -36,14 +35,22 @@ export const ResumeEntry = ({data,style}) => {
                 .textContainer::-moz-scrollbars{
                     display:none;
                 }
+                .dash{
+                    display:none;
+                }
                 .headlineContainer{
+                    grid-area:headline;
                     display:flex;
+                    justify-content:center;
                     padding: 3% 0 3% 0;
-                    width:70%;
+                    width:100%;
                 }
                 .textContainer{
-                    width:60%;
-                    height:90%;
+                    grid-area:text;
+                    display:flex;
+                    justify-content:center;
+                    width:100%;
+                    height:100%;
                     margin:0;
                     padding:0;
                     overflow-y:auto;
@@ -72,18 +79,10 @@ export const ResumeEntry = ({data,style}) => {
                     font-family:'Open sans';
                     font-weight:600;
                     color:${style.standard.text};
-                }
-                .contentContainer{
-                    display:flex;
-                    flex-direction:column;
-                    width:50%;
-                    height:90%;
-                    align-items:center;
-                    justify-content:center;
-                    padding: 1% 0 1% 0;
-
+                    width:80%;
                 }
                 .logoContainer{
+                    grid-area:logo;
                     display:flex;
                     align-items:center;
                     justify-content:center;
@@ -103,31 +102,142 @@ export const ResumeEntry = ({data,style}) => {
                     margin: 10% 0 10% 0;
                 }
                 .graphicsContainer{
+                    grid-area:graphics;
                     height:100%;
-                    width:14%;
                     display:flex;
                     flex-direction:column;
                     align-content:center;
                     justify-content:center;
                 }
                 .datesContainer{
+                    grid-area:dates;
                     display:flex;
                     align-items:center;
                     justify-content:center;
                     flex-direction:column;
-                    width:20%;
+                    
                 }
                 .resumeEntryContainer{
-                    display:flex;
-                    flex-direction:row;
                     width:100%;
                     height:50vh;
+                    display:grid;
+                    grid-template-columns:1fr 1fr 1fr 5fr;
+                    grid-template-rows:0.3fr 0.7fr;
+                    grid-template-areas:
+                    'dates graphics logo headline'
+                    'dates graphics logo text'
                 }
                 p{
                     margin:0;
                     padding:0;
+                    width:80%;
+                }
+                @media only screen and (max-width: 760px) {
+                    .resumeEntryContainer{
+                    grid-area:skillsContent;
+                    width:100%;
+                    height:150vh ;
+                    margin-top:0vh;
+                    display:grid;
+                    align-content:center;
+                    justify-content:center;
+                    grid-template-columns:1fr;
+                    grid-template-rows:0.2fr 0.2fr 0.2fr 0.4fr 0.4fr;
+                    grid-template-areas:
+                    'headline'
+                    'logo'
+                    'dates'
+                    'text'
+                    'graphics'
+                }
+                .graphicsContainer{
+                    grid-area:graphics;
+                    height:100%;
+                    display:flex;
+                    flex-direction:column;
+                    align-content:center;
+                    justify-content:center;
+                }
+                .verticalLine{
+                    width:0.3em;
+                    height:25%;
+                    background:${style.standard.border};
+                    align-self:center;
+                }
+                .horizontalLine{
+                    width:40%;
+                    height:0.2em;
+                    background:${style.standard.border};
+                    align-self:center;
+                    margin: 10% 0 10% 0;
+                }
+                .textContainer{
+                    grid-area:text;
+                    width:90%;
+                    height:100%;
+                    display:flex;
+                    justify-self:center;
+                }   
+                .headlineContainer{
+                    width:90%;
+                    height:auto;
+                    display:flex;
+                    justify-self:center;
+                    align-self:center;
+                }
+                h3{
+                    width:100%;
+                    font-size:1.7em;
+                    text-align:center;
+                }
+                p{
+                    width:100%;
+                    height:auto;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    font-size:1.1em;
+                }
+                .logoContainer{
+                    grid-area:logo;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                }
+                .datesContainer{
+
+                    flex-direction:row;
+                    width:90%;
+                    justify-content:space-between;
+                    justify-self:center;
+                }
+                img{
+                    width:100%;
+                }
+                .fromDates{
+                    font-size:1.3em;
+                    font-weight:600;
+                    width:40%;
+                    display:flex;
+                    justify-self:center;
+                    justify-content:center;
+                }
+                .toDates{
+                    font-size:1.3em;
+                    font-weight:600;
+                    width:40%;
+                    display:flex;
+                    justify-self:center;
+                    justify-content:center;
+                }
+                .dash{
+                    display:block;
+                    height:0.5vh;
+                    width:5vw;
+                    background:${style.standard.text};
                 }
                 
+                    }
+                }
                 `}</style>
         </article>
     )

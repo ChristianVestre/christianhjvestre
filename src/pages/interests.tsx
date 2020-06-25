@@ -1,10 +1,20 @@
 import Head from 'next/head'
 import sizes from 'react-sizes';
-import { UiContextProvider } from '../context/uiContext';
-import { DataContextProvider } from '../context/dataContext';
-import { DInterests } from '../components/desktop/interests/interests';
+import { UiContextProvider, UiContext } from '../context/uiContext';
+import { DataContextProvider, DataContext } from '../context/dataContext';
+import { DInterests } from '../components/interests/interests';
+import { useContext, useState, useRef } from 'react';
+import { MenuRow } from '../components/shared/menuRow';
+import { LanguageToggle } from '../components/shared/languageToggle';
+import { SubMenu } from '../components/interests/subMenu';
+import { InterestsContainer } from '../components/interests/interestsContainer';
+export default () => {
+    
+    const [{interests, menu,language},setDataState] = useContext(DataContext) as any;
+    const [interestsState,setInterestsState] = useState("aimachinelearning") 
+    const [{style},setUiState] = useContext(UiContext) as any;
+    const topRef = useRef();
 
-function Interests({ desktop, data }) {
     return (
         <div className="container">
             <Head>
@@ -12,22 +22,30 @@ function Interests({ desktop, data }) {
                 <link rel="icon" href="/favicon.ico" />
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
             </Head>
-                    {desktop ?
-                        <main>
-                            <DInterests />
-                        </main>
-                        :
-                        <main>
-                            <h2>Christian Vestre</h2>
-                        </main>
-                    }
 
+            <MenuRow imageSrc="ChristianReading.png" menuText={menu} language={language} refKey={topRef}/>
+            <LanguageToggle setDataState={setDataState} language={language} fontSize={4}/>
+            <SubMenu subMenu={interests.subMenu[language]} setInterestsState={setInterestsState} interestsState={interestsState} style={style}/>
+            <InterestsContainer style={style} content={interests.content[language][interestsState]}/>
+        
+        
+        
+        <style jsx>{`
+            .menuContainer{
+                display:flex;
+                flex-direction:row;
+                width:99vw;
+                justify-content:space-evenly;
+                height:25vh;
+            }
+            img{
+                margin:0;
+                padding:0;
+                width:33vh;
+                
 
-            <style jsx>{`
-
-
-      `}</style>
-
+            }
+            `}</style>
             <style jsx global>{`
         html,
         body {
@@ -46,9 +64,3 @@ function Interests({ desktop, data }) {
     )
 }
 
-const mapSizesToProps = ({ width }) => ({
-    desktop: (width && width < 560) ? false : true,
-});
-
-//{id:1, text:"gi"},{id:3,text:"rext"}
-export default sizes(mapSizesToProps)(Interests);

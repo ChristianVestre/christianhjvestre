@@ -29,8 +29,8 @@ export const SkillsItem = ({ data, style }) => {
                     width:100%;
                 }
                 .background{
-                    height:2.2vh;
-                    width:70%;
+                    height:3vh;
+                    width:100%;
                     border: solid 0.2em black;
                     border-radius:0.5em;
                 }
@@ -72,11 +72,19 @@ export const SkillsItem = ({ data, style }) => {
                 }
                 .skillsItemContainer{
                     margin:1vh 0;
-                    height:5vh;
+                    height:auto;
                     width:100%;
                     display:flex;
                     flex-direction:column;
                     align-items:center;
+                }
+                @media only screen and (max-width: 760px) {
+                    .skillsContainer{
+                    grid-area:skillsContent;
+                    width:100%;
+                    height:auto;
+                    margin-top:2vh;
+                    }
                 }
 
                 `}</style>

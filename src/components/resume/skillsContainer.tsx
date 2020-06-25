@@ -1,7 +1,6 @@
 import { SkillsItem } from "./skillsItem"
 
 export const SkillsContainer = ({style,data,dataKey,language}) => {
-console.log(dataKey)
     return(
         <section className="skillsContainer">
             <h3>{data[dataKey][language].headline}</h3>
@@ -17,9 +16,16 @@ console.log(dataKey)
                     width:20vw;
                     padding:3%;
                     padding-left:5%;
-
                 }
-                `}</style>
+                @media only screen and (max-width: 760px) {
+                    .skillsContainer{
+                    grid-area:skillsContent;
+                    width:100vw;
+                    height:auto;
+                    margin-top:0vh;
+                    }
+                }
+                `}</style> 
         </section>
     )
 }

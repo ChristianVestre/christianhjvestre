@@ -31,7 +31,7 @@ export default () => {
 
 
     return (
-        <div className="container">
+        <div className="gridContainer">
             <Head>
                 <title>Christian Vestre</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -81,7 +81,7 @@ export default () => {
                         outline:none;
                     }
                     button::-moz-focus-inner { border:0; }
-            .container{
+            .gridContainer{
                 width:100%;
                 height:100%;
                 display:grid;
@@ -96,7 +96,7 @@ export default () => {
                 'workExhibit3'  
                 'workExhibit4';
             }
-            .container > :global(.mobileNavBar){
+            .gridContainer > :global(.mobileNavBar){
                     display:none;
                 }
             .languageToggleContainer{
@@ -116,7 +116,7 @@ export default () => {
                 .topButton{
                     display:none;
                 }
-                .container{
+                .gridContainer{
                 width:100%;
                 height:100%;
                 display:grid;
@@ -131,10 +131,10 @@ export default () => {
                 'workExhibit3'
                 'workExhibit4'
             }
-                .container > :global(.menuContainer){
+                .gridContainer > :global(.menuContainer){
                     display:none;
                 }
-                .container > :global(.subMenuContainer){
+                .gridContainer > :global(.subMenuContainer){
                     height:30vh;
                     display:grid;
                     width:90%;
@@ -145,7 +145,7 @@ export default () => {
                     align-items:space-evenly;
                     justify-content:center;
                 }
-                .container > :global(.subMenuText){
+                .gridContainer > :global(.subMenuText){
                     font-size:0.8em;
                 }
             }
