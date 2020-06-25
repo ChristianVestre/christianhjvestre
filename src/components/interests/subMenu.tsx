@@ -4,7 +4,7 @@ import { useState } from "react"
 export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => {
 
     return(
-        <div className="subMenuContainer">
+        <nav className="subMenuContainer">
             {subMenu.map((d, i) => {
                 return <SubMenuButton
                         key={i}
@@ -31,7 +31,7 @@ export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => 
                 }
 
                 `}</style>
-        </div>
+        </nav>
     )
 
 }

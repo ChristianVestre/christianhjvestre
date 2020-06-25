@@ -19,6 +19,16 @@ export const MobileNavBar = ({style,setDataState,language,setDrawerState}) => {
                             justify-content:center;
                             align-items:center;
                         }
+                        h4{
+                            padding:0;
+                            margin:0;
+                            font-size:1.4em;
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight:600;
+                            text-decoration:underline;
+                            text-decoration-color: #535353;
+                            color:#535353;
+                        }
                         @media only screen and (min-width: 760px) {
                             .navBarMobile{
                                 display:none;

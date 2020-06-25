@@ -3,7 +3,7 @@ import { SkillsItem } from "./skillsItem"
 export const SkillsContainer = ({style,data,dataKey,language}) => {
 console.log(dataKey)
     return(
-        <div className="skillsContainer">
+        <section className="skillsContainer">
             <h3>{data[dataKey][language].headline}</h3>
             {data[dataKey][language].content.map((d,i) => {return <SkillsItem key={i} data={d} style={style}/> })}
             
@@ -20,6 +20,6 @@ console.log(dataKey)
 
                 }
                 `}</style>
-        </div>
+        </section>
     )
 }

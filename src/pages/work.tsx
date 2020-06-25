@@ -16,6 +16,7 @@ export default () => {
     const [{ style},] = useContext(UiContext) as any;
     const [drawerState, setDrawerState] = useState(false)
 
+    const topRef = useRef() as any
     const refs = work.reduce((acc, value) => {
         acc[value[language].headline] = useRef();
         return acc;
@@ -37,7 +38,7 @@ export default () => {
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            <MenuRow imageSrc="/ChristianStudying.png" menuText={menu} language={language}></MenuRow>
+            <MenuRow imageSrc="/ChristianStudying.png" menuText={menu} language={language} refKey={topRef}></MenuRow>
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
@@ -57,7 +58,29 @@ export default () => {
                 </SwipeableDrawer>
             </React.Fragment> : null
             }
+            <button className="topButton" onClick={() => topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
+                <p>top</p>
+            </button>
             <style jsx>{`
+                .topButton{
+                    position:fixed;
+                    background:transparent;
+                    height:5em;
+                    width:5em;
+                    z-index:2;
+                    bottom:3vh;
+                    right:2vw;
+                    outline:none;
+                    border: solid 0.5em ${style.standard.border}
+
+                }
+                .topButton:active{
+                    outline:none;
+                }
+                button:active{
+                        outline:none;
+                    }
+                    button::-moz-focus-inner { border:0; }
             .container{
                 width:100%;
                 height:100%;
@@ -88,6 +111,9 @@ export default () => {
 
             @media only screen and (max-width: 760px) {
                 .languageToggleContainer{
+                    display:none;
+                }
+                .topButton{
                     display:none;
                 }
                 .container{

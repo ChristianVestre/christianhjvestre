@@ -21,8 +21,8 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
     };
 
     return (
-        <div className="container" ref={refKey}>
-            <div className="textContainer">
+        <article className="container" ref={refKey}>
+            <section className="textContainer">
                 <div className="headlineContainer">
                     <h2>{data.headline}</h2>
                 </div>
@@ -32,8 +32,8 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                 <button className="readMore" onClick={() => {open == "30vh" ? setOpenState("auto"):setOpenState("30vh")}}>
                     <p className="readMoreText">read more</p>
                 </button>
-            </div>
-            <div className="carusel">
+            </section>
+            <section className="carusel">
                 <div className="sliderContainer">
                     <Slider {...settings} className="slider" >
                         {data.images.map(src => 
@@ -48,7 +48,7 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
 
                     </Slider>
                 </div>
-            </div>
+            </section>
             <style jsx>{`
                 .readMore{
                     display:none;
@@ -136,6 +136,7 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                 @media only screen and (max-width: 760px) {
                     .readMore{
                         display:block;
+                        width:40vw;
                     }
                     .sliderContainer{
                         bottom:0;
@@ -233,7 +234,7 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                         width:80%;
                         padding:0;
                         margin:0;
-                        font-size:1.2em;
+                        font-size:1em;
                         text-align: justify;
                         text-justify: inter-word;
                         white-space: pre-line;
@@ -243,11 +244,12 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                     }
                     .readMoreText{
                         font-size:1.5em;
+                        
                     }
                 }
 
                 `}</style>
-        </div>
+        </article>
     )
 }
 

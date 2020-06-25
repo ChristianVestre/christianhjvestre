@@ -13,17 +13,17 @@ export default () => {
     const [{ christian,menu, language }, setDataState] = useContext(DataContext) as any;
     const [{ style },] = useContext(UiContext) as any;
     const [drawerState,setDrawerState] = useState(false)
-    console.log(christian)
-    let isMobile =typeof document != 'undefined' ? window.matchMedia('(max-width: 600px)').matches: false;
+    let isMobile =typeof document != 'undefined' ? window.matchMedia('(max-width: 760px)').matches: false;
 
     return (
-        <div className="christianContainer">
+        <div className="gridContainer">
             <Head>
                 <title>Christian Vestre</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
+            
             <nav id="navBarDesktop" className="navBarDesktop">
                 <div className="menuPlacement">
                     <MenuButton page={"/index"} text={christian.menu[language].christian} />
@@ -37,20 +37,20 @@ export default () => {
                     <h4 className="noselect">Christian Vestre</h4>
                     <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
             </nav>
-            <div className="headlinePlacement" id="headlinePlacement">
+            <section className="headlinePlacement" id="headlinePlacement">
                 <h1 className="noselect">Christian Vestre</h1>
-            </div>
-            <div className="imageContainer">
+            </section>
+            <section className="imageContainer">
                 <img src="/Christian.png" className="noselect" />
-            </div>
-            <div className="textPlacement">
+            </section>
+            <section className="textPlacement">
                 <h2 className="noselect">{christian.text[language].headline}</h2>
                 <p className="noselect">{christian.text[language].content}</p>
-            </div>
+            </section>
             <div className="border"/>
-            <div className="languageToggleContainer">
+            <section className="languageToggleContainer">
                     <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
-            </div>
+            </section>
             {isMobile ? <React.Fragment key={'left'}>
                     <SwipeableDrawer
                         anchor={'left'}
@@ -82,7 +82,7 @@ export default () => {
                         align-items:flex-end;
                         justify-content:flex-end;
                     }
-                    .christianContainer{
+                    .gridContainer{
                         height:100vh;
                         width:100vw;
                         display: grid;
@@ -197,7 +197,7 @@ export default () => {
                         .border{
                             display:none;
                         }
-                        .christianContainer{
+                        .gridContainer{
                             height:auto;
                             width:100vw;
                             display: grid;

@@ -1,11 +1,11 @@
 import { ImageContainer } from "./imageContainer"
 import { MenuRowButton } from "./menuRowButton"
 
-export const MenuRow = ({imageSrc, menuText, language}) => {
+export const MenuRow = ({imageSrc, menuText, language, refKey}) => {
 
 
     return (
-        <nav className="menuContainer" id="menuContainer">
+        <nav className="menuContainer" id="menuContainer" ref={refKey}>
             <MenuRowButton page="/index" text={menuText[language].christian} />
             <MenuRowButton page="/work" text={menuText[language].work}/>
             <ImageContainer src={imageSrc}/>

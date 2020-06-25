@@ -4,7 +4,7 @@ import { SkillsContainer } from "./skillsContainer"
 export const SkillsContent = ({style,data,language}) => {
 
     return(
-        <div className="skillsContainer">
+        <aside className="skillsContainer">
             <SkillsContainer language={language} dataKey="languages" data={data} style={style} />
             <SkillsContainer language={language} dataKey="programming" data={data} style={style} />
 
@@ -15,6 +15,6 @@ export const SkillsContent = ({style,data,language}) => {
                     margin-top:7vh;
                 }
                 `}</style>
-        </div>
+        </aside>
     )
 }

@@ -1,5 +1,5 @@
 import { LanguageToggle } from "../shared/languageToggle"
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { DataContext } from "../../context/dataContext";
 import { ImageContainer } from "../shared/imageContainer";
 import { MenuRow } from "../shared/menuRow";
@@ -11,14 +11,16 @@ export const DResume = () => {
     const [{resume, menu, language},setDataState] = useContext(DataContext) as any;
     const [{style},setUiState] = useContext(UiContext) as any;
 
+    const topRef = useRef();
+    
     return (
         <div className="resumeContainer">
-            <MenuRow imageSrc="/ChristianResume.png" menuText={menu} language={language}></MenuRow>
+            <MenuRow imageSrc="/ChristianResume.png" menuText={menu} language={language} refKey={topRef}></MenuRow>
             <LanguageToggle setDataState={setDataState} language={language} fontSize={4}/>
-            <div className="contentContainer">
+            <main className="contentContainer">
                 <ResumeContent resume={resume.items} language={language} style={style}/>
                 <SkillsContent style={style} data={resume.skills} language={language}/>
-            </div>
+            </main>
 
         
         <style jsx>{`

@@ -3,7 +3,7 @@ export const LanguageToggle = ({language, setDataState,fontSize}) => {
 
 
     return (
-        <div className="languageToggleContainer">
+        <nav className="languageToggleContainer">
             <button className="no" onClick={ () => (setDataState(state => ({...state,language:"no"}))) }>NO</button>
             <p>/</p>
             <button className="en" onClick={ () => (setDataState(state => ({...state,language:"en"}))) }>EN</button>
@@ -53,6 +53,6 @@ export const LanguageToggle = ({language, setDataState,fontSize}) => {
                     user-select: none;
                 }
             `}</style>
-        </div>
+        </nav>
     )
 }

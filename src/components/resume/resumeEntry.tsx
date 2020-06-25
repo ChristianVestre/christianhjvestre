@@ -1,31 +1,31 @@
 export const ResumeEntry = ({data,style}) => {
 
     return(
-        <div className="resumeEntryContainer">
-            <div className="datesContainer">
+        <article className="resumeEntryContainer">
+            <section className="datesContainer">
                 <p className="fromDates">{data.from}</p>
                 <p className="toDates">{data.to}</p>
-            </div>
-            <div className="graphicsContainer">
+            </section>
+            <section className="graphicsContainer">
                 <div className="verticalLine"></div>
                 <div className="horizontalLine"></div>
                 <div className="verticalLine"></div>
-            </div>
-            <div className="logoContainer">
+            </section>
+            <section className="logoContainer">
                 <picture>
                     <source type="image/webp" srcSet={data.logo + ".webp"}/>
                     <source type="image/png" srcSet={data.logo + ".png"}/>
                     <img src={data.logo + ".png"}/>
                 </picture>
-            </div>
-            <div className="contentContainer">
+            </section>
+            <section className="contentContainer">
                 <div className="headlineContainer">
                     <h3>{data.headline}</h3>
                 </div>
                 <div className="textContainer">
                     <p>{data.text}</p>
                 </div>
-            </div>
+            </section>
 
             <style jsx>{`
                 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap');
@@ -129,6 +129,6 @@ export const ResumeEntry = ({data,style}) => {
                 }
                 
                 `}</style>
-        </div>
+        </article>
     )
 }

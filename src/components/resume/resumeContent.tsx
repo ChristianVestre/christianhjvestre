@@ -1,11 +1,11 @@
 import { ResumeEntry } from "./resumeEntry"
 import { useContext } from "react";
-import { DataContext } from "../../../context/dataContext";
+import { DataContext } from "../../context/dataContext";
 
 export const ResumeContent = ({resume, language, style}) => {
 
     return(
-        <div className="resumeContentContainer">
+        <section className="resumeContentContainer">
             {resume.map((d,i) => {
                 return <ResumeEntry key={i} data={d[language]} style={style}/>
             })}
@@ -19,6 +19,6 @@ export const ResumeContent = ({resume, language, style}) => {
                 }
                 `}
             </style>
-        </div>
+        </section>
     )
 }
