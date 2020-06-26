@@ -2,10 +2,8 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
 
     return(
         <div onClick={() => setInterestsState(dataKey)} className="subMenuButtonContainer">
-            <div className="centeringContainer">
                 <div className="selected"/>
                 <p>{text}</p>
-                </div>
             <style jsx>{`
                 .selected{
                     height:1.3em;
@@ -20,6 +18,7 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     width:15vw;
                 }
                 p{
+                    text-align:left;
                     margin:0;
                     padding:0;
                     font-size:1.3em;
@@ -30,7 +29,7 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     display:flex;
                     flex-direction:row;
                     align-items:center;
-                    justify-content:center;
+                    justify-content:flex-start;
                     background-color: Transparent;
                     background-repeat:no-repeat;
                     border: none;
@@ -46,6 +45,16 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     outline:none;
                     border:none;
                 }
+                @media only screen and (max-width: 760px) {
+                    .subMenuButtonContainer{
+                        width:auto;
+                        margin:0 5%;
+                    }
+                    p{
+                        font-size:0.9em;
+                    }
+                }
+
                 `}</style>
         </div>
     )

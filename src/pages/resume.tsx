@@ -8,12 +8,15 @@ import { LanguageToggle } from '../components/shared/languageToggle';
 import { ResumeContent } from '../components/resume/resumeContent';
 import { SkillsContent } from '../components/resume/skillsContent';
 import { MobileNavBar } from '../components/shared/mobileNavBar';
+import React from 'react';
+import { SwipeableDrawer } from '@material-ui/core';
+import { DrawerContent } from '../components/shared/drawerContent';
 
 export default () => {
     const [{ style }, setUiState] = useContext(UiContext) as any;
     const [{ resume, menu, language }, setDataState] = useContext(DataContext) as any;
     const [drawerState, setDrawerState] = useState(false)
-    const topRef = useRef();
+    const topRef = useRef() as any;
 
     return (
         <div className="gridContainer">
@@ -26,10 +29,43 @@ export default () => {
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
-            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState}></MobileNavBar>
+            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topRef}></MobileNavBar>
             <ResumeContent resume={resume.items} language={language} style={style} />
             <SkillsContent style={style} data={resume.skills} language={language} />
+            {style.isMobile ? <React.Fragment key={'left'}>
+                <SwipeableDrawer
+                    anchor={'left'}
+                    open={drawerState}
+                    onClose={() => setDrawerState(false)}
+                    onOpen={() => setDrawerState(true)}
+                >
+                    <DrawerContent menuText={menu} style={style} imageSrc="/ChristianStudying.png" language={language} />
+                </SwipeableDrawer>
+            </React.Fragment> : null
+            }
+            <button className="topButton" onClick={() => topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
+                <p>top</p>
+            </button>
             <style jsx>{`
+            .topButton{
+                    position:fixed;
+                    background:transparent;
+                    height:5em;
+                    width:5em;
+                    z-index:2;
+                    bottom:3vh;
+                    right:2vw;
+                    outline:none;
+                    border: solid 0.5em ${style.standard.border}
+
+                }
+                .topButton:active{
+                    outline:none;
+                }
+                button:active{
+                        outline:none;
+                    }
+                    button::-moz-focus-inner { border:0; }
                 .languageToggleContainer{
                     position:absolute;
                     top:1vh;
@@ -62,7 +98,9 @@ export default () => {
                     display:none;
                 }
                 .topButton{
-                    display:none;
+                    right:2vh;
+                    height:4em;
+                    width:4em;
                 }
                 .gridContainer{
                     width:100%;

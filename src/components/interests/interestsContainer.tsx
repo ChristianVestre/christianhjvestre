@@ -11,15 +11,17 @@ export const InterestsContainer = ({style, content}) => {
             </div>
             <style jsx>{`
                 .textContainer{
-
-                }
+                    grid-area:text;
+                }  
                 .imgContainer{
+                    grid-area:img;
                     width:30vw;
                     height:90%;
                     background:blue;
                 }
                 .interestsContainer{
-                    display:flex;
+                    grid-area:interestsContainer;
+                    display:grid;
                     justify-content:space-between;
                     align-items:center;
                     height:60vh;
@@ -27,8 +29,32 @@ export const InterestsContainer = ({style, content}) => {
                     border: solid 0.5em ${style.standard.border};
                     margin:2vh 5% 0 5%;
                     padding:0 5%;
+                    grid-template-columns:1.4fr 0.6fr;
+                    grid-template-rows: 2fr;
+                    grid-template-areas:
+                    'text img'
                 }
-
+                @media only screen and (max-width: 760px) {
+                    .interestsContainer{
+                        width:100%;
+                        height:100%;
+                        margin:5% 0 0 0;
+                        grid-template-columns:1fr;
+                        grid-template-rows: 1.4fr 0.6fr;
+                        grid-template-areas:
+                        'text'
+                        'img'  
+                    }
+                    p{
+                        font-size:0.9em;
+                    }
+                    .imgContainer{
+                    grid-area:img;
+                    width:100%;
+                    height:40vh;
+                    background:blue;
+                }
+                }
                 `}</style>
         </div>
     )

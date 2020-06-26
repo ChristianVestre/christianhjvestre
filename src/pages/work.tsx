@@ -16,7 +16,8 @@ export default () => {
     const [{ style},] = useContext(UiContext) as any;
     const [drawerState, setDrawerState] = useState(false)
 
-    const topRef = useRef() as any
+    const topDRef = useRef() as any
+    const topMRef = useRef() as any
     const refs = work.reduce((acc, value) => {
         acc[value[language].headline] = useRef();
         return acc;
@@ -27,7 +28,7 @@ export default () => {
             block: 'start',
         });
     }
-    console.log(style.isMobile);
+
 
 
     return (
@@ -38,11 +39,11 @@ export default () => {
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            <MenuRow imageSrc="/ChristianStudying.png" menuText={menu} language={language} refKey={topRef}></MenuRow>
+            <MenuRow imageSrc="/ChristianStudying.png" menuText={menu} language={language} refKey={topDRef}></MenuRow>
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
-            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState}></MobileNavBar>
+            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topMRef}></MobileNavBar>
             <SubMenu data={work} language={language} handleClick={handleClick} style={style} />
             {work.map((d, i) => {
                 return <WorkExhibit key={i} index={i} style={style} data={d[language]} refKey={refs[d[language].headline]} />
@@ -58,7 +59,7 @@ export default () => {
                 </SwipeableDrawer>
             </React.Fragment> : null
             }
-            <button className="topButton" onClick={() => topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
+            <button className="topButton" onClick={() => style.isMobile ? topMRef.current.scrollIntoView({behavior: 'smooth', block: 'start'}):topDRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
                 <p>top</p>
             </button>
             <style jsx>{`
@@ -70,6 +71,8 @@ export default () => {
                     z-index:2;
                     bottom:3vh;
                     right:2vw;
+                    margin:0;
+                    padding:0;
                     outline:none;
                     border: solid 0.5em ${style.standard.border}
 
@@ -114,7 +117,9 @@ export default () => {
                     display:none;
                 }
                 .topButton{
-                    display:none;
+                    right:2vh;
+                    height:4em;
+                    width:4em;
                 }
                 .gridContainer{
                 width:100%;

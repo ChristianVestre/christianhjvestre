@@ -9,7 +9,7 @@ import { DrawerContent } from "../components/shared/drawerContent";
 import { MobileBurgerMenu } from "../components/shared/mobileBurgerMenu";
 import Head from "next/head";
 
-export default () => {
+export default ({query}) => {
     const [{ christian,menu, language }, setDataState] = useContext(DataContext) as any;
     const [{ style },] = useContext(UiContext) as any;
     const [drawerState,setDrawerState] = useState(false)

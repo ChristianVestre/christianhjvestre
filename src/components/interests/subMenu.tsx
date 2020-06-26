@@ -27,7 +27,16 @@ export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => 
                     grid-row-gap:2.5vh;
                     align-items:center;
                     justify-content:center;
+                }
 
+                @media only screen and (max-width: 760px) {
+                    .subMenuContainer{
+                        width:100%;
+                        height:100%;
+                        display:grid;
+                        grid-template-columns:1fr 1fr;
+                        margin:0;
+                    }
                 }
 
                 `}</style>

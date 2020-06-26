@@ -216,7 +216,7 @@ export const ResumeEntry = ({data,style}) => {
                 .fromDates{
                     font-size:1.3em;
                     font-weight:600;
-                    width:40%;
+                    width:45%;
                     display:flex;
                     justify-self:center;
                     justify-content:center;
@@ -224,7 +224,7 @@ export const ResumeEntry = ({data,style}) => {
                 .toDates{
                     font-size:1.3em;
                     font-weight:600;
-                    width:40%;
+                    width:45%;
                     display:flex;
                     justify-self:center;
                     justify-content:center;

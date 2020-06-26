@@ -6,7 +6,6 @@ import { useRouter } from 'next/router'
 export const MenuRowButton = ({page,text}) => {
     const [{selectedPage, style},setUiState] = useContext(UiContext) as any;
     const router = useRouter()
-    console.log(router.pathname)
 
 
     const handleClick = (e) => {

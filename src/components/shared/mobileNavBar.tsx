@@ -1,10 +1,10 @@
 import { MobileBurgerMenu } from "./mobileBurgerMenu"
 import { LanguageToggle } from "./languageToggle"
 
-export const MobileNavBar = ({style,setDataState,language,setDrawerState}) => {
+export const MobileNavBar = ({style,setDataState,language,setDrawerState,refKey}) => {
 
     return(
-        <nav className="navBarMobile">
+        <nav className="navBarMobile" ref={refKey}>
             <MobileBurgerMenu style={style} toggleDrawer={() => {setDrawerState(true)}} />
             <h4 className="noselect">Christian Vestre</h4>
             <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
@@ -12,7 +12,7 @@ export const MobileNavBar = ({style,setDataState,language,setDrawerState}) => {
             .navBarMobile{
                             grid-area:nav;
                             height:10vh;
-                            width:100vw;
+                            width:100%;
                             border-bottom: solid 0.5em ${style.standard.border};
                             display:grid;
                             grid-template-columns:1fr 1fr 1fr;
