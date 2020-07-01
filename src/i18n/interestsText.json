@@ -79,17 +79,17 @@
             "aimachinelearning": {
                 "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
                 "text": "test",
-                "image": ""
+                "image": "/interests/jupyter.png"
             },
             "design": {
-                "headline": "Design er hvordan man løser åpne spørsmål",
-                "text": "test",
+                "headline": "For meg handler design om å takle problemer som ikke har noen optimal løsning på best mulig måte.",
+                "text": "Min interesse i design har lenge vært vedvarende. Det er noe med at design gir deg mulighet til å være kreativ uten mange begrensninger. Selve designprosessen er noe jeg finner veldig attraktiv. Den indirekte erfaringen jeg har, ved å ha jobbet sammen med UX/UI designere, og å bruke design thinking har vært veldig appellerende.\n\n Horst Rittel sammen med Melvin Webber i sin artikkel “Dilemmas in a General Theory of Planning” definerte “onde problemer” (“wicked problems”)  som ikke har en unverselt god løsning. Når man løser slike problemer handler det om å finne den beste blant en rekke ikke optimale løsninger. Dette er typen problemer som er standarden ute i en kaotisk virkelig verden, og det er slike problemer designere løser. Det løsningen på slike problemer som utgjør en forskjell og det er slike problemer jeg vil være med på å løse.\n\nAbduksjon er en måte å løse slike problemer på. Abduksjon, definert av den Amerikanske filosofen C.S. Pierce tar sin plass ved siden av Induksjon og Deduksjon som logiske tenkemåter. Abduksjon ligner deduksjon ved at man trekker en konklusjon ut fra observasjoner, det særskilte med abduksjon er at konklusjonen blir antatt for å være sann, men trenger ikke å bli bekreftet. Som del av masteroppgaven min undersøkte jeg rollen til abduksjon i relasjon med kreativitet, og dette er et tema jeg kommer til å videre til å oppfølge og teste ut nye teorier i.",
                 "image": ""
             },
             "webdevelopment": {
-                "headline": "Web utvikling handler om å gi en best mulig kundeopplevelse",
-                "text": "test",
-                "image": ""
+                "headline": "Softwareutvikling handler om å få bukt på kompleksitet",
+                "text": "Første stedet jeg jobbet var en reise e-commerce nettside, hvor jeg startet innenfor markedsføring. Mens jeg var der føltes det alltid som om at vi stanget hodet mot tech teamet og deres problemer med å få utgitt nye funksjoner og fikse bugs. Så jeg ble mer og mer interessert i å forstå hva problemet var og hvorfor ting var så vanskelig. Det var en sterk motivasjon for meg til å komme meg inn i systemene og å få lært meg hvordan man koder.\n\nSiden har jeg selv både på fritiden, på universitetet og i jobbsammenheng hatt en god mengde med utviklingsprosjekter, store og små. Dermed har jeg få kjent på kroppen all den kompleksiteten og de vanskene som kommer med software utvikling, og som en person fra en business/økonomibakgrunn har jeg vært interessert i å finne de ikke tekniske løsningene på slike problemer. Det vil si, hvordan man kan på produktnivå eller team nivå jobbe for å unngå å jobbe seg inn i et hjørne, med legacy code og høye levetidskostnader. Jeg er fortsatt i begynnerfasen av å virkelig forstå kompleksitetene, men som en sen tilhenger informatikk og koding føler jeg at jeg ligger godt an.\n\nPå teknologi siden er jeg også veldig interessert i det nye hotte, men jeg har blitt mer og mer oppmerksom på avveiningen av fordelene med det gamle stabile. Teknologier som for øyeblikket jeg synes virker spennende er Svelte 3, Vue 3 og hele Jam stacken for backend.",
+                "image": "/interests/code.jpg"
             },
             "cognition": {
                 "headline": "Hvordan lærer vi mennesker?",

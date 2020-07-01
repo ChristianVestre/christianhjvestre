@@ -7,17 +7,33 @@ export const InterestsContainer = ({style, content}) => {
                 <p>{content.text}</p>
             </div>
             <div className="imgContainer">
-                
+                <img src={content.image}/>
             </div>
             <style jsx>{`
                 .textContainer{
                     grid-area:text;
-                }  
+                    width:80%;
+                    height:90%;
+                    overflow-y:scroll;
+                    padding:0 5%;
+                } 
+                p{
+                    text-align: left;
+                    text-justify: inter-word;
+                    white-space: pre-line;
+                    font-size:1.1em;
+                } 
+                h3{
+                    font-size:2em;
+                }
+                img{
+                    max-height:100%;
+                }
                 .imgContainer{
                     grid-area:img;
-                    width:30vw;
+                    width:40vw;
                     height:90%;
-                    background:blue;
+                    overflow:hidden;
                 }
                 .interestsContainer{
                     grid-area:interestsContainer;
