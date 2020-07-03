@@ -31,7 +31,7 @@ export default () => {
             </div>
             <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topRef}></MobileNavBar>
             <ResumeContent resume={resume.items} language={language} style={style} />
-            <SkillsContent style={style} data={resume.skills} language={language} />
+            <SkillsContent style={style} data={resume.skills} language={language} menu={menu} />
             {style.isMobile ? <React.Fragment key={'left'}>
                 <SwipeableDrawer
                     anchor={'left'}
@@ -107,7 +107,7 @@ export default () => {
                     height:100%;
                     display:grid;
                     grid-template-columns:1fr;
-                    grid-template-rows:0.01fr 0.05fr 2fr;
+                    grid-template-rows:0.01fr 0.03fr 2fr;
                     grid-template-areas:
                     'nav'
                     'skillsContent'

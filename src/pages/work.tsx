@@ -10,6 +10,7 @@ import { SwipeableDrawer } from "@material-ui/core";
 import { DrawerContent } from "../components/shared/drawerContent";
 import Head from "next/head";
 import { MobileNavBar } from "../components/shared/mobileNavBar";
+import { ArrowUp } from "../components/shared/arrowUp";
 
 export default () => {
     const [{ work, menu, language }, setDataState] = useContext(DataContext) as any;
@@ -46,7 +47,7 @@ export default () => {
             <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topMRef}></MobileNavBar>
             <SubMenu data={work} language={language} handleClick={handleClick} style={style} />
             {work.map((d, i) => {
-                return <WorkExhibit key={i} index={i} style={style} data={d[language]} refKey={refs[d[language].headline]} />
+                return <WorkExhibit key={i} index={i} language={language} menu={menu} style={style} data={d[language]} refKey={refs[d[language].headline]} />
             })}
             {style.isMobile ? <React.Fragment key={'left'}>
                 <SwipeableDrawer
@@ -60,7 +61,7 @@ export default () => {
             </React.Fragment> : null
             }
             <button className="topButton" onClick={() => style.isMobile ? topMRef.current.scrollIntoView({behavior: 'smooth', block: 'start'}):topDRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
-                <p>top</p>
+                <ArrowUp/>
             </button>
             <style jsx>{`
                 .topButton{

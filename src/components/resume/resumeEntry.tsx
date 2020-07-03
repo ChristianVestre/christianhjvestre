@@ -209,6 +209,7 @@ export const ResumeEntry = ({data,style}) => {
                     width:90%;
                     justify-content:space-between;
                     justify-self:center;
+                    align-self:center;
                 }
                 img{
                     width:100%;

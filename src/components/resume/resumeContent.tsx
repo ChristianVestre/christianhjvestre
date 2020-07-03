@@ -10,13 +10,11 @@ export const ResumeContent = ({resume, language, style}) => {
                 return <ResumeEntry key={i} data={d[language]} style={style}/>
             })}
             
-            
             <style jsx>{`
                 .resumeContentContainer{
                     grid-area:resumeContent;
                     width:100%;
                     border: solid 0.5em ${style.standard.border};
-                    margin-top:7vh;
                 }
                 `}
             </style>

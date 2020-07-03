@@ -4,15 +4,22 @@
         "work":"Arbeid",
         "resume":"Resumé",
         "interests":"Interesser",
+        "readLess":"les mindre",
         "readMore":"les mer",
-        "seeMore":"se mer"
+        "seeLess":"se mindre",
+        "seeMore":"se mer",
+        "skills":"Ferdigheter"
     },
     "en":{
         "christian":"Christian",
         "work":"Work",
         "resume":"Resumé",
         "interests":"Interests",
+        "readLess":"read less",
         "readMore":"read more",
-        "seeMore":"see more"
+        "seeLess":"see less",
+        "seeMore":"see more",
+        "skills":"Skills"
+
     }
 }

@@ -61,6 +61,13 @@ export const InterestsContainer = ({style, content}) => {
                         'text'
                         'img'  
                     }
+                    .textContainer{
+                        width:100%;
+                        height:auto;
+                    }
+                    h3{
+                        font-size:1.3em;
+                    }
                     p{
                         font-size:0.9em;
                     }
@@ -68,7 +75,6 @@ export const InterestsContainer = ({style, content}) => {
                     grid-area:img;
                     width:100%;
                     height:40vh;
-                    background:blue;
                 }
                 }
                 `}</style>

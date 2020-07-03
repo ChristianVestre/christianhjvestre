@@ -4,7 +4,7 @@ import { useState } from 'react';
 var Scroll = require('react-scroll');
 
 
-export const WorkExhibit = ({ data, style,refKey,index }) => {
+export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
     const [open, setOpenState] = useState("30vh")
     const settings = {
         dots: true,
@@ -12,8 +12,6 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 10000,
         variableWidth: true,
         cssEase: "linear",
         nextArrow: <SampleNextArrow />,
@@ -30,7 +28,7 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                     <p>{data.content}</p>
                 </div>
                 <button className="readMore" onClick={() => {open == "30vh" ? setOpenState("auto"):setOpenState("30vh")}}>
-                    <p className="readMoreText">read more</p>
+                    <p className="readMoreText">{open == "30vh" ? menu[language].readMore:menu[language].readLess}</p>
                 </button>
             </section>
             <section className="carusel">
@@ -60,8 +58,8 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                     padding:0;
                 }
                 .carusel{                        
-                    width:60vw;                    font-family:'Open sans'
-
+                    width:60vw;                    
+                    font-family:'Open sans';
                     height:70vh;
                     display:flex;
                     align-items:center;
@@ -140,7 +138,7 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                     }
                     .sliderContainer{
                         bottom:0;
-                        width:86vw;
+                        width:80vw;
                         height:90%,
                     }
                     .container > :global(.slick-next){
@@ -212,6 +210,7 @@ export const WorkExhibit = ({ data, style,refKey,index }) => {
                         justify-content:center;
                         align-content:flex-start;
                         padding-bottom:5vh;
+                        overflow:hidden;
 
                     }
                     .contentContainer{

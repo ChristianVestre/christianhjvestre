@@ -8,9 +8,12 @@ export const SkillsContainer = ({style,data,dataKey,language}) => {
             
             <style jsx>{`
                 h3{
-                    font-size:2em;  
+                    font-size:1.8em;  
                     margin:0;
                     padding:0;
+                    font-family: 'Open sans';
+                    font-weight:600;
+                    color:${style.standard.text}
                 }
                 .skillsContainer{
                     width:20vw;
@@ -20,9 +23,13 @@ export const SkillsContainer = ({style,data,dataKey,language}) => {
                 @media only screen and (max-width: 760px) {
                     .skillsContainer{
                     grid-area:skillsContent;
-                    width:100vw;
+                    width:90%;
                     height:auto;
                     margin-top:0vh;
+                    display:flex;
+                    flex-direction:column;
+                    align-items:flex-start;
+                    justify-content:flex-start;
                     }
                 }
                 `}</style> 
