@@ -2,7 +2,7 @@ import Head from 'next/head'
 import sizes from 'react-sizes';
 import { UiContextProvider, UiContext } from '../context/uiContext';
 import { DataContextProvider, DataContext } from '../context/dataContext';
-import { useContext, useRef, useState } from 'react';
+import { useContext, useRef, useState, Ref } from 'react';
 import { MenuRow } from '../components/shared/menuRow';
 import { LanguageToggle } from '../components/shared/languageToggle';
 import { ResumeContent } from '../components/resume/resumeContent';
@@ -11,25 +11,26 @@ import { MobileNavBar } from '../components/shared/mobileNavBar';
 import React from 'react';
 import { SwipeableDrawer } from '@material-ui/core';
 import { DrawerContent } from '../components/shared/drawerContent';
+import { ArrowUp } from '../components/shared/arrowUp';
 
 export default () => {
     const [{ style }, setUiState] = useContext(UiContext) as any;
     const [{ resume, menu, language }, setDataState] = useContext(DataContext) as any;
     const [drawerState, setDrawerState] = useState(false)
-    const topRef = useRef() as any;
-
+    const topDRef = useRef() as any
+    const topMRef = useRef() as any
     return (
         <div className="gridContainer">
             <Head>
                 <title>Christian Vestre</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/ansikt.svg" />
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
             </Head>
-            <MenuRow imageSrc="/ChristianResume.png" menuText={menu} language={language} refKey={topRef}/>
+            <MenuRow imageSrc="christian/ChristianResume.svg" menuText={menu} language={language} refKey={topDRef}/>
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
-            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topRef}></MobileNavBar>
+            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topMRef}></MobileNavBar>
             <ResumeContent resume={resume.items} language={language} style={style} />
             <SkillsContent style={style} data={resume.skills} language={language} menu={menu} />
             {style.isMobile ? <React.Fragment key={'left'}>
@@ -43,8 +44,8 @@ export default () => {
                 </SwipeableDrawer>
             </React.Fragment> : null
             }
-            <button className="topButton" onClick={() => topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
-                <p>top</p>
+            <button className="topButton" onClick={() => style.isMobile ? topMRef.current.scrollIntoView({behavior: 'smooth', block: 'start'}):topDRef.current.scrollIntoView({behavior: 'smooth', block: 'start'})}>
+                <ArrowUp/>
             </button>
             <style jsx>{`
             .topButton{

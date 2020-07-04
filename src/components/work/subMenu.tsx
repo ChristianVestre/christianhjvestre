@@ -6,7 +6,7 @@ import { useState } from "react"
 export const SubMenu = ({data,language, handleClick, style}) => {
 
     return(
-        <div className="subMenuContainer">
+        <ul className="subMenuContainer">
             {data.map((d, i) => {
                 return <SubMenuButton
                         key={i}
@@ -32,7 +32,7 @@ export const SubMenu = ({data,language, handleClick, style}) => {
                 }
 
                 `}</style>
-        </div>
+        </ul>
     )
 
 }

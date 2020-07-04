@@ -1,7 +1,7 @@
 export const SubMenuButton = ({headline, handleClick, style}) => {
     console.log(style.isMobile)
     return(
-        <div onClick={() =>  handleClick(headline) } className="subMenuButtonContainer">
+        <li onClick={() =>  handleClick(headline) } className="subMenuButtonContainer">
             <div className="centeringContainer">
                 <p className="subMenuText">{headline}</p>
             </div>
@@ -48,6 +48,6 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                 }
                 }
                 `}</style>
-        </div>
+        </li>
     )
 }   

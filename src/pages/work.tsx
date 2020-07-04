@@ -36,11 +36,11 @@ export default () => {
         <div className="gridContainer">
             <Head>
                 <title>Christian Vestre</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/ansikt.svg" />
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            <MenuRow imageSrc="/ChristianStudying.png" menuText={menu} language={language} refKey={topDRef}></MenuRow>
+            <MenuRow imageSrc="christian/ChristianStudying.svg" menuText={menu} language={language} refKey={topDRef}></MenuRow>
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
@@ -123,20 +123,20 @@ export default () => {
                     width:4em;
                 }
                 .gridContainer{
-                width:100%;
-                height:100%;
-                display:grid;
-                grid-template-columns:1fr;
-                grid-template-rows:0.2fr auto repeat(5,auto);
-                grid-template-areas:
-                'nav'
-                'subMenu'
-                'workExhibit0'
-                'workExhibit1'
-                'workExhibit2'
-                'workExhibit3'
-                'workExhibit4'
-            }
+                    width:100%;
+                    height:100%;
+                    display:grid;
+                    grid-template-columns:1fr;
+                    grid-template-rows:0.2fr auto repeat(5,auto);
+                    grid-template-areas:
+                    'nav'
+                    'subMenu'
+                    'workExhibit0'
+                    'workExhibit1'
+                    'workExhibit2'
+                    'workExhibit3'
+                    'workExhibit4'
+                }
                 .gridContainer > :global(.menuContainer){
                     display:none;
                 }

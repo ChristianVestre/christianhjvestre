@@ -2,7 +2,7 @@ import { SkillsItem } from "./skillsItem"
 
 export const SkillsContainer = ({style,data,dataKey,language}) => {
     return(
-        <section className="skillsContainer">
+        <ul className="skillsContainer">
             <h3>{data[dataKey][language].headline}</h3>
             {data[dataKey][language].content.map((d,i) => {return <SkillsItem key={i} data={d} style={style}/> })}
             
@@ -33,6 +33,6 @@ export const SkillsContainer = ({style,data,dataKey,language}) => {
                     }
                 }
                 `}</style> 
-        </section>
+        </ul>
     )
 }

@@ -8,12 +8,12 @@ export const DrawerContent = ({style,imageSrc,menuText,language}) => {
 
     return(
         <div className="drawerContainer">
-            <div className="buttons">
+            <ul className="buttons">
             <DrawerMenuButton page="/index" text={menuText[language].christian} />
             <DrawerMenuButton page="/work" text={menuText[language].work}/>
             <DrawerMenuButton page="/resume" text={menuText[language].resume}/>
             <DrawerMenuButton page="/interests" text={menuText[language].interests}/>
-            </div>
+            </ul>
             <img src={imageSrc}/>
             <style jsx>{`
                 .buttons{
@@ -50,7 +50,7 @@ const DrawerMenuButton =({page, text}) =>{
         }
     
         return (
-        <div onClick={(e) => handleClick(e)} className="container">
+        <li onClick={(e) => handleClick(e)} className="container">
             <div className="selected"></div>
                 <h3>{text}</h3>
             <style jsx>{`
@@ -93,5 +93,5 @@ const DrawerMenuButton =({page, text}) =>{
                             user-select: none;
                         }
                 `}</style>
-        </div>)
+        </li>)
     }

@@ -19,7 +19,7 @@ export default ({query}) => {
         <div className="gridContainer">
             <Head>
                 <title>Christian Vestre</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/ansikt.svg" />
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
@@ -41,7 +41,7 @@ export default ({query}) => {
                 <h1 className="noselect">Christian Vestre</h1>
             </section>
             <section className="imageContainer">
-                <img src="/Christian.png" className="noselect" />
+                <img src="christian/Christian.svg" className="noselect" />
             </section>
             <section className="textPlacement">
                 <h2 className="noselect">{christian.text[language].headline}</h2>

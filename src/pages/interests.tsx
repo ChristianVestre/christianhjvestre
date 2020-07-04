@@ -22,10 +22,10 @@ export default () => {
         <div className="gridContainer">
             <Head>
                 <title>Christian Vestre</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/ansikt.svg" />
                 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
             </Head>
-            <MenuRow imageSrc="ChristianReading.png" menuText={menu} language={language} refKey={topRef}/>
+            <MenuRow imageSrc="christian/ChristianReading.svg" menuText={menu} language={language} refKey={topRef}/>
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>

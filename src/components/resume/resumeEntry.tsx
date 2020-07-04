@@ -62,8 +62,6 @@ export const ResumeEntry = ({data,style}) => {
                     margin:0;
                     padding:0;
                     font-size:1.2em;
-                    text-align: justify;
-                    text-justify: inter-word;
                     white-space: pre-line;
                     font-family:'Open sans';
                     font-weight:300;
@@ -73,8 +71,7 @@ export const ResumeEntry = ({data,style}) => {
                     margin:0;
                     padding:0;
                     font-size:1.9em;
-                    text-align: start;
-                    text-justify: inter-word;
+
                     white-space: pre-line;
                     font-family:'Open sans';
                     font-weight:600;

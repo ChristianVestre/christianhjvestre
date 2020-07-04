@@ -1,12 +1,11 @@
 export const SkillsItem = ({ data, style }) => {
-    console.log(data.percent)
     let rightBar = "none"
 
     if (data.percent ==! 100) {
         rightBar = "solid 0.2em black"
     }
     return (
-        <div className="skillsItemContainer">
+        <li className="skillsItemContainer">
             <p className="main">{data.main}</p>
             <div className="skillsGauge">
                 <div className="background">
@@ -88,6 +87,6 @@ export const SkillsItem = ({ data, style }) => {
                 }
 
                 `}</style>
-        </div>
+        </li>
     )
 }

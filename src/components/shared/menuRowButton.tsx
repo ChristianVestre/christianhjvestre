@@ -14,7 +14,7 @@ export const MenuRowButton = ({page,text}) => {
     }
 
     return (
-    <div onClick={(e) => handleClick(e)} className="container">
+    <li onClick={(e) => handleClick(e)} className="container">
         {"/index" != page ?
         <div className="selected"></div>:null}
             <h3>{text}</h3>
@@ -60,5 +60,5 @@ export const MenuRowButton = ({page,text}) => {
                         user-select: none;
                     }
             `}</style>
-    </div>)
+    </li>)
 }
