@@ -5,9 +5,8 @@ import { UiContext } from "../../context/uiContext"
 import { useRouter } from "next/router"
 
 export const DrawerContent = ({style,imageSrc,menuText,language}) => {
-
     return(
-        <div className="drawerContainer">
+        <section className="drawerContainer">
             <ul className="buttons">
             <DrawerMenuButton page="/index" text={menuText[language].christian} />
             <DrawerMenuButton page="/work" text={menuText[language].work}/>
@@ -30,11 +29,12 @@ export const DrawerContent = ({style,imageSrc,menuText,language}) => {
                 img{
                     width:90%;
                     height:auto;
+                    max-height:40%;
                     align-self:center;
                 }
                 
                 `}</style>
-        </div>
+        </section>
     )
 }
 

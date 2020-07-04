@@ -1,11 +1,11 @@
 import { MobileBurgerMenu } from "./mobileBurgerMenu"
 import { LanguageToggle } from "./languageToggle"
 
-export const MobileNavBar = ({style,setDataState,language,setDrawerState,refKey}) => {
+export const MobileNavBar = ({style,setDataState,language,handleDrawerOpen,refKey}) => {
 
     return(
         <nav className="navBarMobile" ref={refKey}>
-            <MobileBurgerMenu style={style} toggleDrawer={() => {setDrawerState(true)}} />
+            <MobileBurgerMenu style={style} toggleDrawer={() => {handleDrawerOpen()}} />
             <h4 className="noselect">Christian Vestre</h4>
             <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
             <style jsx>{`

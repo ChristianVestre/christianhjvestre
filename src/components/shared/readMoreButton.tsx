@@ -6,7 +6,7 @@ export const ReadMoreButton = ({ open, closedSize, menu, language, setOpenState,
                         width:30%;
                         padding:0;
                         margin:0;
-                        font-size:1.2em;
+                        font-size:1.5em;
                         text-align: justify;
                         text-justify: inter-word;
                         white-space: pre-line;
@@ -22,6 +22,8 @@ export const ReadMoreButton = ({ open, closedSize, menu, language, setOpenState,
                                 display:flex;
                                 width:100vw;
                                 justify-content:flex-end;
+                                align-items:center;
+                                height:4em;
                             }
                             button{
                                 outline:none;

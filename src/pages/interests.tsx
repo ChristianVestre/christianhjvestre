@@ -15,8 +15,14 @@ export default () => {
     
     const [{interests, menu,language},setDataState] = useContext(DataContext) as any;
     const [interestsState,setInterestsState] = useState("aimachinelearning") 
-    const [{style},setUiState] = useContext(UiContext) as any;
+    const [{style,randomeImageNumber},setUiState] = useContext(UiContext) as any;
     const topRef = useRef();
+    const DrawerImageArray = ["christian/Christian.svg", "christian/ChristianReading.svg", "christian/ChristianResume.svg", "christian/ChristianStudying.svg"]
+    const handleDrawerOpen = () => {
+        setUiState(state => ({...state, randomeImageNumber:Math.floor(Math.random() * DrawerImageArray.length)}))
+        setDrawerState(true)
+    }
+
     const [drawerState, setDrawerState] = useState(false)
     return (
         <div className="gridContainer">
@@ -29,7 +35,7 @@ export default () => {
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
-            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topRef}></MobileNavBar>
+            <MobileNavBar style={style} language={language} setDataState={setDataState} handleDrawerOpen={handleDrawerOpen} refKey={topRef}></MobileNavBar>
             <SubMenu subMenu={interests.subMenu[language]} setInterestsState={setInterestsState} interestsState={interestsState} style={style}/>
             <InterestsContainer style={style} content={interests.content[language][interestsState]}/>
             {style.isMobile ? <React.Fragment key={'left'}>
@@ -37,9 +43,9 @@ export default () => {
                     anchor={'left'}
                     open={drawerState}
                     onClose={() => setDrawerState(false)}
-                    onOpen={() => setDrawerState(true)}
+                    onOpen={() => handleDrawerOpen( )}
                 >
-                    <DrawerContent menuText={menu} style={style} imageSrc="/ChristianStudying.png" language={language} />
+                    <DrawerContent menuText={menu} style={style} imageSrc={DrawerImageArray[randomeImageNumber]} language={language} />
                 </SwipeableDrawer>
             </React.Fragment> : null
             }

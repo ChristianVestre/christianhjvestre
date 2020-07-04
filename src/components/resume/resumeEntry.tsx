@@ -1,8 +1,12 @@
-export const ResumeEntry = ({data,style}) => {
+import { ReadMoreButton } from "../shared/readMoreButton"
+import { useState } from 'react';
 
+export const ResumeEntry = ({data,style, language,menu}) => {
+    const closedSize = "20vh"
+    const [open, setOpenState] = useState(closedSize)
     return(
         <article className="resumeEntryContainer">
-            <section className="datesContainer">
+            <section className="datesSection">
                 <p className="fromDates">{data.from}</p>
                 <div className="dash"/>
                 <p className="toDates">{data.to}</p>
@@ -12,7 +16,7 @@ export const ResumeEntry = ({data,style}) => {
                 <div className="horizontalLine"></div>
                 <div className="verticalLine"></div>
             </section>
-            <section className="logoContainer">
+            <section className="logoSection">
                 <picture>
                     <source type="image/webp" srcSet={data.logo + ".webp"}/>
                     <source type="image/png" srcSet={data.logo + ".png"}/>
@@ -22,8 +26,11 @@ export const ResumeEntry = ({data,style}) => {
             <section className="headlineContainer">
                 <h3>{data.headline}</h3>
             </section>
-            <section className="textContainer">
+            <section className="textSection">
+                <div className="textContainer">
                 <p>{data.text}</p>
+                </div>
+                <ReadMoreButton language={language} style={style} open={open} closedSize={closedSize} setOpenState={setOpenState} menu={menu} type="read" />
             </section>
 
             <style jsx>{`
@@ -45,7 +52,7 @@ export const ResumeEntry = ({data,style}) => {
                     padding: 3% 0 3% 0;
                     width:100%;
                 }
-                .textContainer{
+                .textSection{
                     grid-area:text;
                     display:flex;
                     justify-content:center;
@@ -53,9 +60,6 @@ export const ResumeEntry = ({data,style}) => {
                     height:100%;
                     margin:0;
                     padding:0;
-                    overflow-y:auto;
-                    -ms-overflow-style: none;
-                    -ms-overflow-style: none;
                     scrollbar-width:none;
                 }   
                 p{
@@ -78,7 +82,7 @@ export const ResumeEntry = ({data,style}) => {
                     color:${style.standard.text};
                     width:80%;
                 }
-                .logoContainer{
+                .logoSection{
                     grid-area:logo;
                     display:flex;
                     align-items:center;
@@ -106,7 +110,7 @@ export const ResumeEntry = ({data,style}) => {
                     align-content:center;
                     justify-content:center;
                 }
-                .datesContainer{
+                .datesSection{
                     grid-area:dates;
                     display:flex;
                     align-items:center;
@@ -133,13 +137,13 @@ export const ResumeEntry = ({data,style}) => {
                     .resumeEntryContainer{
                     grid-area:skillsContent;
                     width:100%;
-                    height:150vh ;
+                    height:auto ;
                     margin-top:0vh;
                     display:grid;
                     align-content:center;
                     justify-content:center;
                     grid-template-columns:1fr;
-                    grid-template-rows:0.2fr 0.2fr 0.2fr 0.4fr 0.4fr;
+                    grid-template-rows:repeat(5, auto);
                     grid-template-areas:
                     'headline'
                     'logo'
@@ -157,7 +161,7 @@ export const ResumeEntry = ({data,style}) => {
                 }
                 .verticalLine{
                     width:0.3em;
-                    height:25%;
+                    height:5vh;
                     background:${style.standard.border};
                     align-self:center;
                 }
@@ -166,15 +170,23 @@ export const ResumeEntry = ({data,style}) => {
                     height:0.2em;
                     background:${style.standard.border};
                     align-self:center;
-                    margin: 10% 0 10% 0;
+                    margin: 4% 0 4% 0;
                 }
-                .textContainer{
+                .textSection{
                     grid-area:text;
                     width:90%;
-                    height:100%;
+                    height:auto;
                     display:flex;
                     justify-self:center;
+                    align-items:flex-start;
+                    flex-direction:column;
+                    align-self:flex-start;
                 }   
+                .textContainer{
+                    width:100%;
+                    height:${open};
+                    overflow:hidden;
+                }
                 .headlineContainer{
                     width:90%;
                     height:auto;
@@ -190,20 +202,22 @@ export const ResumeEntry = ({data,style}) => {
                 p{
                     width:100%;
                     height:auto;
-                    text-align: justify;
+                    text-align: left;
                     text-justify: inter-word;
                     font-size:1.1em;
                 }
-                .logoContainer{
+                .logoSection{
                     grid-area:logo;
+                    padding-top:3vh;
                     display:flex;
                     align-items:center;
                     justify-content:center;
                 }
-                .datesContainer{
+                .datesSection{
 
                     flex-direction:row;
                     width:90%;
+                    height:16vh;
                     justify-content:space-between;
                     justify-self:center;
                     align-self:center;

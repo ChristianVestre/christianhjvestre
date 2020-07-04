@@ -14,11 +14,18 @@ import { DrawerContent } from '../components/shared/drawerContent';
 import { ArrowUp } from '../components/shared/arrowUp';
 
 export default () => {
-    const [{ style }, setUiState] = useContext(UiContext) as any;
+    const [{ style,randomeImageNumber }, setUiState] = useContext(UiContext) as any;
     const [{ resume, menu, language }, setDataState] = useContext(DataContext) as any;
     const [drawerState, setDrawerState] = useState(false)
     const topDRef = useRef() as any
     const topMRef = useRef() as any
+    const DrawerImageArray = ["christian/Christian.svg", "christian/ChristianReading.svg", "christian/ChristianResume.svg", "christian/ChristianStudying.svg"]
+    const handleDrawerOpen = () => {
+        setUiState(state => ({...state, randomeImageNumber:Math.floor(Math.random() * DrawerImageArray.length)}))
+        setDrawerState(true)
+    }
+
+
     return (
         <div className="gridContainer">
             <Head>
@@ -30,17 +37,17 @@ export default () => {
             <div className="languageToggleContainer">
                 <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
             </div>
-            <MobileNavBar style={style} language={language} setDataState={setDataState} setDrawerState={setDrawerState} refKey={topMRef}></MobileNavBar>
-            <ResumeContent resume={resume.items} language={language} style={style} />
+            <MobileNavBar style={style} language={language} setDataState={setDataState} handleDrawerOpen={handleDrawerOpen} refKey={topMRef}></MobileNavBar>
+            <ResumeContent resume={resume.items} language={language} style={style} menu={menu} />
             <SkillsContent style={style} data={resume.skills} language={language} menu={menu} />
             {style.isMobile ? <React.Fragment key={'left'}>
                 <SwipeableDrawer
                     anchor={'left'}
                     open={drawerState}
                     onClose={() => setDrawerState(false)}
-                    onOpen={() => setDrawerState(true)}
+                    onOpen={() => handleDrawerOpen()}
                 >
-                    <DrawerContent menuText={menu} style={style} imageSrc="/ChristianStudying.png" language={language} />
+                    <DrawerContent menuText={menu} style={style} imageSrc={DrawerImageArray[randomeImageNumber]} language={language} />
                 </SwipeableDrawer>
             </React.Fragment> : null
             }

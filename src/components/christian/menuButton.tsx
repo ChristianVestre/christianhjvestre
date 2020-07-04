@@ -14,7 +14,7 @@ export const MenuButton = ({ page, text }) => {
 
     const pathname = router.pathname == "/" ? "/index":router.pathname
     return (
-        <div onClick={(e) => handleClick(e)} className="container">
+        <li onClick={(e) => handleClick(e)} className="container">
             <div className="selected"></div>
             <h3>{text}</h3>
             <style jsx>{`
@@ -51,5 +51,5 @@ export const MenuButton = ({ page, text }) => {
                         align-items:center;
                     }
             `}</style>
-        </div>)
+        </li>)
 }

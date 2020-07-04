@@ -21,6 +21,7 @@ const UiContextProvider = ({children}) => {
 
 
     const [uiState, setUiState] = useState({
+        randomeImageNumber:1,
         style: {
             isMobile:isMobile,
             selectedPage:"/index",

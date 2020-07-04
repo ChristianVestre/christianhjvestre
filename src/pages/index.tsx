@@ -11,9 +11,15 @@ import Head from "next/head";
 
 export default ({query}) => {
     const [{ christian,menu, language }, setDataState] = useContext(DataContext) as any;
-    const [{ style },] = useContext(UiContext) as any;
+    const [{ style, randomeImageNumber},setUiState] = useContext(UiContext) as any;
     const [drawerState,setDrawerState] = useState(false)
     let isMobile =typeof document != 'undefined' ? window.matchMedia('(max-width: 760px)').matches: false;
+    const DrawerImageArray = ["christian/Christian.svg", "christian/ChristianReading.svg", "christian/ChristianResume.svg", "christian/ChristianStudying.svg"]
+    const handleDrawerOpen = () => {
+        setUiState(state => ({...state, randomeImageNumber:Math.floor(Math.random() * DrawerImageArray.length)}))
+        setDrawerState(true)
+    }
+
 
     return (
         <div className="gridContainer">
@@ -25,15 +31,15 @@ export default ({query}) => {
             </Head>
             
             <nav id="navBarDesktop" className="navBarDesktop">
-                <div className="menuPlacement">
+                <ul className="menuPlacement">
                     <MenuButton page={"/index"} text={christian.menu[language].christian} />
                     <MenuButton page={"/work"} text={christian.menu[language].work} />
                     <MenuButton page={"/resume"} text={christian.menu[language].resume} />
                     <MenuButton page={"/interests"} text={christian.menu[language].interests} />
-                </div>
+                </ul>
             </nav>
             <nav id="navBarMobile">
-                    <MobileBurgerMenu style={style} toggleDrawer={() => {setDrawerState(true)}} />
+                    <MobileBurgerMenu style={style} toggleDrawer={() => {handleDrawerOpen()}} />
                     <h4 className="noselect">Christian Vestre</h4>
                     <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
             </nav>
@@ -56,9 +62,9 @@ export default ({query}) => {
                         anchor={'left'}
                         open={drawerState}
                         onClose={() => setDrawerState(false)}
-                        onOpen={() => setDrawerState(true)}
+                        onOpen={() => handleDrawerOpen()}
                     >
-                        <DrawerContent menuText={menu} style={style} imageSrc="/ChristianStudying.png" language={language}/>
+                        <DrawerContent menuText={menu} style={style} imageSrc={DrawerImageArray[randomeImageNumber]} language={language}/>
                     </SwipeableDrawer>
                 </React.Fragment>:null
                 }
