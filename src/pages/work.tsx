@@ -170,6 +170,8 @@ export default () => {
                     body {
                     padding: 0;
                     margin: 0;
+                    scrollbar-color: ${style.standard.border} white;
+                    overflow: overlay;
                     min-height: -webkit-fill-available;
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,

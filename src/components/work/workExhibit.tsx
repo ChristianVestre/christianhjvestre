@@ -13,6 +13,8 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
+        adaptiveHeight:true,
+        centerMode: true,
         cssEase: "linear",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
@@ -55,7 +57,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     bottom:0;
                     width:90%;
                     margin:0;
-                    padding:0;
+                    padding:0
                 }
                 .carusel{                        
                     width:60vw;                    
@@ -70,12 +72,16 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     padding-bottom:4%;
                 }
                 img{
-                    width:13vw;
-                    padding:2em 1.5em 0 1.5em
+                    width:auto;
+                    max-width:60vw;
+                    height:auto;
+                    max-height:60vh;
+                    transform:translate(0,50%);
+                    padding: 0 2em;
+
                 }
                 .imageContainer{
-                    width:10vh;
-                    height:50vh;
+                    height:60vh;
                     display:flex;
                     align-content:center;
                     justify-content:center;
@@ -138,11 +144,14 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     }
                     .sliderContainer{
                         bottom:0;
-                        width:80vw;
-                        height:90%,
+                        width:90vw;
+                        padding:5%;
                     }
                     .container > :global(.slick-next){
                         right:-15px
+                    }
+                    .container > :global(.slick-dots){
+                        bottom: -10px;
                     }
                     button{
                         outline:none;
@@ -173,11 +182,12 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     }
                     img{
                         width:auto;
-                        height:50vh;
-                        padding:2em 1.5em 0 1.5em
+                        max-width:85vw;
+                        max-height:50vh;
+                        bottom:50%;
+                        transform:${data.landscape ? "translate(0,50%)":"translate(0,0)"};
                     }
                     .imageContainer{
-                        width:4vw;
                         height:50vh;
                         display:flex;
                         align-content:center;

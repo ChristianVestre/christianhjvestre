@@ -60,6 +60,8 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     height:100%;
                     margin:0;
                     padding:0;
+                    padding-left:3%;
+                    margin-left:3%;
                     scrollbar-width:none;
                 }   
                 p{
