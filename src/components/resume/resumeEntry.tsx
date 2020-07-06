@@ -23,7 +23,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     <img src={data.logo + ".png"}/>
                 </picture>
             </section>
-            <section className="headlineContainer">
+            <section className="headlineSection">
                 <h3>{data.headline}</h3>
             </section>
             <section className="textSection">
@@ -45,11 +45,11 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 .dash{
                     display:none;
                 }
-                .headlineContainer{
+                .headlineSection{
                     grid-area:headline;
                     display:flex;
-                    justify-content:center;
-                    padding: 3% 0 3% 0;
+                    justify-content:flex-start;
+                    padding: 3% 0 3% 5%;
                     width:100%;
                 }
                 .textSection{

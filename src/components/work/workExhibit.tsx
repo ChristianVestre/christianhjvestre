@@ -130,8 +130,6 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     padding:0;
                     margin:0;
                     font-size:1.4em;
-                    text-align: justify;
-                    text-justify: inter-word;
                     white-space: pre-line;
                     color:${style.standard.text};
                     font-family:'Open sans'

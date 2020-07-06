@@ -36,6 +36,7 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     cursor:pointer;
                     overflow: hidden;
                     outline:none;
+                    padding-left:25%;
                 }
 
                 button::-moz-focus-inner {

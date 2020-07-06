@@ -18,13 +18,13 @@ export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => 
             
             <style jsx>{`
                 .subMenuContainer{
-                    padding-top:2vh;
+
                     height:18vh;
                     display:flex;
                     display:grid;
                     margin:0 5% 0 5%;
-                    grid-template-columns:1fr 1fr 1fr 1fr;
-                    grid-row-gap:2.5vh;
+                    grid-template-columns:1fr 1fr 1fr;
+                    grid-row-gap:1vh;
                     align-items:center;
                     justify-content:center;
                 }

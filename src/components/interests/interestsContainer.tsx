@@ -25,6 +25,8 @@ export const InterestsContainer = ({style, content}) => {
                 } 
                 h3{
                     font-size:2em;
+                    margin:0;
+                    padding:0;
                 }
                 img{
                     max-height:100%;
@@ -40,10 +42,10 @@ export const InterestsContainer = ({style, content}) => {
                     display:grid;
                     justify-content:space-between;
                     align-items:center;
-                    height:60vh;
+                    height:59vh;
                     width:90%;
                     border: solid 0.5em ${style.standard.border};
-                    margin:2vh 5% 0 5%;
+                    margin:0 5% 0 5%;
                     padding:0 5%;
                     grid-template-columns:1.4fr 0.6fr;
                     grid-template-rows: 2fr;
