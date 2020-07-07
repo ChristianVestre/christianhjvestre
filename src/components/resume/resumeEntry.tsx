@@ -25,12 +25,12 @@ export const ResumeEntry = ({data,style, language,menu}) => {
             </section>
             <section className="headlineSection">
                 <h3>{data.headline}</h3>
-            </section>
+            </section>  
             <section className="textSection">
                 <div className="textContainer">
-                <p>{data.text}</p>
+                {data.text.length >= 300 ? <p>{data.text.slice(0,300)}<span id="dots">....</span><span id="more">{data.text.slice(300,)}</span></p>:<p> {data.text}</p>}
                 </div>
-                <ReadMoreButton language={language} style={style} open={open} closedSize={closedSize} setOpenState={setOpenState} menu={menu} type="read" />
+                {data.text.length >= 300 ? <ReadMoreButton language={language} style={style} open={open} closedSize={closedSize} setOpenState={setOpenState} menu={menu} type="read" />:null}
             </section>
 
             <style jsx>{`
@@ -136,6 +136,13 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     width:80%;
                 }
                 @media only screen and (max-width: 760px) {
+                    #more{
+                        display:${open == "20vh"?"none":"inline"};
+                    }
+                    #dots{
+                        display:${open == "20vh"?"inline":"none"};
+                        }
+
                     .resumeEntryContainer{
                     grid-area:skillsContent;
                     width:100%;
@@ -186,8 +193,8 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 }   
                 .textContainer{
                     width:100%;
-                    height:${open};
-                    overflow:hidden;
+                    height:auto;
+                    text-align:left;
                 }
                 .headlineContainer{
                     width:90%;
@@ -205,7 +212,6 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     width:100%;
                     height:auto;
                     text-align: left;
-                    text-justify: inter-word;
                     font-size:1.1em;
                 }
                 .logoSection{
