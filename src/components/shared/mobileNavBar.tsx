@@ -12,7 +12,7 @@ export const MobileNavBar = ({style,setDataState,language,handleDrawerOpen,refKe
             .navBarMobile{
                             grid-area:nav;
                             height:10vh;
-                            width:100%;
+                            width:100vw;
                             border-bottom: solid 0.5em ${style.standard.border};
                             display:grid;
                             grid-template-columns:1fr 1fr 1fr;

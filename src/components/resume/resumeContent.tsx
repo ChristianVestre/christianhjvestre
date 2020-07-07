@@ -13,7 +13,7 @@ export const ResumeContent = ({resume, language, style, menu}) => {
             <style jsx>{`
                 .resumeContentContainer{
                     grid-area:resumeContent;
-                    width:100%;
+                    width:100vw;
                     border: solid 0.5em ${style.standard.border};
                 }
                 `}
