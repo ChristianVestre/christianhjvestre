@@ -196,7 +196,8 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         max-width:85vw;
                         max-height:50vh;
                         bottom:50%;
-                        transform:${data.landscape ? "translate(0,50%)":"translate(0,0)"};
+                        transform:${data.landscape ? data.images.length < 2 ?"translate(-20%,50%)":"translate(0,50%)":"translate(0,0)"};
+                        padding:${data.landscape ? "0":"0 2em"};
                     }
                     .imageContainer{
                         height:50vh;
