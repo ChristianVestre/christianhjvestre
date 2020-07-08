@@ -18,7 +18,6 @@ export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => 
             
             <style jsx>{`
                 .subMenuContainer{
-
                     height:18vh;
                     display:flex;
                     display:grid;

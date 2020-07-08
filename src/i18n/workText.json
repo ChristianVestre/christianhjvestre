@@ -25,7 +25,7 @@
         "en":{
             "headline":"Fible CMS",
             "content":"Camperboys travell appen startet som et hobby prosjekt sammen med noen venner som har grunnlagt en start-up so leier ut Camping-vaner i München. \n\nMålet med appen var å tilby kundene, reise ruter og praktisk informasjon som de kunne bruke på reisen sin.\n\nJeg jobbet sammen med en designer og en av gründerene for å utforme funksjonaliteten og utseende, selve implementasjonen av appen var jeg alene ansvarlig for. Etter mye forarbeid valgte jeg å bruke et rammeverk som tillatte å lage apper for både Android og iOS. Jeg fant også et back-end system som tillot oss å få innført data rask og var lite arbeid å integrere fra min side.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/fiblecms/cmsmenu","/fiblecms/cmsroutemenu","/fiblecms/cmsroute","/fiblecms/cmsstoplibrary","/fiblecms/cmsstopmenu","/fiblecms/cmsmap","/fiblecms/cmstextedit"],
             "landscape":true
         }
         },
@@ -33,14 +33,14 @@
             "no":{
             "headline":"Holidu marketsføringsverktøy",
             "content":"Holidu GmbH er en reise-startup basert i München. Jeg ble ansatt i markedsføringsavdelingen der. Etterhvert øynet jeg mange automatiserings muligheter, og selv med nybegynner ferdigheter i programmering var jeg vellykket i å lage noen scripts som automatiserte mange tidkrevende manuelle oppgaver for markedsføringsteamet. Etterhvert ble jeg spurt om å mer og mer koding, og tilslutt byttet jeg team fra markedsføring til business intelligence.\n\nNoe jeg hadde jobbet mye med i markedsføring teamet var å automatisere og lage algoritmer for online markedsføringen vi gjorde hos Google. Jeg automatiserte et script som kalkulerte hvor mye vi var villig til å by på webside trafikk fra forskjellige google søk, basert på intern data om hvilken verdi vi tilførte trafikken. Til å begynne med gjorde jeg denne automatiseringen ved å selv koble meg til Googles API. \n\nHolidu hadde lenge jobbet med et egetutviklet verktøy for å ta over og videreføre den automatiseringen jeg hadde startet med. Jeg ble brakt inn i prosjektet, hvor min rolle var å assistere integrasjonen av mitt prototypearbeid. Samtidig som jeg lagde konsepter for ny funksjonalitet og var med i diskusjoner om hvordan verktøyet skulle bli videreutviklet. Mitt arbeid på prosjektet var in mellomting mellom product manager og designer.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/holidu/holidubiddingtool"],
             "landscape":false
 
         },
         "en":{
             "headline":"Fible CMS",
             "content":"Camperboys travell appen startet som et hobby prosjekt sammen med noen venner som har grunnlagt en start-up so leier ut Camping-vaner i München. \n\nMålet med appen var å tilby kundene, reise ruter og praktisk informasjon som de kunne bruke på reisen sin.\n\nJeg jobbet sammen med en designer og en av gründerene for å utforme funksjonaliteten og utseende, selve implementasjonen av appen var jeg alene ansvarlig for. Etter mye forarbeid valgte jeg å bruke et rammeverk som tillatte å lage apper for både Android og iOS. Jeg fant også et back-end system som tillot oss å få innført data rask og var lite arbeid å integrere fra min side.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/holidu/holidubiddingtool"],
             "landscape":false
         }
         },
@@ -48,14 +48,14 @@
             "no":{
             "headline":"SafewAI alarm app",
             "content":"I løpet av mine studier på det tekniske universitetet i München, tok jeg del i et semesterlangt kurs kalt Tech Challenge. Hvor vi skulle i grupper på 5 utforske og jobbe med en ide for en ny start-up, for å lære metodikk og tips og triks for senere å kunne enklere grunnlegge en bedrift på et senere tidspunkt.\n\nVi valgte å utvikle en app for å gjøre hjemturer i mørket sikrere. Ved å gjenkjenne et forhåndsvalg stikkord som ved hjelp av stemmegjenkjenning utløser en alarm som tilkaller hjelp.\n\nJeg stod for den tekniske implementasjonen av appen. Det var en standard android app, men vi ble oppfordret til å bruke Huawei sin AI chip for stemmegjenkjenningen. Jeg fant et bibliotek som forholdsvis enkelt lot meg implementere funksjonaliteten etter å ha gitt opp å lage min egen implementasjon på grunn av tidsbegrensninger og mangel på data.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/safewai/safewaiPoster","/safewai/safewAI1","/safewai/safewAI2"],
             "landscape":false
 
         },
         "en":{
-            "headline":"Fible CMS",
+            "headline":"SafewAI alarm app",
             "content":"Camperboys travell appen startet som et hobby prosjekt sammen med noen venner som har grunnlagt en start-up so leier ut Camping-vaner i München. \n\nMålet med appen var å tilby kundene, reise ruter og praktisk informasjon som de kunne bruke på reisen sin.\n\nJeg jobbet sammen med en designer og en av gründerene for å utforme funksjonaliteten og utseende, selve implementasjonen av appen var jeg alene ansvarlig for. Etter mye forarbeid valgte jeg å bruke et rammeverk som tillatte å lage apper for både Android og iOS. Jeg fant også et back-end system som tillot oss å få innført data rask og var lite arbeid å integrere fra min side.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/safewai/safewaiPoster","/safewai/safewAI1","/safewai/safewAI2"],
             "landscape":false
         }
         },
@@ -68,7 +68,7 @@
 
         },
         "en":{
-            "headline":"Fible CMS",
+            "headline":"This website",
             "content":"Camperboys travell appen startet som et hobby prosjekt sammen med noen venner som har grunnlagt en start-up so leier ut Camping-vaner i München. \n\nMålet med appen var å tilby kundene, reise ruter og praktisk informasjon som de kunne bruke på reisen sin.\n\nJeg jobbet sammen med en designer og en av gründerene for å utforme funksjonaliteten og utseende, selve implementasjonen av appen var jeg alene ansvarlig for. Etter mye forarbeid valgte jeg å bruke et rammeverk som tillatte å lage apper for både Android og iOS. Jeg fant også et back-end system som tillot oss å få innført data rask og var lite arbeid å integrere fra min side.",
             "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
             "landscape":false

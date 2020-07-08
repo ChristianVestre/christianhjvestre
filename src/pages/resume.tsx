@@ -111,7 +111,7 @@ export default () => {
                     width:4em;
                 }
                 .gridContainer{
-                    width:98%;
+                    width:100%;
                     height:100%;
                     display:grid;
                     grid-template-columns:1fr;

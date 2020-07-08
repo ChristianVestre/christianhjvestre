@@ -22,7 +22,7 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                 .subMenuButtonContainer{
                     display:flex;
                     flex-direction:row;
-                    align-items:center;
+                    align-items:flex-start;
                     justify-content:center;
                     background-color: Transparent;
                     background-repeat:no-repeat;
@@ -45,6 +45,7 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                 }
                 .subMenuText{
                     font-size:0.9em;
+                    text-justify:flex-start;    
                 }
                 }
                 `}</style>

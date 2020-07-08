@@ -7,7 +7,11 @@ export const InterestsContainer = ({style, content}) => {
                 <p>{content.text}</p>
             </div>
             <div className="imgContainer">
-                <img src={content.image}/>
+                <picture>
+                    <source type="image/webp" srcSet={content.image + ".webp"}/>
+                    <source type="image/png" srcSet={content.image + ".jpg"}/>
+                    <img src={content.image + ".jpg"}/>
+                </picture>
             </div>
             <style jsx>{`
                 .textContainer{
@@ -58,7 +62,7 @@ export const InterestsContainer = ({style, content}) => {
                         height:100%;
                         margin:5% 0 0 0;
                         grid-template-columns:1fr;
-                        grid-template-rows: 1.4fr 0.6fr;
+                        grid-template-rows: 1.5fr 0.5fr;
                         grid-template-areas:
                         'text'
                         'img'  
@@ -70,13 +74,17 @@ export const InterestsContainer = ({style, content}) => {
                     h3{
                         font-size:1.3em;
                     }
+                    img{
+
+                        max-width:100%; 
+                    }
                     p{
                         font-size:0.9em;
                     }
                     .imgContainer{
                     grid-area:img;
                     width:100%;
-                    height:40vh;
+                    height:auto;
                 }
                 }
                 `}</style>

@@ -50,6 +50,7 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     .subMenuButtonContainer{
                         width:auto;
                         margin:0 5%;
+                        padding:0;
                     }
                     p{
                         font-size:0.9em;

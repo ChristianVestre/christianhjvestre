@@ -98,7 +98,7 @@ export default () => {
                 height:100%;
                 display:grid;
                 grid-template-columns:1fr;
-                grid-template-rows:0.2fr 0.2fr repeat(5,0.65fr);
+                grid-template-rows:0.2fr 0.1fr repeat(5,0.65fr);
                 grid-template-areas:
                 'nav'
                 'subMenu'
@@ -148,17 +148,6 @@ export default () => {
                 .gridContainer > :global(.menuContainer){
                     display:none;
                 }
-                .gridContainer > :global(.subMenuContainer){
-                    height:30vh;
-                    display:grid;
-                    width:90%;
-                    margin:0 5% 0 5%;
-                    grid-template-columns:1fr 1fr;
-                    grid-template-rows:0.2fr 0.2fr 0.2fr;
-                    grid-row-gap:2.5vh;
-                    align-items:space-evenly;
-                    justify-content:center;
-                }
                 .gridContainer > :global(.subMenuText){
                     font-size:0.8em;
                 }
@@ -170,8 +159,6 @@ export default () => {
                     body {
                     padding: 0;
                     margin: 0;
-                    scrollbar-color: ${style.standard.border} white;
-                    overflow: overlay;
                     min-height: -webkit-fill-available;
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,

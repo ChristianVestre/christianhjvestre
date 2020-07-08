@@ -1,14 +1,16 @@
 import Slider from "react-slick";
 import css from 'styled-jsx/css'
 import { useState } from 'react';
+import { ReadMoreButton } from "../shared/readMoreButton";
 var Scroll = require('react-scroll');
 
 
 export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
+    const closedSize = "30vh"
     const [open, setOpenState] = useState("30vh")
     const settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -27,11 +29,9 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     <h2>{data.headline}</h2>
                 </div>
                 <div className="contentContainer">
-                    <p>{data.content}</p>
+                    {data.content.length >= 300 ? <p>{data.content.slice(0,300)}<span id="dots">....</span><span id="more">{data.content.slice(300,)}</span></p>:<p> {data.content}</p>}
                 </div>
-                <button className="readMore" onClick={() => {open == "30vh" ? setOpenState("auto"):setOpenState("30vh")}}>
-                    <p className="readMoreText">{open == "30vh" ? menu[language].readMore:menu[language].readLess}</p>
-                </button>
+                {data.content.length >= 300 ? <ReadMoreButton language={language} style={style} open={open} closedSize={closedSize} setOpenState={setOpenState} menu={menu} type="read" />:null}
             </section>
             <section className="carusel">
                 <div className="sliderContainer">
@@ -50,6 +50,12 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                 </div>
             </section>
             <style jsx>{`
+                .dash{
+                        display:none;
+                }
+                #dots{
+                        display:none;
+                        }
                 .readMore{
                     display:none;
                 }
@@ -75,8 +81,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     width:auto;
                     max-width:60vw;
                     height:auto;
-                    max-height:60vh;
-                    transform:translate(0,50%);
+                    max-height:80%;
                     padding: 0 2em;
 
                 }
@@ -87,6 +92,8 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     justify-content:center;
                 }
                 .container{
+                    scrollbar-color: ${style.standard.border} white;
+                    overflow: overlay;
                     grid-area:${'workExhibit' + index};
                     display:flex;
                     flex-direction:row;
@@ -136,6 +143,12 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
 
                 }
                 @media only screen and (max-width: 760px) {
+                    #more{
+                        display:${open == closedSize?"none":"inline"};
+                    }
+                    #dots{
+                        display:${open == closedSize?"inline":"none"};
+                        }
                     .readMore{
                         display:block;
                         width:40vw;
@@ -208,7 +221,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         display:flex;
                         flex-direction:column;
                         width:100%;
-                        height:${open};
+                        height:auto;
                         align-content:space-between;
                         margin-bottom:5vh;
                         padding-left:0;
@@ -226,7 +239,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         justify-content:center;
                         align-content:center;
                         display:flex;
-                        height:${open};
+                        height:auto;
                         
                     }
                     h2{
@@ -242,8 +255,6 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         padding:0;
                         margin:0;
                         font-size:1em;
-                        text-align: justify;
-                        text-justify: inter-word;
                         white-space: pre-line;
                         font-family:'Open sans';
                         font-weight:300;

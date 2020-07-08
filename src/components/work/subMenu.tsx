@@ -6,7 +6,9 @@ import { useState } from "react"
 export const SubMenu = ({data,language, handleClick, style}) => {
 
     return(
-        <ul className="subMenuContainer">
+        <nav className="subMenuContainer">
+            <h2>Quick navigation</h2>
+            <ul className="subMenuGrid">
             {data.map((d, i) => {
                 return <SubMenuButton
                         key={i}
@@ -15,24 +17,56 @@ export const SubMenu = ({data,language, handleClick, style}) => {
                         style={style}
                         />
             })}
-            
+            </ul>
             <style jsx>{`
+                h2{display:none}
+
                 .subMenuContainer{
                     grid-area:subMenu;
-                    padding-top:2vh;
-                    height:18vh;
                     display:flex;
+                    flex-direction:column;
+                    height:100%;
+                    width:100%;
+                }
+                .subMenuGrid{
+                    margin:0;
+                    padding:0;
+                    height:18vh;
                     display:grid;
-                    margin:0 5% 0 5%;
+                    padding-left:5%;
                     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
                     grid-row-gap:2.5vh;
                     align-items:center;
                     justify-content:center;
-
+                }
+                @media only screen and (max-width: 760px) {
+                    h2{
+                        display:block;
+                        margin:0;
+                        height:0;
+                        width:100%;
+                        text-align:center;
+                        color:${style.standard.text};  
+                        font-size: 1.5em;
+                        font-family:'Open sans';
+                        margin:1vh 0;
+                    }
+                    .subMenuGrid{
+                        height:30vh;
+                        display:grid;
+                        width:90%;
+                        margin:5% 5% 5% 5%;
+                        grid-template-columns:1fr 1fr;
+                        padding:0;
+                        grid-template-rows:0.33fr 0.33fr 0.33fr;
+                        grid-row-gap:2.5vh;
+                        align-items:space-between;
+                        justify-content:center;
+                    }
                 }
 
                 `}</style>
-        </ul>
+        </nav>
     )
 
 }

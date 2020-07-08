@@ -42,6 +42,9 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 .textContainer::-moz-scrollbars{
                     display:none;
                 }
+                #dots{
+                    display:none;
+                }
                 .dash{
                     display:none;
                 }
@@ -134,6 +137,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     margin:0;
                     padding:0;
                     width:80%;
+                    grid-template-rows:repeat(5, auto);
                 }
                 @media only screen and (max-width: 760px) {
                     #more{
@@ -168,6 +172,12 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     align-content:center;
                     justify-content:center;
                 }
+                .resumeEntryContainer:nth-last-child(1) > .graphicsContainer{
+                    display:none;
+                }
+                .resumeEntryContainer:nth-last-child(1) > .textSection{
+                    margin-bottom:3vh;
+                }
                 .verticalLine{
                     width:0.3em;
                     height:5vh;
@@ -175,7 +185,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     align-self:center;
                 }
                 .horizontalLine{
-                    width:40%;
+                    width:70%;
                     height:0.2em;
                     background:${style.standard.border};
                     align-self:center;

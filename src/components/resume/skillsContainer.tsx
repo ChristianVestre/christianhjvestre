@@ -23,9 +23,10 @@ export const SkillsContainer = ({style,data,dataKey,language}) => {
                 @media only screen and (max-width: 760px) {
                     .skillsContainer{
                     grid-area:skillsContent;
+                    padding:0;
                     width:90%;
                     height:auto;
-                    margin-top:0vh;
+                    margin-top:1vh;
                     display:flex;
                     flex-direction:column;
                     align-items:flex-start;

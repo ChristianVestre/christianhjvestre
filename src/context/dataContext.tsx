@@ -30,6 +30,9 @@ export { DataContext, DataContextProvider};
 
 magick wizard.png -size -quality 70 wizard.webp
 
+magick wizard.png wizard.webp
+
+
 magick wizard.png -resize 200 wizard.webp
 
 

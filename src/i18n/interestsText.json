@@ -58,64 +58,64 @@
             "anthropology": {
                 "headline": "Antropologi er en måte å tilegne seg kontekstuell kunnskap.",
                 "text": "Det vil si kunnskap tilegnet den spesifikke situasjonen, kontekst, man befinner seg i. Jeg som økonom, hadde alltid satt høyere verdi ved generell kunnskap, som kan passe i en stor variasjon av situasjoner. Så her var det noe som gikk rett i strid med det meste jeg hadde lært på skolen.\n\nI 2015 gikk jeg på sommerskole i København, der tok jeg et fag, Business Anthropology. Jeg synes virket spennende utfra beskrivelsen, men hadde ikke noe tidligere forhold til antropologi, hva det var for noe og hvordan det kunne brukes. Det første kurset der satte meg ut på en reise til å grave dypere i verden av antropologi, og i masteren min var jeg heldig nok til å finne et par fag til som ga en dypere introduksjon til teorien og arbeidsmetodikken.\n\nCliffort Geertz og Gregory Bateson er to antropologer jeg har stor respekt for og gjerne leser. Bateson er kjent for en veldig kognitivistisk basert antropologi teori, teoriene hans nærmer seg ofte filosofi. Geertz kulturell antropologi er den formen for antropologi som mest blir sitert i ledelseslitteratur.\n\nAntropologi er også veldig behjelpelig i samkjør med design. C.S Pierce, og hans semiotikk, studiet av sosialt betingede tegnsystemer er noe som blir aktivt brukt både i design og i semiotikk, og noe jeg synes er fascinerende.",
-                "image": ""
+                "image": "/interests/anthropology"
             },
             "aimachinelearning": {
                 "headline": "Kunstig intelligens er fremtiden, det er bare å omfavne det først som sist.",
                 "text": "Hva er kunstig intelligens? Til syvende og sist er det data, det er å skvise ut mer og mer abstrakte mønstre ut fra data og bruke det på samme måte som vi tror hjernen funker. For et potensiale det har! Hvis vi kan få maskiner til å overta kognitive arbeidsoppgaver som til nå kun mennesker har vært kapable til å gjennomføre så vil det fundamentalt endre den verden vi lever i. Men det er viktig vi er bevisst på de mørke sidene som kommer med å innføre et sånt skifte.\n\nInnenfor kunstig intelligens finnes det 3 store undersjangre. Supervised learning, unsupervised learning og reinforcement learning. Selv om jeg er mest interessert i Reinforcement learning (jeg baserte deler av masteroppgaven min på det) så må jeg være ærlig å si at både supervised og unsupervised learning har en klarere bruksnytte for brorparten av selskaper i dag. Bildegjenkjenning, anbefalingalgorithmer også videre er basert på slike algoritmer, men gode nyheten er at dette er ofte mindre komplisert og kan også enkelt bli implementert i en Saas løsning.\n\nJeg føler jeg har et godt innblikk i hvordan disse algoritmene fungerer og skjønner det meste av “magien” som skjer i bakgrunnen, som gjør at disse algoritmene fungerer så godt som de gjør. Det er veldig lett å fable om fremtiden, men mer interessant for i dag og for de neste par årene er å skjønne når maskinlæring gir mening å brukes og når det er bedre å la være. Det er mye forskjellig som skal til for å ta en slik vurdering. I en slik problemstilling, datakvalitet, utviklings og implementeringskostnader, kundens merverdi osv, viktig. Det er ikke enkelt å ta en slik avgjørelse hvis man ikke har den fjerneste anelse om hva som ligger bak teknologien. Derfor mener jeg at alle som gjør en jobb som er tilknyttet maskinlæring burde ha en viss kjennskap til hvordan alt funker. De har jeg de siste par årene, på skole, jobb og fritid satt meg inn i temaet så fremt det har latt seg gjøre, for i fremtiden kunne ta slike avgjørelser.",
-                "image": "/interests/jupyter.png"
+                "image": "/interests/jupyter"
             },
             "design": {
                 "headline": "For meg handler design om å takle problemer som ikke har noen optimal løsning på en best mulig måte.",
                 "text": "Min interesse i design har lenge vært vedvarende. Det er noe med at design gir deg mulighet til å være kreativ uten mange begrensninger. Selve designprosessen er noe jeg finner veldig attraktiv. Den indirekte erfaringen jeg har, ved å ha jobbet sammen med UX/UI designere, og å bruke design thinking har vært veldig appellerende.\n\n Horst Rittel sammen med Melvin Webber i sin artikkel “Dilemmas in a General Theory of Planning” definerte “onde problemer” (“wicked problems”)  som ikke har en unverselt god løsning. Når man løser slike problemer handler det om å finne den beste blant en rekke ikke optimale løsninger. Dette er typen problemer som er standarden ute i en kaotisk virkelig verden, og det er slike problemer designere løser. Det løsningen på slike problemer som utgjør en forskjell og det er slike problemer jeg vil være med på å løse.\n\nAbduksjon er en måte å løse slike problemer på. Abduksjon, definert av den Amerikanske filosofen C.S. Pierce tar sin plass ved siden av Induksjon og Deduksjon som logiske tenkemåter. Abduksjon ligner deduksjon ved at man trekker en konklusjon ut fra observasjoner, det særskilte med abduksjon er at konklusjonen blir antatt for å være sann, men trenger ikke å bli bekreftet. Som del av masteroppgaven min undersøkte jeg rollen til abduksjon i relasjon med kreativitet, og dette er et tema jeg kommer til å videre til å oppfølge og teste ut nye teorier i.",
-                "image": ""
+                "image": "/interests/design"
             },
             "webdevelopment": {
                 "headline": "Softwareutvikling handler om å få bukt på kompleksitet",
                 "text": "Første stedet jeg jobbet var en reise e-commerce nettside, hvor jeg startet innenfor markedsføring. Mens jeg var der føltes det alltid som om at vi stanget hodet mot tech teamet og deres problemer med å få utgitt nye funksjoner og fikse bugs. Så jeg ble mer og mer interessert i å forstå hva problemet var og hvorfor ting var så vanskelig. Det var en sterk motivasjon for meg til å komme meg inn i systemene og å få lært meg hvordan man koder.\n\nSiden har jeg selv både på fritiden, på universitetet og i jobbsammenheng hatt en god mengde med utviklingsprosjekter, store og små. Dermed har jeg få kjent på kroppen all den kompleksiteten og de vanskene som kommer med software utvikling, og som en person fra en business/økonomibakgrunn har jeg vært interessert i å finne de ikke tekniske løsningene på slike problemer. Det vil si, hvordan man kan på produktnivå eller team nivå jobbe for å unngå å jobbe seg inn i et hjørne, med legacy code og høye levetidskostnader. Jeg er fortsatt i begynnerfasen av å virkelig forstå kompleksitetene, men som en sen tilhenger informatikk og koding føler jeg at jeg ligger godt an.\n\nPå teknologi siden er jeg også veldig interessert i det nye hotte, men jeg har blitt mer og mer oppmerksom på avveiningen av fordelene med det gamle stabile. Teknologier som for øyeblikket jeg synes virker spennende er Svelte 3, Vue 3 og hele Jam stacken for backend.",
-                "image": "/interests/code.jpg"
+                "image": "/interests/code"
             },
             "organisationsstudies": {
                 "headline": "Hvordan få folk til å jobbe sammen på best mulig måte?",
                 "text": "Organisasjoner er måten vi mennesker har fått til så utrolig mye, så hvorfor ikke finne ut av hvordan man får de til å studere best mulig. Det var det jeg tenkte da jeg begynte på masteren min i teknologiledelse.\n\nInnenfor organisasjonsstudier finnes det en stor variasjon av teorier. Contingency theory, Behavioral theory, Institutional theory og Organization ecology er noen av de mest populære teoriene. De gir forskjellige perspektiver gjennom hvilke man kan analysere organisasjoner. De forklare hvilken oppførsel som er givende og hvilke som er ødeleggende for å nå målene organisasjonen har satt seg.\n\nSelv synes jeg Behavioral theory er mest spennende, det var også derfor jeg valgte å bruke den som basis for masteroppgaven min. I masteroppgaven skrev jeg om utforskning mot utnyttelse, under det teoretisk rammeverket gitt av Behavioral theory. Jeg sammenlignet det med maskinlæring-agenter som har som grunnlag mye av de samme teoretiske støttebjelkene og dro konklusjoner ut fra paralleller og utskeielser. I fremtiden har jeg stor tro på at maskinlæring kommer til å bevise hvordan kognisjon funker i hjernen til mennesker, noe jeg er sikker på vil ha en stor innflytelse på organisasjonsteori sammen med veldig mange andre områder.",
-                "image": ""
+                "image": "interests/organisation"
             },
             "economics": {
                 "headline": "Hvorfor er noe rike og noen fattige?",
                 "text": "Jeg har alltid vært interessert i hva som gjør at noen mennesker er fattige og noen er rike. Hva er fattig å hva er rikt? Etter å ha studert samfunnsøkonomi konkluderte jeg at det er vel så mye filosofi som sosialvitenskap. Noe jeg i de senere årene har blitt mer interessert i og føler er viktig er hvordan vi måler rikdom. Standarden for land er BNP og for enkeltpersoner er formue eller inntekt, men disse måleenhetene tar bare i betraktning ting som har en pris. For land er det enkelt å tenke på det slik, hvis man har en helsesektor som funksjonærer godt og ikke har høye priser for pleie, det gjør at man blir ansett utfra BNP til å være et fattigere land, enn et annet land hvor pleien er fryktelig dyr. Det er et paradoks som følger mesteparten av økonomisk tenkning i dag.\n\nDa jeg studerte samfunnsøkonomi i bachelorgraden min, var det et fag som særlig fenget meg, økonomisk idehistorie. Til syvende og sist er det et sosialfag, ikke naturvitenskapelig. Verdi er relativt og er en sosial konstruksjon. Penger for eksempel er ikke noe som har noen reell verdi i seg selv. Det er kun fordi alle har tiltro til det som en form for verdioverføring at det tilknyttes en verdi. Han du kjøper av, er sikker på at pengene han får fra deg kan brukes til å kjøpe andre varer fra andre.\n\nHvilke andre sosiale konstruksjoner tar vi for gitt? Det er mye, det er helt sikkert. Noe annet jeg liker å tenke på er hvorfor vi fortsatt har 40 timers arbeidsuker. I 1930 skrev John Maynard Keynes en essay “Economic possibilities for our grandchildren” hvor han forutså at vi i 2030 ikke trenger å jobbe mer en 15 timer i uken. Nå nærmer vi oss og det er fortsatt ingen tegn til at vi ikke kommer til å bare fortsette med 40 timers ukene frem til den tid. Men alt av produktivitet har vokst kolossalt på 100 år så hvorfor jobber vi fortsatt så mye? Det er et av veldig mange samfunnsøkonomiske spørsmål jeg synes er fascinerende og gjerne konstruerer og leker med egne teorier rundt.",
-                "image": ""
+                "image": "/interests/norskekroner"
             }
         },
         "en": {
             "anthropology": {
                 "headline": "Antropology helps you understand the world around you",
                 "text": "test",
-                "image": ""
+                "image": "/interests/anthropology"
             },
             "aimachinelearning": {
                 "headline": "AI is the future, there is no getting around that",
                 "text": "test",
-                "image": ""
+                "image": "/interests/jupyter"
             },
             "design": {
                 "headline": "Antropologi for å forstå verden rundt deg",
                 "text": "test",
-                "image": ""
+                "image": "/interests/design"
             },
             "webdevelopment": {
                 "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
                 "text": "test",
-                "image": ""
+                "image": "/interests/code"
             },
             "organisationsstudies": {
                 "headline": "AI er fremtiden, det er ikke noe man kommer seg rundt",
                 "text": "test",
-                "image": ""
+                "image": "interests/organisation"
             },
             "economics": {
                 "headline": "Antropologi for å forstå verden rundt deg",
                 "text": "test",
-                "image": ""
+                "image": "/interests/norskekroner"
             }
         }
     }

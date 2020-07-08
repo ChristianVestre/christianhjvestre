@@ -292,13 +292,8 @@
                     },
                     {
                         "main": "Dart (Flutter)",
-                        "percent":60
-                    },
-                    {
-                        "main": "Java (Android)",
-                        "percent":42
+                        "percent":65
                     }
-
                 ]
             },
             "en": {
@@ -322,11 +317,7 @@
                     },
                     {
                         "main": "Dart (Flutter)",
-                        "percent":60
-                    },
-                    {
-                        "main": "Java (Android)",
-                        "percent":42
+                        "percent":65
                     }
                 ]
             }
