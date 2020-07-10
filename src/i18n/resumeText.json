@@ -2,8 +2,8 @@
     "items": [
         {
             "no": {
-                "headline": "Master i Teknologiledelse",
-                "text": "Master i Management and Technology på det Tekniske Universitet i Munchen. Den er veldig fleksibel master med plenty av spesialiseringsmuligheter. Jeg valgte  innovasjon og entreprenørskap og  informatikk, som passet mine interesser. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge, hvor vi skulle lage en mock startup etter lean startup og design thinking metodologiene, vi lagde en alarm app (se under Arbeid). Andre interessante fag var Economics of innovation og  Out of the box, practical approaches to decision making.",
+                "headline": "Master i Teknologiledelse ved det Tekniske Universitetet i München",
+                "text": "En veldig fleksibel master med plenty av spesialiseringsmuligheter, det var hovedgrunnen til at jeg valgte den Jeg valgte å spesialisere meg i  innovasjon og entreprenørskap og  informatikk, som passet mine interesser. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge (se safewAI under arbeid), Economics of innovation, Out of the box, practical approaches to decision making, Cultural analysis og New forms of organising på management siden. Innenfor informatikk tok jeg fag som Software engineering, Blockchain og Cloud Computing.",
                 "logo": "resume/tumlogo",
                 "from": "Fra okt. 18",
                 "to": "Til aug. 20"
@@ -18,8 +18,8 @@
         },
         {
             "no": {
-                "headline": "Økonomiansvarlig Ansa Tyskland Sør",
-                "text": "Ansa er studentorganisasjonen for nordmenn som studerer i utlandet. Jeg var ansvarlig for budsjettering, regnskap og controlling. I tillegg, som del av lokallagsstyret var jeg med på å planlegge og gjennomføre arrangementer som julebord, 17 mai, skiturer og rafting.",
+                "headline": "Økonomiansvarlig for Ansa Tyskland Sør",
+                "text": "Ansa er studentorganisasjonen for nordmenn som studerer i utlandet. Jeg var ansvarlig for budsjettering, regnskap og controlling. I tillegg, som del av lokallagsstyret var jeg med på å planlegge og gjennomføre arrangementer som julebord, 17 mai, skiturer og rafting. Det var deilig å, en gang i måneden ca, kunne møte nordmenn og snakke litt norsk også i utlandet. Etter å ha vært med på arrangementer i mange år, følte jeg at jeg også måtte gi litt tilbake og ta i et tak, så jeg ble med i styret.",
                 "logo": "resume/ansalogo",
                 "from": "Fra okt. 18",
                 "to": "Til sep. 20"
@@ -35,7 +35,7 @@
         {
             "no": {
                 "headline": "Freelancearbeid ved siden av studiene hos CamperBoys",
-                "text": "Camperboys GmbH er en Campervanutleier start-up grunnlagt i 2018 av et par venner av meg, som holder til på Flyplassen i Munchen. Jeg utviklet en prototype av en reiseapp ved hjelp av koderammeverket Flutter. Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med gode resultater og et investerings avkasting på 20x. Mens jeg jobbet der vant vi den tyske turistforeningens innovasjonspris for startups “Springbrett” i 2019 og vi tok del i LMU universitetet i Munchen sin startup accelerator.",
+                "text": "CamperBoys er en Campervanutleier start-up grunnlagt i 2018 av et par venner av meg, som holder til på Flyplassen i Munchen. Jeg utviklet en prototype av en reiseruteapp (se Camperboys reiseapp under arbeid). Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med gode resultater og en investerings avkasting på 20x. Mens jeg jobbet der vant vi den tyske turistforeningens innovasjonspris for startups “Springbrett” i 2019 og vi tok del i LMU universitetet i Munchen sin startup accelerator, sammen med en masse andre kult ting. ",
                 "logo": "resume/camperboyslogo",
                 "from": "Fra okt. 18",
                 "to": "Til jan. 20"
@@ -50,8 +50,8 @@
         },
         {
             "no": {
-                "headline": "Junior Data Analytiker",
-                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet for det meste i områder rundt markedsføring. Forberedelse av data som ble forespurt fra andre og utvikling av algoritmer for å forutsi fremtidige verdier og etterspørsel av produkter. I tillegg arbeidet jeg på prosjekter som product manager og som designer.",
+                "headline": "Junior Data Analytiker hos Holidu",
+                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet, for det meste med markedsføring. Arbeidsoppgaver lød ofte som, forberedelse av data som ble forespurt fra andre, utvikling av algoritmer for å forutsi fremtidige verdier og etterspørsel av produkter, og enkle programmeringsoppgaver. I tillegg arbeidet jeg innimellom på prosjekter som product manager og som designer (se Holidu markedsføringsverktøy under arbei)",
                 "logo": "resume/holidulogo",
                 "from": "Fra aug. 17",
                 "to": "Til okt. 18"
@@ -66,8 +66,8 @@
         },
         {
             "no": {
-                "headline": "Junior online marketing manager for det nordiske markedet",
-                "text": "Jeg jobbet i marketsføringsteamet hos Holidu, hvor jeg var ansvarlig for å styre  søkemotormarkedsføringen så vell som displaymarketsføringen for Norge, Sverige og Storbritannia. Det involverte mye manuelt arbeid, særlig excel arbeid som jeg tok initiativ til å automatisere etter å ha lært meg selv et begynnernivå i programmering under praktikantoppholdet mitt i samme selskapet.",
+                "headline": "Junior Online Marketing Manager for det Nordiske Markedet hos Holidu",
+                "text": "Jeg jobbet i marketsføringsteamet hos Holidu, hvor jeg var ansvarlig for å styre søkemotormarkedsføringen så vell som displaymarketsføringen for Norge, Sverige og Storbritannia. Det involverte mye manuelt arbeid, særlig excel arbeid som jeg tok initiativ til å automatisere etter å ha lært meg selv et begynnernivå i programmering under praktikantoppholdet mitt i samme selskapet.",
                 "logo": "resume/holidulogo",
                 "from": "Fra apr. 17",
                 "to": "Til jul. 17"
@@ -82,14 +82,14 @@
         },
         {
             "no": {
-                "headline": "Norsk country manager praktikant",
+                "headline": "Norsk Country Manager praktikant hos Holidu",
                 "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
                 "logo": "resume/holidulogo",
                 "from": "Fra okt. 16",
                 "to": "Til mar. 17"
             },
             "en": {
-                "headline": "Norwegian country manager intern",
+                "headline": "Norwegian country manager intern at Holidu",
                 "text": "Norwegian country manager intern",
                 "logo": "resume/holidulogo",
                 "from": "From oct. 16",
@@ -98,8 +98,8 @@
         },
         {
             "no": {
-                "headline": "Sommerjob hos Folkehelseinstituttet ",
-                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
+                "headline": "Sommerjob hos Folkehelseinstituttet i Oslo",
+                "text": "Jeg hjalp til å gjennomføre en undersøkelse av bruken av narkotiske stoffer blant den norske befolkningen ved å intervjue festivaldeltakere på diverse norske festivaler gjennom sommeren.",
                 "logo": "resume/fhilogo",
                 "from": "Fra jun. 16",
                 "to": "Til aug. 16"
@@ -114,8 +114,8 @@
         },
         {
             "no": {
-                "headline": "Bachelor (3. år) i samfunnsøkonomi og ledelse",
-                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
+                "headline": "Bachelor (3. år) i Samfunnsøkonomi og Ledelse ved Université de Paris 1 Panthéon Sorbonne",
+                "text": "Siste år av bacheloren tok jeg i Paris, jeg byttet universitet fordi det var en utmerket mulighet til å bo i Paris som student. Samtidig ønsket jeg også å ha et annet perspektiv på økonomi enn det veldig matematiske perspektivet de hadde i Toulouse. I Paris hadde jeg fortsatt statistikk og økonometri kurs, men i tillegg hadde jeg fag som økonomisk idehistorie, noe jeg fant veldig interessant. Studiet var fortsatt 100% på fransk, og jeg trivdes veldig godt med det faglige innholdet der.",
                 "logo": "resume/up1logo",
                 "from": "Fra jun. 16",
                 "to": "Til aug. 16"
@@ -131,7 +131,7 @@
         {
             "no": {
                 "headline": "Sommerskole ved Copenhagen Business School",
-                "text": "Etter å ha gått et par år på økonomiutdanningen, jeg savnet å lære om mer på kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology, og møtte andre studenter fra hele verden som var samlet der. Det hele utgjorde en kjempeopplevelse.",
+                "text": "Etter å ha gått et par år på samfunnsøkonomiutdanningen, savnet jeg å lære om mer på kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology, og møtte andre studenter fra hele verden som var samlet der. De to fagene blusset opp interessen min i design og customer research. Sommeren der utgjorde en kjempeopplevelse.",
                 "logo": "resume/cbslogo",
                 "from": "Fra jun. 15",
                 "to": "Til aug. 15"
@@ -146,8 +146,8 @@
         },
         {
             "no": {
-                "headline": "Bachelor (1. & 2. år) i samfunnsøkonomi og ledelse",
-                "text": "Bacheloren jeg gikk på var en del av et norskt program som hjalp norske studenter med å tilpasse seg studier i Frankrike på  Université de Toulouse 1 Capitole. Siden studieprogrammet var 100% på Fransk, vi fikk også en del ekstra fransktimer. Selve studiet var krevende og veldig matematisk, med matte og statistikkfag hvert semester, utover veldig matematisk innrettet mikro- og makroøkonomi.",
+                "headline": "Bachelor (1. & 2. år) i Samfunnsøkonomi og Ledelse ved Université de Toulouse 1 Capitole",
+                "text": "Bacheloren jeg gikk på var en del av et norskt program som hjalp norske studenter med å tilpasse seg studier i Frankrike. Siden studieprogrammet var 100% på Fransk, vi fikk også en del ekstra fransktimer. Selve studiet var krevende og veldig matematisk, med matte og statistikkfag hvert semester og veldig matematisk innrettet mikro- og makroøkonomi. Det la grunnlag for en veldig god tallforståelse, noe jeg har dratt god nytte av senere, særlig innenfor kvantitative undersøkelser.",
                 "logo": "resume/ut1logo",
                 "from": "Fra sep. 13",
                 "to": "Til jun. 15"
@@ -162,8 +162,8 @@
         },
         {
             "no": {
-                "headline": "Forbredelsesår til bachelor i Samfunnsøkonomi og ledelse",
-                "text": "Vi dro ned til Université de Toulouse 1 Capitole og hadde intensivt med franskkurs og mer avansert matematikk og statistikk enn hva vi hadde hatt på videregående skole for å forbrede oss på samfunnsøkonomistudier i Frankrike.",
+                "headline": "Forbredelsesår til Bachelor i Samfunnsøkonomi og Ledelse",
+                "text": "Vi dro ned til Toulouse og hadde intensivt med franskkurs og mer avansert matematikk og statistikk enn hva vi hadde hatt på videregående skole. Hele året var fylt med ekstrafag for å forberede oss på samfunnsøkonomistudier i Frankrike på fransk.",
                 "logo": "resume/ut1logo",
                 "from": "Fra aug. 12",
                 "to": "Til jun. 13"
@@ -178,7 +178,7 @@
         },
         {
             "no": {
-                "headline": "Sommerjobb hos Direktoratet for forvaltning og IKT",
+                "headline": "Sommerjobb hos Direktoratet for Forvaltning og IKT i Oslo",
                 "text": "Jeg var sommervikar hos Difi sommerne 12,13, 15 og 16. Det første året jobbet jeg med å gjøre istand arkivet og sortere alle publikasjonene Difi har gitt ut. De andre årene jobbet jeg i anskaffelsesavdelingen med å lage rapporter med statistikker over offentlige innkjøpsvaner.",
                 "logo": "resume/difilogo",
                 "from": "Fra jun. 12",
@@ -194,8 +194,8 @@
         },
         {
             "no": {
-                "headline": "Årsenhet i fransk på universitetet i Oslo",
-                "text": "Jeg gjorde det dårlig i Fransk på videregående skole, så da jeg trengte mer tid for å finne ut av hva jeg ville studere, tok jeg en årsenhet i Fransk for å forbedre språket. Studiet innhold språkfag selvfølgelig, men også ting som fransk historie og litteratur.",
+                "headline": "Årsenhet i Fransk på Universitetet i Oslo",
+                "text": "Jeg gjorde det dårlig i Fransk på videregående skole, så da jeg trengte mer tid for å finne ut av hva jeg egentlig ville studere, tok jeg muligheten for å ta en årsenhet i Fransk for å forbedre språket. Studiet innhold språkfag selvfølgelig, men også ting som fransk historie og litteratur.",
                 "logo": "resume/uiologo",
                 "from": "Fra sep. 11",
                 "to": "Til jun. 12"
@@ -210,14 +210,14 @@
         },
         {
             "no": {
-                "headline": "Videregående skole på Lambertseter VGS i Oslo",
-                "text": "Studiespesialisering i realfag med valgfag som fysikk, IKT, Psykologi og Historie og Filosofi. Jeg gikk ut med snitt på 4.8 etter å ha gjort det forholdsvis svakt i språkfag som Nynorsk og Fransk.",
+                "headline": "Videregående Skole på Lambertseter VGS i Oslo",
+                "text": "Studiespesialisering i realfag med valgfag som fysikk, IKT, Psykologi og Historie og Filosofi. Jeg gikk ut med snitt på 4.8 etter å ha gjort det sterkt i historie, psykologi og norsk muntlig, men svakt i språkfag som Nynorsk og Fransk.",
                 "logo": "resume/lambertlogo",
                 "from": "Fra aug. 08",
                 "to": "Til jun. 11"
             },
             "en": {
-                "headline": "Summerschool at copenhagen business school",
+                "headline": "High school at Lambertseter VGS in Oslo ",
                 "text": "Norwegian country manager intern",
                 "logo": "resume/lambertlogo",
                 "from": "From aug. 08",
