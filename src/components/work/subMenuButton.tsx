@@ -1,12 +1,10 @@
 export const SubMenuButton = ({headline, handleClick, style}) => {
-    console.log(style.isMobile)
     return(
         <li onClick={() =>  handleClick(headline) } className="subMenuButtonContainer">
             <div className="centeringContainer">
                 <p className="subMenuText">{headline}</p>
             </div>
             <style jsx>{`
-
                 .centeringContainer{
                     display:flex;   
                     width:15vw;
@@ -31,7 +29,6 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                     overflow: hidden;
                     outline:none;
                 }
-
                 button::-moz-focus-inner {
                     border: 0;
                 }

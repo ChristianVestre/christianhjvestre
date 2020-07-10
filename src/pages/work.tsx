@@ -21,10 +21,8 @@ export default () => {
     const DrawerImageArray = ["christian/Christian.svg", "christian/ChristianReading.svg", "christian/ChristianResume.svg", "christian/ChristianStudying.svg"]
     const handleDrawerOpen = () => {
         setUiState(state => ({...state, randomeImageNumber:Math.floor(Math.random() * DrawerImageArray.length)}))
-        console.log(Math.floor(Math.random() * DrawerImageArray.length))
         setDrawerState(true)
     }
-    console.log(randomeImageNumber)
 
 
     const refs = work.reduce((acc, value) => {
@@ -50,7 +48,7 @@ export default () => {
             </Head>
             <MenuRow imageSrc="christian/ChristianStudying.svg" menuText={menu} language={language} refKey={topDRef}></MenuRow>
             <div className="languageToggleContainer">
-                <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
+                <LanguageToggle setDataState={setDataState} style={style} language={language} fontSize={4} />
             </div>
             <MobileNavBar style={style} language={language} setDataState={setDataState} handleDrawerOpen={handleDrawerOpen} refKey={topMRef}></MobileNavBar>
             <SubMenu data={work} language={language} handleClick={handleClick} style={style} />

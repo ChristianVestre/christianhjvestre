@@ -51,7 +51,7 @@
         {
             "no": {
                 "headline": "Junior Data Analytiker hos Holidu",
-                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet, for det meste med markedsføring. Arbeidsoppgaver lød ofte som, forberedelse av data som ble forespurt fra andre, utvikling av algoritmer for å forutsi fremtidige verdier og etterspørsel av produkter, og enkle programmeringsoppgaver. I tillegg arbeidet jeg innimellom på prosjekter som product manager og som designer (se Holidu markedsføringsverktøy under arbei)",
+                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet, for det meste med markedsføring. Arbeidsoppgaver lød ofte som, forberedelse av data som ble forespurt fra andre, utvikling av algoritmer for å forutsi fremtidige verdier og etterspørsel av produkter, og enkle programmeringsoppgaver. I tillegg arbeidet jeg innimellom på prosjekter som product manager og som designer (se Holidu markedsføringsverktøy under arbeid)",
                 "logo": "resume/holidulogo",
                 "from": "Fra aug. 17",
                 "to": "Til okt. 18"
@@ -283,8 +283,16 @@
                         "percent":80
                     },
                     {
+                        "main": "HTML",
+                        "percent":78
+                    },
+                    {
+                        "main": "CSS",
+                        "percent":76
+                    },
+                    {
                         "main": "SQL",
-                        "percent":77
+                        "percent":75
                     },
                     {
                         "main": "R (R studio)",

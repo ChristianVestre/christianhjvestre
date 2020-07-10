@@ -30,14 +30,14 @@ export const SkillsItem = ({ data, style }) => {
                 .background{
                     height:3vh;
                     width:100%;
-                    border: solid 0.2em black;
+                    border: solid 0.2em ${style.standard.text};
                     border-radius:0.5em;
                 }
                 .fill{
                     background:linear-gradient(#EBD5B3, #BC9E70);
                     height:100%;
                     width:${data.percent + "%"};
-                    border-right: ${data.percent !== 100 ? "solid 0.2em black":"none"};
+                    border-right: ${data.percent !== 100 ? "solid 0.2em "+ style.standard.text:"none"};
                     border-top-left-radius:0.4em;
                     border-bottom-left-radius:0.4em;
                     border-radius:${data.percent !== 100 ? "none":"0.4em"};
@@ -48,6 +48,7 @@ export const SkillsItem = ({ data, style }) => {
                 p{
                     margin:0;
                     padding:0;
+                    color:${style.standard.text}
                 }
                 .main{
                     font-size:1.5em;
@@ -83,6 +84,11 @@ export const SkillsItem = ({ data, style }) => {
                     width:100%;
                     height:auto;
                     margin-top:2vh;
+                    }
+                    .fill{
+                        border-top-left-radius:0.27em;
+                    border-bottom-left-radius:0.27em;
+                        border-radius:${data.percent !== 100 ? "none":"0.27em"};
                     }
                 }
 

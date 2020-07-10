@@ -1,8 +1,8 @@
 import { SkillsItem } from "./skillsItem"
 
-export const SkillsContainer = ({style,data,dataKey,language}) => {
+export const SkillsList = ({style,data,dataKey,language}) => {
     return(
-        <ul className="skillsContainer">
+        <ul className="skillsList">
             <h3>{data[dataKey][language].headline}</h3>
             {data[dataKey][language].content.map((d,i) => {return <SkillsItem key={i} data={d} style={style}/> })}
             
@@ -15,14 +15,13 @@ export const SkillsContainer = ({style,data,dataKey,language}) => {
                     font-weight:600;
                     color:${style.standard.text}
                 }
-                .skillsContainer{
+                .skillsList{
                     width:20vw;
                     padding:3%;
                     padding-left:5%;
                 }
                 @media only screen and (max-width: 760px) {
-                    .skillsContainer{
-                    grid-area:skillsContent;
+                    .skillsList{
                     padding:0;
                     width:90%;
                     height:auto;

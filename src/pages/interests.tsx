@@ -33,7 +33,7 @@ export default () => {
             </Head>
             <MenuRow imageSrc="christian/ChristianReading.svg" menuText={menu} language={language} refKey={topRef}/>
             <div className="languageToggleContainer">
-                <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
+                <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={4} />
             </div>
             <MobileNavBar style={style} language={language} setDataState={setDataState} handleDrawerOpen={handleDrawerOpen} refKey={topRef}></MobileNavBar>
             <SubMenu subMenu={interests.subMenu[language]} setInterestsState={setInterestsState} interestsState={interestsState} style={style}/>

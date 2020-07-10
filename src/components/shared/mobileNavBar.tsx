@@ -7,7 +7,7 @@ export const MobileNavBar = ({style,setDataState,language,handleDrawerOpen,refKe
         <nav className="navBarMobile" ref={refKey}>
             <MobileBurgerMenu style={style} toggleDrawer={() => {handleDrawerOpen()}} />
             <h4 className="noselect">Christian Vestre</h4>
-            <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
+            <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={1.6} />
             <style jsx>{`
             .navBarMobile{
                             grid-area:nav;

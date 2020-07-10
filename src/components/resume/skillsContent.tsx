@@ -1,5 +1,5 @@
 import { SkillsItem } from "./skillsItem"
-import { SkillsContainer } from "./skillsContainer"
+import { SkillsList } from "./skillsList"
 import { useState } from 'react';
 import { ReadMoreButton } from "../shared/readMoreButton";
 
@@ -7,10 +7,9 @@ export const SkillsContent = ({style,data,language, menu}) => {
     const [open, setOpenState] = useState("30vh")
     return(
         <aside className="skillsAside">
-            <h2>{menu[language].skills}</h2>
             <section className="skillsContainer">
-                <SkillsContainer language={language} dataKey="languages" data={data} style={style} />
-                <SkillsContainer language={language} dataKey="programming" data={data} style={style} />
+                <SkillsList language={language} dataKey="languages" data={data} style={style} />
+                <SkillsList language={language} dataKey="programming" data={data} style={style} />
             </section>
             <ReadMoreButton language={language} style={style} open={open} closedSize={"30vh"} setOpenState={setOpenState} menu={menu} type="see" />
             <style jsx>{`
@@ -32,17 +31,22 @@ export const SkillsContent = ({style,data,language, menu}) => {
                 @media only screen and (max-width: 760px) {
                     h2{
                         text-align:center;
+                        font-size:2.6em;
+                        padding-bottom:3vh;
                     }
                     .skillsAside{
                     grid-area:skillsContent;
                     width:100vw;
                     height:auto;
                     margin-top:0vh;
+
                     }
                     .skillsContainer{
                         height:${open};
                         overflow:hidden;
-
+                        display:flex;
+                        flex-direction:column;
+                        align-items:center;
                     }
                 }
                 `}</style>

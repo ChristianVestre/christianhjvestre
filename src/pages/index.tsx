@@ -41,7 +41,7 @@ export default ({query}) => {
             <nav id="navBarMobile">
                     <MobileBurgerMenu style={style} toggleDrawer={() => {handleDrawerOpen()}} />
                     <h4 className="noselect">Christian Vestre</h4>
-                    <LanguageToggle setDataState={setDataState} language={language} fontSize={1.6} />
+                    <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={1.6} />
             </nav>
             <section className="headlinePlacement" id="headlinePlacement">
                 <h1 className="noselect">Christian Vestre</h1>
@@ -55,7 +55,7 @@ export default ({query}) => {
             </section>
             <div className="border"/>
             <section className="languageToggleContainer">
-                    <LanguageToggle setDataState={setDataState} language={language} fontSize={4} />
+                    <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={4} />
             </section>
             {isMobile ? <React.Fragment key={'left'}>
                     <SwipeableDrawer

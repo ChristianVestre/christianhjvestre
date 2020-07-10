@@ -19,13 +19,13 @@ export const InterestsContainer = ({style, content}) => {
                     width:80%;
                     height:90%;
                     overflow-y:scroll;
-                    padding:0 5%;
+                    padding:0 2%;
                 } 
                 p{
                     text-align: left;
                     text-justify: inter-word;
                     white-space: pre-line;
-                    font-size:1.1em;
+                    font-size:1.2em;
                 } 
                 h3{
                     font-size:2em;
@@ -37,9 +37,12 @@ export const InterestsContainer = ({style, content}) => {
                 }
                 .imgContainer{
                     grid-area:img;
-                    width:40vw;
+                    width:100%;
                     height:90%;
                     overflow:hidden;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
                 }
                 .interestsContainer{
                     grid-area:interestsContainer;
@@ -51,7 +54,7 @@ export const InterestsContainer = ({style, content}) => {
                     border: solid 0.5em ${style.standard.border};
                     margin:0 5% 0 5%;
                     padding:0 5%;
-                    grid-template-columns:1.4fr 0.6fr;
+                    grid-template-columns:1.2fr 0.8fr;
                     grid-template-rows: 2fr;
                     grid-template-areas:
                     'text img'

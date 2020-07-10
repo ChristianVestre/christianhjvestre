@@ -68,7 +68,8 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                 .carusel{                        
                     width:60vw;                    
                     font-family:'Open sans';
-                    height:70vh;
+                    max-height:70vh;
+                    height:auto;
                     display:flex;
                     align-items:center;
                     justify-content:flex-end;
@@ -79,14 +80,13 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                 }
                 img{
                     width:auto;
-                    max-width:60vw;
+                    max-width:80vw;
                     height:auto;
-                    max-height:80%;
+                    max-height:60vh;
                     padding: 0 2em;
-
                 }
                 .imageContainer{
-                    height:60vh;
+                    
                     display:flex;
                     align-content:center;
                     justify-content:center;
@@ -201,8 +201,8 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     }
                     .imageContainer{
                         height:50vh;
-                        display:flex;
-                        align-content:center;
+                        display:flex;   
+                        align-items:center;
                         justify-content:center;
                     }
                     .container{

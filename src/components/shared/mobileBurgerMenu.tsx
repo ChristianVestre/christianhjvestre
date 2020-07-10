@@ -8,7 +8,7 @@ export const MobileBurgerMenu = ({style, toggleDrawer}) => {
             <style jsx>{`
                 .burgerMenuContainer{
                     width:80%;
-                    height:80%;
+                    height:90%;
                     display:flex;
                     align-items:center;
                     justify-content:space-evenly;

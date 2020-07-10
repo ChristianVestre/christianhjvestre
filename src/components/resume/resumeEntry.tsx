@@ -200,18 +200,19 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     align-items:flex-start;
                     flex-direction:column;
                     align-self:flex-start;
+                    padding:2%;
+                    margin:0;
                 }   
                 .textContainer{
                     width:100%;
                     height:auto;
                     text-align:left;
                 }
-                .headlineContainer{
-                    width:90%;
+                .headlineSection{
+                    width:100%;
                     height:auto;
                     display:flex;
-                    justify-self:center;
-                    align-self:center;
+                    padding:3%;
                 }
                 h3{
                     width:100%;
