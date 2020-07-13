@@ -16,7 +16,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
         slidesToScroll: 1,
         variableWidth: true,
         adaptiveHeight:true,
-        centerMode: true,
+
         cssEase: "linear",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
@@ -33,7 +33,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                 </div>
                 {data.content.length >= 300 ? <ReadMoreButton language={language} style={style} open={open} closedSize={closedSize} setOpenState={setOpenState} menu={menu} type="read" />:null}
             </section>
-            <section className="carusel">
+            {data.images.length > 1 ? <section className="carusel">
                 <div className="sliderContainer">
                     <Slider {...settings} className="slider" >
                         {data.images.map(src => 
@@ -49,7 +49,29 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     </Slider>
                 </div>
             </section>
+            :
+            <section className="singleImageSection">
+                <picture>
+                    <source type="image/webp" srcSet={data.images[0] + ".webp"}/>
+                    <source type="image/png" srcSet={data.images[0] + ".png"}/>
+                    <img className="singleImage" src={data.images[0] + ".png"}/>
+                </picture>
+            </section>}
             <style jsx>{`
+                .singleImage{
+                    width:auto;
+                    max-width:100%;
+                    height:auto;
+                    max-height:100%;
+                }
+                .singleImageSection{
+                    width:60vw;
+                    height:auto;
+                    padding: 0 2em;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                }
                 .dash{
                         display:none;
                 }
@@ -80,7 +102,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                 }
                 img{
                     width:auto;
-                    max-width:80vw;
+                    max-width:60vw;
                     height:auto;
                     max-height:60vh;
                     padding: 0 2em;
@@ -103,6 +125,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     margin:0;
                     padding:0;
                     align-items:center;
+                    justify-content:space-between;
 
                 }
                 .textContainer{
@@ -143,6 +166,19 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
 
                 }
                 @media only screen and (max-width: 760px) {
+                    .singleImage{
+                        width:100%;
+                        height:auto;
+                        transform:none;
+                        bottom:none;
+                    }
+                    .singleImageSection{
+                        width:100%;
+                        height:50vh;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    }
                     #more{
                         display:${open == closedSize?"none":"inline"};
                     }
