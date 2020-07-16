@@ -226,12 +226,10 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         align-items:center;
                         justify-content:flex-end;
                         flex-direction:column;
-                        margin-bottom:2em;
                     }
                     img{
                         width:auto;
                         max-width:85vw;
-                        max-height:90%;
                         bottom:50%;
                         padding:${data.landscape ? "0":"0 2em"};
                     }
