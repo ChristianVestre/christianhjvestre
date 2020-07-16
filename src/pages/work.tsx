@@ -133,7 +133,7 @@ export default () => {
                     height:100%;
                     display:grid;
                     grid-template-columns:1fr;
-                    grid-template-rows:0.2fr auto repeat(5,auto);
+                    grid-template-rows:auto auto repeat(5,minmax(40em,auto));
                     grid-template-areas:
                     'nav'
                     'subMenu'

@@ -174,7 +174,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     }
                     .singleImageSection{
                         width:100%;
-                        height:50vh;
+                        height:50%;
                         display:flex;
                         align-items:center;
                         justify-content:center;
@@ -192,6 +192,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     .sliderContainer{
                         bottom:0;
                         width:90vw;
+                        height:100%;
                         padding:5%;
                     }
                     .container > :global(.slick-next){
@@ -220,23 +221,22 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     button::-moz-focus-inner { border:0; }
                     .carusel{
                         width:90vw;
-                        height:50vh;
+                        height:auto;
                         display:flex;
                         align-items:center;
                         justify-content:flex-end;
                         flex-direction:column;
-                        padding-bottom:4%;
+                        margin-bottom:2em;
                     }
                     img{
                         width:auto;
                         max-width:85vw;
-                        max-height:50vh;
+                        max-height:90%;
                         bottom:50%;
-                        transform:${data.landscape ? data.images.length < 2 ?"translate(-20%,50%)":"translate(0,50%)":"translate(0,0)"};
                         padding:${data.landscape ? "0":"0 2em"};
                     }
                     .imageContainer{
-                        height:50vh;
+                        max-height:100%;
                         display:flex;   
                         align-items:center;
                         justify-content:center;
@@ -260,7 +260,6 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         width:100%;
                         height:auto;
                         align-content:space-between;
-                        margin-bottom:5vh;
                         padding-left:0;
                     }
                     .headlineContainer{

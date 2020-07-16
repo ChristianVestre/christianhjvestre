@@ -21,9 +21,6 @@ export const ResumeContent = ({resume, language, style, menu}) => {
                         width:100vw;
                         height:auto;
                     }
-                    .resumeEntryContainer:nth-last-child(1) > .graphicsContainer{
-                    display:none;
-                }
                 }
                 `}
             </style>

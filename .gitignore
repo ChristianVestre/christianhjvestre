@@ -32,4 +32,4 @@ yarn-error.log*
 .now
 
 # util
-imgfix.py
+imgfix.js

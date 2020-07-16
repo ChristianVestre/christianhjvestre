@@ -47,7 +47,7 @@ export const SubMenu = ({data,language, handleClick, style}) => {
                         width:100%;
                         text-align:center;
                         color:${style.standard.text};  
-                        font-size: 1.5em;
+                        font-size: 0.9em;
                         font-family:'Open sans';
                         margin:1vh 0;
                     }
