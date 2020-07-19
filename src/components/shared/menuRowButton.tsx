@@ -59,6 +59,7 @@ export const MenuRowButton = ({page,text}) => {
                         -ms-user-select: none; /* Internet Explorer/Edge */
                         user-select: none;
                     }
+
             `}</style>
     </li>)
 }

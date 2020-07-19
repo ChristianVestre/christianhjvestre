@@ -6,13 +6,15 @@ export const MobileNavBar = ({style,setDataState,language,handleDrawerOpen,refKe
     return(
         <nav className="navBarMobile" ref={refKey}>
             <MobileBurgerMenu style={style} toggleDrawer={() => {handleDrawerOpen()}} />
-            <h4 className="noselect">Christian Vestre</h4>
+            <div className="headlineContainer">
+                <h4 className="noselect">Christian Vestre</h4>
+            </div>
             <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={1.6} />
             <style jsx>{`
             .navBarMobile{
                             grid-area:nav;
                             height:10vh;
-                            width:100vw;
+                            width:100%;
                             border-bottom: solid 0.5em ${style.standard.border};
                             display:grid;
                             grid-template-columns:1fr 1fr 1fr;
@@ -22,12 +24,16 @@ export const MobileNavBar = ({style,setDataState,language,handleDrawerOpen,refKe
                         h4{
                             padding:0;
                             margin:0;
+                            width:100%;
                             font-size:1.4em;
                             font-family: 'Work Sans', sans-serif;
                             font-weight:600;
                             text-decoration:underline;
                             text-decoration-color: #535353;
                             color:#535353;
+                        }
+                        .headlineContainer{
+                            width:100%;
                         }
                         @media only screen and (min-width: 760px) {
                             .navBarMobile{

@@ -316,8 +316,16 @@
                         "percent":80
                     },
                     {
+                        "main": "HTML",
+                        "percent":78
+                    },
+                    {
+                        "main": "CSS",
+                        "percent":76
+                    },
+                    {
                         "main": "SQL",
-                        "percent":77
+                        "percent":75
                     },
                     {
                         "main": "R (R studio)",

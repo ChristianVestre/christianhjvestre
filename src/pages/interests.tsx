@@ -29,7 +29,7 @@ export default () => {
             <Head>
                 <title>Christian Vestre</title>
                 <link rel="icon" href="/ansikt.svg" />
-                <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+                <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
             </Head>
             <MenuRow imageSrc="christian/ChristianReading.svg" menuText={menu} language={language} refKey={topRef}/>
             <div className="languageToggleContainer">

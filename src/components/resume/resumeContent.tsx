@@ -18,7 +18,7 @@ export const ResumeContent = ({resume, language, style, menu}) => {
                 }
                 @media only screen and (max-width: 760px) {
                     .resumeContentContainer{
-                        width:100vw;
+                        width:100%;
                         height:auto;
                     }
                 }

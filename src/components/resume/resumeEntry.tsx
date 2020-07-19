@@ -151,7 +151,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     grid-area:skillsContent;
                     width:100%;
                     height:auto ;
-                    margin-top:0vh;
+                    margin-top:0;
                     display:grid;
                     align-content:center;
                     justify-content:center;
@@ -176,17 +176,17 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     display:none;
                 }
                 .resumeEntryContainer:nth-last-child(1) > .textSection{
-                    margin-bottom:3vh;
+                    margin-bottom:3%;
                 }
                 .verticalLine{
-                    width:0.3em;
-                    height:5vh;
+                    width:0.25em;
+                    height:3em;
                     background:${style.standard.border};
                     align-self:center;
                 }
                 .horizontalLine{
-                    width:70%;
-                    height:0.2em;
+                    width:65%;
+                    height:0.25em;
                     background:${style.standard.border};
                     align-self:center;
                     margin: 4% 0 4% 0;
@@ -212,11 +212,11 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     width:100%;
                     height:auto;
                     display:flex;
-                    padding:3%;
+                    padding:5% 3%;
                 }
                 h3{
                     width:100%;
-                    font-size:1.7em;
+                    font-size:1.5em;
                     text-align:center;
                 }
                 p{
@@ -227,7 +227,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 }
                 .logoSection{
                     grid-area:logo;
-                    padding-top:3vh;
+                    padding:5% 0;
                     display:flex;
                     align-items:center;
                     justify-content:center;
@@ -236,10 +236,11 @@ export const ResumeEntry = ({data,style, language,menu}) => {
 
                     flex-direction:row;
                     width:90%;
-                    height:16vh;
+                    height:16%;
                     justify-content:space-between;
                     justify-self:center;
                     align-self:center;
+                    padding:5% 0;   
                 }
                 img{
                     width:100%;
@@ -262,7 +263,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 }
                 .dash{
                     display:block;
-                    height:0.5vh;
+                    height:0.25em;
                     width:5vw;
                     background:${style.standard.text};
                 }

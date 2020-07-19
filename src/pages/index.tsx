@@ -26,7 +26,7 @@ export default ({query}) => {
             <Head>
                 <title>Christian Vestre</title>
                 <link rel="icon" href="/ansikt.svg" />
-                <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+                <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
             
@@ -116,8 +116,6 @@ export default ({query}) => {
                     p{
                         width:60%;
                         font-size:1.4em;
-                        text-align: justify;
-                        text-justify: inter-word;
                         white-space: pre-line;
                         margin:0;
                         padding:0;
@@ -197,7 +195,21 @@ export default ({query}) => {
                     }
 
                     @media only screen and (max-width: 760px) {
-                        #navBarDesktop { display: none; }
+                        .navBarDesktop{
+                            grid-area: navmenu;
+                            justify-content:center;
+
+                         }
+                        .menuPlacement{
+                            margin:0;
+                            padding:0;
+                            display:flex;
+                            flex-direction:row;
+                            padding:10% 0  ;
+                            width:100%;
+                            align-items:center;
+                            justify-content:center;
+                        }
                         #headlinePlacement{display:none;}
                         .languageToggleContainer{display:none;}
                         .border{
@@ -212,6 +224,7 @@ export default ({query}) => {
                             grid-template-areas:
                             'nav'
                             'text'
+                            'navmenu'
                             'img';
                         }
                         
@@ -233,8 +246,6 @@ export default ({query}) => {
                         p{
                             width:80%;
                             font-size:1.1em;
-                            text-align: justify;
-                            text-justify: inter-word;
                             white-space: pre-line;
                             margin:0;
                             padding:0;
@@ -253,9 +264,7 @@ export default ({query}) => {
                             grid-area:text;
                             display:flex;
                             flex-direction:column;
-                            align-items:center;
-                            padding-bottom:5vh;
-                
+                            align-items:center;                
                         }
                         img{
                             max-width:90%;

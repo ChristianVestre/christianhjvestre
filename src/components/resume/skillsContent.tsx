@@ -36,7 +36,7 @@ export const SkillsContent = ({style,data,language, menu}) => {
                     }
                     .skillsAside{
                     grid-area:skillsContent;
-                    width:100vw;
+                    width:100%;
                     height:auto;
                     margin-top:0vh;
 
