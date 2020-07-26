@@ -34,7 +34,7 @@ export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => 
                         height:100%;
                         display:grid;
                         grid-template-columns:1fr 1fr;
-                        margin:0;
+                        margin:2% 0;
                     }
                 }
 

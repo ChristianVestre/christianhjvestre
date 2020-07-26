@@ -63,14 +63,14 @@
             "no":{
             "headline":"Denne nettsiden",
             "content":"Basert på mye av lærdommen min fra å ha skrevet Fibel CMSen hadde jeg lyst til å fullføre et eget nettsideprosjekt. Samtidig som jeg trengte å søke etter en jobb og følte at et resume og et motivasjonsbrev ikke var nok til å virkelig vise frem hvem jeg er og hva jeg jobbet med. Jeg gjorde også undersøkelser for å se hva slike portfolio nettsider trenger av innhold for å hjelpe til i en jobbsøknad og hva slags design som kan passe til det.\n\nDenne nettsiden er bygget med samme tech-stacken som CMSen, men uten en backend, siden nettsiden er helt statisk. Så nettsiden blir servert som html, css og javascript filer, det ikke er behov for en server med en runtime.Videre har jeg integrert noen teknikker for å gjøre siden raskere, som f.eks. det å bruke Webp bilder istedenfor større png filer, men jeg har de som backup i tilfelle nettleseren ikke er kompatibel.\n\nJeg har også gjort siden responsive, med forskjellig layout tilpasset skjermformatet på laptop og mobil. Siden nettsiden er statisk så har jeg gjort dette i CSS og med media queries.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/thiswebsite/christianpage","/thiswebsite/workpage","/thiswebsite/resumepage","/thiswebsite/interestspage"],
             "landscape":false
 
         },
         "en":{
             "headline":"This website",
             "content":"Based on meny of the lessons I learned from coding the Fibel CMS, I wanted to complete my own website project. At the same time, I needed to look for a job and felt that a summary and a motivation letter were not enough to really showcase who I am and what I have been working on. I did some research to see what such portfolio web pages need in terms of content, to be helpful in a job application and what kind of design might be suitable for it. \n\nThis website is built with the same tech stack as the Fible CMS, but without a backend , since the website is completely static. The website is served as html, css and javascript files, there is no need for a server with a runtime to maintain state or sessions. Furthermore, I have integrated some techniques to make the page faster, such as using Webp images instead of larger png files. Though I keep them as backup in case of compatibility issues. \n\nI have also made the page responsive, with different layouts adapted to the screen formats of laptops and mobile. Since the website is static I have done this in CSS and with media queries.",
-            "images":["/camperboysapp/cbapproutes","/camperboysapp/cbapproutedetail","/camperboysapp/cbapprouteinfo","/camperboysapp/cbappstop","/camperboysapp/cbappmap","/camperboysapp/cbapppoi"],
+            "images":["/thiswebsite/christianpage","/thiswebsite/workpage","/thiswebsite/resumepage","/thiswebsite/interestspage"],
             "landscape":false
         }
         }

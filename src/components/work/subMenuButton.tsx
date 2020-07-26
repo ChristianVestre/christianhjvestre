@@ -1,13 +1,30 @@
 export const SubMenuButton = ({headline, handleClick, style}) => {
     return(
-        <li onClick={() =>  handleClick(headline) } className="subMenuButtonContainer">
+        <li id="button" onClick={() =>  handleClick(headline) } className="subMenuButtonContainer">
             <div className="centeringContainer">
                 <p className="subMenuText">{headline}</p>
             </div>
+            <svg  height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <line id="line" x1="0" x2="100%" y1="50%" y2="50%"></line>
+            </svg> 
             <style jsx>{`
                 .centeringContainer{
                     display:flex;   
                     width:15vw;
+                }
+                #line{
+                    stroke-width:0.2em;
+                    stroke:transparent;
+                    stroke-dasharray: 100%;
+                    stroke-dashoffset: 90%;
+                    stroke-linecap:round;
+                    transition: 0.3s all ease-out;
+                }
+                #button:hover #line{
+                    stroke-dasharray: 100%;
+                    stroke-width: 0.2em;
+                    stroke-dashoffset: 0;
+                    stroke: ${style.standard.text};
                 }
                 .subMenuText{
                     margin:0;
@@ -19,7 +36,7 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                 }
                 .subMenuButtonContainer{
                     display:flex;
-                    flex-direction:row;
+                    flex-direction:column;
                     align-items:flex-start;
                     justify-content:center;
                     background-color: Transparent;

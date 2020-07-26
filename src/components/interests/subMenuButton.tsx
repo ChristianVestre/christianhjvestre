@@ -1,9 +1,14 @@
 export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, style}) => {
 
     return(
-        <div onClick={() => setInterestsState(dataKey)} className="subMenuButtonContainer">
-                <div className="selected"/>
-                <p>{text}</p>
+        <li id="button" onClick={() => setInterestsState(dataKey)} className="subMenuButtonContainer">
+                <section className="content">
+                    <div className="selected"/>
+                    <p>{text}</p>
+                </section>
+                <svg  height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <line id="line" x1="0" x2="100%" y1="50%" y2="50%"></line>
+                </svg> 
             <style jsx>{`
                 .selected{
                     height:1.3em;
@@ -13,9 +18,27 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     margin:0;
                     margin-right:1vw;
                 }
+                .content{
+                    display:flex;
+                    flex-direction:row;
+                }
                 .centeringContainer{
                     display:flex;
                     width:15vw;
+                }
+                #line{
+                    stroke-width:0.2em;
+                    stroke:transparent;
+                    stroke-dasharray: 85%;
+                    stroke-dashoffset: -20%;
+                    stroke-linecap:round;
+                    transition: 0.5s all ease-out;
+                }
+                #button:hover #line{
+                    stroke-dasharray: 85%;
+                    stroke-width: 0.2em;
+                    stroke-dashoffset: -35%;
+                    stroke: ${style.standard.text};
                 }
                 p{
                     text-align:left;
@@ -27,7 +50,7 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                 }
                 .subMenuButtonContainer{
                     display:flex;
-                    flex-direction:row;
+                    flex-direction:column;
                     align-items:center;
                     justify-content:flex-start;
                     background-color: Transparent;
@@ -48,16 +71,26 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                 }
                 @media only screen and (max-width: 760px) {
                     .subMenuButtonContainer{
-                        width:auto;
+                        width:100%;
                         margin:0 5%;
                         padding:0;
+                        justify-content:flex-start;
+                        align-items:flex-start;
+                    }
+                    #line{
+                        stroke-width:0;
+                    }
+                    #button:hover #line{
+                        stroke-width:0;
                     }
                     p{
-                        font-size:0.9em;
+                        font-size:0.8em;
+                        text-overflow: ellipsis;                          
+                        max-lines:1;
                     }
                 }
 
                 `}</style>
-        </div>
+        </li>
     )
 }
