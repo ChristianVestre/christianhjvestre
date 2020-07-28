@@ -32,21 +32,20 @@ export const SkillsContent = ({style,data,language, menu}) => {
                     h2{
                         text-align:center;
                         font-size:2.6em;
-                        padding-bottom:3vh;
+                        padding-bottom:1em;
                     }
                     .skillsAside{
                     grid-area:skillsContent;
                     width:100%;
                     height:auto;
-                    margin-top:0vh;
+                    margin-top:0;
                     position:relative;
                     }
                     .skillsContainer{
                         height:${open};
                         overflow:hidden;
-                        display:flex;
-                        flex-direction:column;
-                        align-items:center;
+                        display:block;
+                        margin:auto;
                         position:relative;
                     }
                 }

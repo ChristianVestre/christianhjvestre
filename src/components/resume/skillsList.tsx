@@ -27,10 +27,8 @@ export const SkillsList = ({style,data,dataKey,language}) => {
                     width:90%;
                     height:auto;
                     margin-top:1em;
-                    display:flex;
-                    flex-direction:column;
-                    align-items:flex-start;
-                    justify-content:flex-start;
+                    margin:auto;
+                    display:block;
                     }
                 }
                 `}</style> 
