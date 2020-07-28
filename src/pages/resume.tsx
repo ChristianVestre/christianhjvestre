@@ -134,6 +134,7 @@ export default () => {
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
                         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
                         sans-serif;
+                    overflow:hidden;
                 }
                 * {
                     box-sizing: border-box;
