@@ -39,16 +39,16 @@ export const MenuButton = ({ page, text }) => {
                 stroke-width:0.5em;
                 stroke:transparent;
                 stroke-dasharray: 100%;
-                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "100%":"-20%"};
+                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "100%":"100%"};
                 stroke-linecap:round;
                 transition: 0.3s all ease-out;
                 
             }
 
             .menuButtonContainer:hover #line{
-                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "100%":"80%"};
+                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "100%":"100%"};
                 stroke-width: 0.5em;
-                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "0":"-2.8em"};
+                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "0":"0"};
                 stroke: ${style.standard.border};
             }
 

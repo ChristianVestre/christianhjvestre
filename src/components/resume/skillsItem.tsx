@@ -21,14 +21,14 @@ export const SkillsItem = ({ data, style }) => {
                     border-left:solid 0.15em ${style.standard.text};
                     border-bottom:solid 0.15em ${style.standard.text};
                     border-bottom-left-radius:0.3em;
-                    margin-left:0.2vw;
+                    margin-left:0.2em;
 
                 }
                 .skillsGauge{
                     width:100%;
                 }
                 .background{
-                    height:3vh;
+                    height:1.5em;
                     width:100%;
                     border: solid 0.2em ${style.standard.text};
                     border-radius:0.5em;
@@ -57,12 +57,12 @@ export const SkillsItem = ({ data, style }) => {
 
                 }
                 .space{
-                    width:2vw;
+                    width:2em;
                     height:100%;
                     display:flex;
                     align-items:center;
                     justify-content:center;
-                    padding: 0 0.5vw 0 0.5vw;
+                    padding: 0 0.5em 0 0.5em;
                 }
                 .line{
                     width:80%;
@@ -71,7 +71,7 @@ export const SkillsItem = ({ data, style }) => {
 
                 }
                 .skillsItemContainer{
-                    margin:1vh 0;
+                    margin:0.5em 0;
                     height:auto;
                     width:100%;
                     display:flex;
@@ -83,7 +83,7 @@ export const SkillsItem = ({ data, style }) => {
                     grid-area:skillsContent;
                     width:100%;
                     height:auto;
-                    margin-top:2vh;
+                    margin-top:0.5em;
                     }
                     .fill{
                         border-top-left-radius:0.27em;

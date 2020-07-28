@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ReadMoreButton } from "../shared/readMoreButton";
 
 export const SkillsContent = ({style,data,language, menu}) => {
-    const [open, setOpenState] = useState("10em")
+    const [open, setOpenState] = useState("15em")
     return(
         <aside className="skillsAside">
             <section className="skillsContainer">

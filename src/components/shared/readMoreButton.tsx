@@ -20,7 +20,7 @@ export const ReadMoreButton = ({ open, closedSize, menu, language, setOpenState,
                         @media only screen and (max-width: 760px) {
                             .readMore{
                                 display:flex;
-                                width:100vw;
+                                width:100%;
                                 justify-content:flex-end;
                                 align-items:center;
                                 height:4em;

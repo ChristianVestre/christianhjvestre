@@ -2,7 +2,7 @@ import { ReadMoreButton } from "../shared/readMoreButton"
 import { useState } from 'react';
 
 export const ResumeEntry = ({data,style, language,menu}) => {
-    const closedSize = "20vh"
+    const closedSize = "20%"
     const [open, setOpenState] = useState(closedSize)
     return(
         <article className="resumeEntryContainer">
@@ -141,10 +141,10 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 }
                 @media only screen and (max-width: 760px) {
                     #more{
-                        display:${open == "20vh"?"none":"inline"};
+                        display:${open == "20%"?"none":"inline"};
                     }
                     #dots{
-                        display:${open == "20vh"?"inline":"none"};
+                        display:${open == "20%"?"inline":"none"};
                         }
 
                     .resumeEntryContainer{

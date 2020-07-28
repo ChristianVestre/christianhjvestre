@@ -25,7 +25,7 @@ export const SkillsList = ({style,data,dataKey,language}) => {
                     padding:0;
                     width:90%;
                     height:auto;
-                    margin-top:1vh;
+                    margin-top:1em;
                     display:flex;
                     flex-direction:column;
                     align-items:flex-start;
