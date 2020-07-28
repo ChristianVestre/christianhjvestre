@@ -4,14 +4,14 @@ import { useState } from 'react';
 import { ReadMoreButton } from "../shared/readMoreButton";
 
 export const SkillsContent = ({style,data,language, menu}) => {
-    const [open, setOpenState] = useState("30vh")
+    const [open, setOpenState] = useState("10em")
     return(
         <aside className="skillsAside">
             <section className="skillsContainer">
                 <SkillsList language={language} dataKey="languages" data={data} style={style} />
                 <SkillsList language={language} dataKey="programming" data={data} style={style} />
             </section>
-            <ReadMoreButton language={language} style={style} open={open} closedSize={"30vh"} setOpenState={setOpenState} menu={menu} type="see" />
+            <ReadMoreButton language={language} style={style} open={open} closedSize={"10em"} setOpenState={setOpenState} menu={menu} type="see" />
             <style jsx>{`
                 .skillsAside{
                     grid-area:skillsContent;

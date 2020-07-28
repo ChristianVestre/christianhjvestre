@@ -46,7 +46,7 @@ export const MenuButton = ({ page, text }) => {
             }
 
             .menuButtonContainer:hover #line{
-                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "150%":"110%"};
+                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "100%":"80%"};
                 stroke-width: 0.5em;
                 stroke-dashoffset:${"/index" == page || page == router.pathname  ? "0":"-2.8em"};
                 stroke: ${style.standard.border};
