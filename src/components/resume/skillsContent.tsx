@@ -11,7 +11,7 @@ export const SkillsContent = ({style,data,language, menu}) => {
                 <SkillsList language={language} dataKey="languages" data={data} style={style} />
                 <SkillsList language={language} dataKey="programming" data={data} style={style} />
             </section>
-            <ReadMoreButton language={language} style={style} open={open} closedSize={"10em"} setOpenState={setOpenState} menu={menu} type="see" />
+            <ReadMoreButton language={language} style={style} open={open} closedSize={"15em"} setOpenState={setOpenState} menu={menu} type="see" />
             <style jsx>{`
                 .skillsAside{
                     grid-area:skillsContent;
@@ -39,7 +39,7 @@ export const SkillsContent = ({style,data,language, menu}) => {
                     width:100%;
                     height:auto;
                     margin-top:0vh;
-
+                    position:relative;
                     }
                     .skillsContainer{
                         height:${open};
@@ -47,6 +47,7 @@ export const SkillsContent = ({style,data,language, menu}) => {
                         display:flex;
                         flex-direction:column;
                         align-items:center;
+                        position:relative;
                     }
                 }
                 `}</style>

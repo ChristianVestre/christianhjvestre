@@ -22,6 +22,7 @@ export const SkillsList = ({style,data,dataKey,language}) => {
                 }
                 @media only screen and (max-width: 760px) {
                     .skillsList{
+                    position:relative;
                     padding:0;
                     width:90%;
                     height:auto;
