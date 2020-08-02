@@ -54,6 +54,9 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                     border:none;
                 }
                 @media only screen and (max-width: 760px) {
+                #line{
+                    stroke-width:0;
+                }
                 .centeringContainer{
                     width:35vw;
                 }

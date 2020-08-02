@@ -181,6 +181,7 @@ export default ({query}) => {
                         color:#535353;
                     }
                     .menuPlacement{
+                        width:100%;
                     }
                     .navBarDesktop{
                         grid-area:nav;

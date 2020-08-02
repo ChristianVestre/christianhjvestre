@@ -19,7 +19,7 @@ export const MenuButton = ({ page, text }) => {
             <div className="selected"></div>
             <h3>{text}</h3>
             </section>
-            <svg id="svgline" height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <svg id="svgline" height="5" width="70%" xmlns="http://www.w3.org/2000/svg">
                 <line id="line" x1="0" x2="100%" y1="50%" y2="50%"></line>
             </svg>
             <style jsx>{`
@@ -38,15 +38,15 @@ export const MenuButton = ({ page, text }) => {
             #line{
                 stroke-width:0.5em;
                 stroke:transparent;
-                stroke-dasharray: 100%;
-                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "100%":"100%"};
+                stroke-dasharray: 500;
+                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "500":"500"};
                 stroke-linecap:round;
-                transition: 0.3s all ease-out;
+                transition: 1s all ease-out;
                 
             }
 
             .menuButtonContainer:hover #line{
-                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "100%":"100%"};
+                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "500":"500"};
                 stroke-width: 0.5em;
                 stroke-dashoffset:${"/index" == page || page == router.pathname  ? "0":"0"};
                 stroke: ${style.standard.border};
@@ -82,6 +82,9 @@ export const MenuButton = ({ page, text }) => {
                         align-items:center;
                     }
                     @media only screen and (max-width: 760px) {
+                        #line{
+                            stroke-width:0
+                        }
                         .menuButtonContainer{
                             display:${ page === pathname? "none":  "flex"};
                             padding:0 5%;  
