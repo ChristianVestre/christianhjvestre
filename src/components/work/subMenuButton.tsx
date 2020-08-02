@@ -4,7 +4,7 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
             <div className="centeringContainer">
                 <p className="subMenuText">{headline}</p>
             </div>
-            <svg  height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <svg  height="5" width="80%" xmlns="http://www.w3.org/2000/svg">
                 <line id="line" x1="0" x2="100%" y1="50%" y2="50%"></line>
             </svg> 
             <style jsx>{`
@@ -15,16 +15,16 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                 #line{
                     stroke-width:0.2em;
                     stroke:transparent;
-                    stroke-dasharray: 100%;
-                    stroke-dashoffset: 90%;
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 500;
                     stroke-linecap:round;
-                    transition: 0.3s all ease-out;
+                    transition: 1s all ease-out;
                 }
                 #button:hover #line{
-                    stroke-dasharray: 100%;
+                    stroke-dasharray: 500;
                     stroke-width: 0.2em;
                     stroke-dashoffset: 0;
-                    stroke: ${style.standard.text};
+                    stroke: ${style.standard.border};
                 }
                 .subMenuText{
                     margin:0;

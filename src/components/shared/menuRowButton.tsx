@@ -20,7 +20,7 @@ export const MenuRowButton = ({page,text}) => {
         <div className="selected"></div>:null}
         <h3>{text}</h3>
         </section>
-        <svg id="svgline" height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg id="svgline" height="5" width="80%" xmlns="http://www.w3.org/2000/svg">
             <line id="line" x1="0" x2="100%" y1="50%" y2="50%"></line>
         </svg>
         <style jsx>{`
@@ -36,7 +36,7 @@ export const MenuRowButton = ({page,text}) => {
             .contentSection{
                 display:flex;
                 flex-direction:row;
-                padding-right:2em;
+                padding-right:5em;
                 cursor:pointer;
                 margin-top:8vh;
             }
@@ -47,20 +47,21 @@ export const MenuRowButton = ({page,text}) => {
             #line{
                 stroke-width:0.5em;
                 stroke:transparent;
-                stroke-dasharray: 100%;
-                stroke-dashoffset: 90%;
+                stroke-dasharray: 300;
+                stroke-dashoffset: 300;
                 stroke-linecap:round;
-                transition: 0.3s all ease-out;
+                transition: 0.5s all ease-out;
                 
             }
             .buttonContainer:hover #line{
-                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "100%":"100%"};
+                stroke-dasharray: ${"/index" == page || page == router.pathname  ? "300":"300"};
                 stroke-width: 0.5em;
-                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "0":"-2.8em"};
+                stroke-dashoffset:${"/index" == page || page == router.pathname  ? "0":"0"};
                 stroke: ${style.standard.border};
             }
 
             .selected{
+                display:${ page === router.pathname? "block":  "none"};
                 height:2em;
                 width:2em;
                 background:${page == router.pathname ? style.standard.border : "transparent"};

@@ -53,6 +53,7 @@ export const MenuButton = ({ page, text }) => {
             }
 
             .selected{
+                display:${ page === pathname? "block":  "none"};
                 height:2em;
                 width:1em;
                 background:${ page === pathname? style.standard.border:  "transparent"};

@@ -6,11 +6,12 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                     <div className="selected"/>
                     <p>{text}</p>
                 </section>
-                <svg  height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <svg  height="5" width="60%" xmlns="http://www.w3.org/2000/svg">
                 <line id="line" x1="0" x2="100%" y1="50%" y2="50%"></line>
                 </svg> 
             <style jsx>{`
                 .selected{
+                    display:${ dataKey === interestsState? "block":  "none"};
                     height:1.3em;
                     width:1.3em;
                     background:${dataKey == interestsState ? style.standard.border : "transparent"};
@@ -29,16 +30,16 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                 #line{
                     stroke-width:0.2em;
                     stroke:transparent;
-                    stroke-dasharray: 85%;
-                    stroke-dashoffset: -20%;
+                    stroke-dasharray: 500;
+                    stroke-dashoffset: 500;
                     stroke-linecap:round;
                     transition: 0.5s all ease-out;
                 }
                 #button:hover #line{
-                    stroke-dasharray: 85%;
+                    stroke-dasharray: 500;
                     stroke-width: 0.2em;
-                    stroke-dashoffset: -35%;
-                    stroke: ${style.standard.text};
+                    stroke-dashoffset: 0    ;
+                    stroke: ${style.standard.border};
                 }
                 p{
                     text-align:left;
@@ -51,7 +52,7 @@ export const SubMenuButton = ({text,dataKey, setInterestsState,interestsState, s
                 .subMenuButtonContainer{
                     display:flex;
                     flex-direction:column;
-                    align-items:center;
+                    align-items:flex-start;
                     justify-content:flex-start;
                     background-color: Transparent;
                     background-repeat:no-repeat;
