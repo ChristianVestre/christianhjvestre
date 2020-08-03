@@ -29,7 +29,7 @@ export default ({query}) => {
                 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            
+            <div className="border"/>
             <nav id="navBarDesktop" className="navBarDesktop">
                 <ul className="menuPlacement">
                     <MenuButton page={"/index"} text={christian.menu[language].christian} />
@@ -50,10 +50,9 @@ export default ({query}) => {
                 <img src="christian/Christian.svg" className="noselect" />
             </section>
             <section className="textPlacement">
-                <h2 className="noselect">{christian.text[language].headline}</h2>
-                <p className="noselect">{christian.text[language].content}</p>
+                <h2>{christian.text[language].headline}</h2>
+                <p >{christian.text[language].content}</p>
             </section>
-            <div className="border"/>
             <section className="languageToggleContainer">
                     <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={4} />
             </section>
@@ -75,9 +74,10 @@ export default ({query}) => {
                     .border{
                         position:absolute;
                         height:100vh;
-                        width:80vw;
+                        width:75vw;
                         top:0;
                         right:0;
+                        z-index:-1;
                         border:solid 0.5em ${style.standard.border};
                     }
                     .languageToggleContainer{
@@ -92,7 +92,7 @@ export default ({query}) => {
                         height:100vh;
                         width:100vw;
                         display: grid;
-                        grid-template-columns:1.3fr 2fr 1.7fr ;
+                        grid-template-columns:1.5fr 2fr 1.5fr ;
                         grid-template-rows:repeat(3,1fr);
                         grid-template-areas:
                         'headline headline headline'
@@ -136,7 +136,7 @@ export default ({query}) => {
                         flex-direction:column;
                         margin:0;
                         padding:0;
-                        overflow-y:auto;
+                        overflow-y:scroll;
                         overflow-x:hidden;
 
                     }
@@ -150,7 +150,7 @@ export default ({query}) => {
                     img{
 
                         width:auto;
-                        height:90%;
+                        max-height:90%;
                         bottom:0;
                     }
                     .headlinePlacement{
@@ -181,7 +181,7 @@ export default ({query}) => {
                         color:#535353;
                     }
                     .menuPlacement{
-                        width:100%;
+                        z-index:1;
                     }
                     .navBarDesktop{
                         grid-area:nav;
