@@ -2,22 +2,6 @@
     "items": [
         {
             "no": {
-                "headline": "Master i Teknologiledelse ved det Tekniske Universitetet i München",
-                "text": "En veldig fleksibel master med plenty av spesialiseringsmuligheter, det var hovedgrunnen til at jeg valgte den Jeg valgte å spesialisere meg i  innovasjon og entreprenørskap og  informatikk, som passet mine interesser. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge (se safewAI under arbeid), Economics of innovation, Out of the box, practical approaches to decision making, Cultural analysis og New forms of organising på management siden. Innenfor informatikk tok jeg fag som Software engineering, Blockchain og Cloud Computing.",
-                "logo": "resume/tumlogo",
-                "from": "Fra okt. 18",
-                "to": "Til aug. 20"
-            },
-            "en": {
-                "headline": "Master in Management and Technology at the Technical University of Munich",
-                "text": "A very flexible master with plenty of different opportunities for specialization.The flexibility was the main point that attracted me to the master. I chose to specialize in innovation and entrepreneurship and informatics, which suited my interests. It has been a very good experience with a very good mix of theoretical and practical subjects, with a special focus on high-tech. I have taken subjects such as Tech challenge (see safewAI under work), Economics of innovation, Out of the box, practical approaches to decision making, Cultural analysis and New forms of organizing on the management side. In informatics I took subjects such as Software engineering, Blockchain and Cloud Computing.",
-                "logo": "resume/tumlogo",
-                "from": "From oct. 18",
-                "to": "To aug. 20"
-            }
-        },
-        {
-            "no": {
                 "headline": "Freelancearbeid ved siden av studiene hos CamperBoys",
                 "text": "CamperBoys er en Campervanutleier start-up grunnlagt i 2018 av et par venner av meg, som holder til på Flyplassen i Munchen. Jeg utviklet en prototype av en reiseruteapp (se Camperboys reiseapp under arbeid). Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med gode resultater og en investerings avkasting på 20x. Mens jeg jobbet der vant vi den tyske turistforeningens innovasjonspris for startups “Springbrett” i 2019 og vi tok del i LMU universitetet i Munchen sin startup accelerator, sammen med en masse andre kult ting. ",
                 "logo": "resume/camperboyslogo",
@@ -98,6 +82,38 @@
         },
         {
             "no": {
+                "headline": "Sommerjobb hos Direktoratet for Forvaltning og IKT i Oslo (Digitaliseringsdirektoratet)",
+                "text": "Jeg var sommervikar i Difi sommerne 12,13, 15 og 16. Det første året jobbet jeg med å gjøre istand arkivet og sortere alle publikasjonene Difi har gitt ut. De andre årene jobbet jeg i anskaffelsesavdelingen med å lage rapporter med statistikker over offentlige innkjøpsvaner.",
+                "logo": "resume/difilogo",
+                "from": "Fra jun. 12",
+                "to": "Til aug. 16"
+            },
+            "en": {
+                "headline": "Summer internship at the Agency for Public Administration and IT",
+                "text": "I was a summer intern at Difi in the summers of 12, 13, 15 and 16. The first year I worked on reorganising the archive and sorting all of Difis’ publications. The other years I worked in the procurement department making statistical reports on public procurement habits.",
+                "logo": "resume/difilogo",
+                "from": "From jun. 12",
+                "to": "To aug. 16"
+            }
+        },
+        {
+            "no": {
+                "headline": "Master i Teknologiledelse ved det Tekniske Universitetet i München",
+                "text": "En veldig fleksibel master med plenty av spesialiseringsmuligheter, det var hovedgrunnen til at jeg valgte den Jeg valgte å spesialisere meg i  innovasjon og entreprenørskap og  informatikk, som passet mine interesser. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge (se safewAI under arbeid), Economics of innovation, Out of the box, practical approaches to decision making, Cultural analysis og New forms of organising på management siden. Innenfor informatikk tok jeg fag som Software engineering, Blockchain og Cloud Computing.",
+                "logo": "resume/tumlogo",
+                "from": "Fra okt. 18",
+                "to": "Til aug. 20"
+            },
+            "en": {
+                "headline": "Master in Management and Technology at the Technical University of Munich",
+                "text": "A very flexible master with plenty of different opportunities for specialization.The flexibility was the main point that attracted me to the master. I chose to specialize in innovation and entrepreneurship and informatics, which suited my interests. It has been a very good experience with a very good mix of theoretical and practical subjects, with a special focus on high-tech. I have taken subjects such as Tech challenge (see safewAI under work), Economics of innovation, Out of the box, practical approaches to decision making, Cultural analysis and New forms of organizing on the management side. In informatics I took subjects such as Software engineering, Blockchain and Cloud Computing.",
+                "logo": "resume/tumlogo",
+                "from": "From oct. 18",
+                "to": "To aug. 20"
+            }
+        },
+        {
+            "no": {
                 "headline": "Bachelor (3. år) i Samfunnsøkonomi og Ledelse ved Université de Paris 1 Panthéon Sorbonne",
                 "text": "Siste år av bacheloren tok jeg i Paris, jeg byttet universitet fordi det var en utmerket mulighet til å bo i Paris som student. Samtidig ønsket jeg også å ha et annet perspektiv på økonomi enn det veldig matematiske perspektivet de hadde i Toulouse. I Paris hadde jeg fortsatt statistikk og økonometri kurs, men i tillegg hadde jeg fag som økonomisk idehistorie, noe jeg fant veldig interessant. Studiet var fortsatt 100% på fransk, og jeg trivdes veldig godt med det faglige innholdet der.",
                 "logo": "resume/up1logo",
@@ -158,22 +174,6 @@
                 "logo": "resume/ut1logo",
                 "from": "From aug. 12",
                 "to": "Til jun. 13"
-            }
-        },
-        {
-            "no": {
-                "headline": "Sommerjobb hos Direktoratet for Forvaltning og IKT i Oslo",
-                "text": "Jeg var sommervikar hos Difi sommerne 12,13, 15 og 16. Det første året jobbet jeg med å gjøre istand arkivet og sortere alle publikasjonene Difi har gitt ut. De andre årene jobbet jeg i anskaffelsesavdelingen med å lage rapporter med statistikker over offentlige innkjøpsvaner.",
-                "logo": "resume/difilogo",
-                "from": "Fra jun. 12",
-                "to": "Til aug. 16"
-            },
-            "en": {
-                "headline": "Summer internship at the Agency for Public Administration and IT",
-                "text": "I was a summer intern at Difi in the summers of 12, 13, 15 and 16. The first year I worked on reorganising the archive and sorting all of Difis’ publications. The other years I worked in the procurement department making statistical reports on public procurement habits.",
-                "logo": "resume/difilogo",
-                "from": "From jun. 12",
-                "to": "To aug. 16"
             }
         },
         {
@@ -318,6 +318,42 @@
                     {
                         "main": "Dart (Flutter)",
                         "percent":65
+                    }
+                ]
+            }
+        },
+        "software": {
+            "no": {
+                "headline": "Programvare",
+                "content": [
+                    {
+                        "main": "Google analytics",           
+                        "percent": 91
+                    },
+                    {
+                        "main": "Tableau",
+                        "percent": 82
+                    },
+                    {
+                        "main": "Figma",
+                        "percent": 76
+                    }
+                ]
+            },
+            "en": {
+                "headline": "Software",
+                "content": [
+                    {
+                        "main": "Google analytics",           
+                        "percent": 91
+                    },
+                    {
+                        "main": "Tableau",
+                        "percent": 82
+                    },
+                    {
+                        "main": "Figma",
+                        "percent": 76
                     }
                 ]
             }

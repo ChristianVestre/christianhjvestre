@@ -19,8 +19,14 @@ export const SubMenu = ({data,language, handleClick, style}) => {
             })}
             </ul>
             <style jsx>{`
-                h2{display:none}
-
+                h2{
+                    margin:0;
+                    padding:0 0 0 3%;
+                    font-size:1.4em;
+                    font-family: 'Open sans';
+                    font-weight: 600;
+                    color:${style.standard.text}
+                }
                 .subMenuContainer{
                     grid-area:subMenu;
                     display:flex;
@@ -31,7 +37,7 @@ export const SubMenu = ({data,language, handleClick, style}) => {
                 .subMenuGrid{
                     margin:0;
                     padding:0;
-                    height:18vh;
+                    height:14vh;
                     display:grid;
                     padding-left:5%;
                     grid-template-columns:1fr 1fr 1fr 1fr 1fr;

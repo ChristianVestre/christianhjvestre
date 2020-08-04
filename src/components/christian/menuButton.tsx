@@ -67,7 +67,7 @@ export const MenuButton = ({ page, text }) => {
                 padding-top:5vh;
             }
         h3{
-                        font-size:3em;
+                        font-size:1.5em;
                         padding:0;
                         margin:0;
                         font-weight:${page == pathname ? "600" : "300"};

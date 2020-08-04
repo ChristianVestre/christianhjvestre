@@ -8,8 +8,9 @@ export const SkillsContent = ({style,data,language, menu}) => {
     return(
         <aside className="skillsAside">
             <section className="skillsContainer">
-                <SkillsList language={language} dataKey="languages" data={data} style={style} />
+                <SkillsList language={language} dataKey="software" data={data} style={style} />
                 <SkillsList language={language} dataKey="programming" data={data} style={style} />
+                <SkillsList language={language} dataKey="languages" data={data} style={style} />
             </section>
             <ReadMoreButton language={language} style={style} open={open} closedSize={"15em"} setOpenState={setOpenState} menu={menu} type="see" />
             <style jsx>{`

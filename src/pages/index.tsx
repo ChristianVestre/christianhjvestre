@@ -29,7 +29,6 @@ export default ({query}) => {
                 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            <div className="border"/>
             <nav id="navBarDesktop" className="navBarDesktop">
                 <ul className="menuPlacement">
                     <MenuButton page={"/index"} text={christian.menu[language].christian} />
@@ -53,6 +52,13 @@ export default ({query}) => {
                 <h2>{christian.text[language].headline}</h2>
                 <p >{christian.text[language].content}</p>
             </section>
+            <nav>
+                <ul>
+                    <li>{christian.text[language].textLinks.work}</li>
+                    <li>{christian.text[language].textLinks.resume}</li>
+                    <li>{christian.text[language].textLinks.interests}</li>
+                </ul>
+            </nav>
             <section className="languageToggleContainer">
                     <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={4} />
             </section>
@@ -69,17 +75,8 @@ export default ({query}) => {
                 }
             <style jsx>{`
 
-                    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500;600&display=swap');
                     #navBarMobile { display: none; }
-                    .border{
-                        position:absolute;
-                        height:100vh;
-                        width:75vw;
-                        top:0;
-                        right:0;
-                        z-index:-1;
-                        border:solid 0.5em ${style.standard.border};
-                    }
                     .languageToggleContainer{
                         position:absolute;
                         top:1vh;
@@ -92,12 +89,12 @@ export default ({query}) => {
                         height:100vh;
                         width:100vw;
                         display: grid;
-                        grid-template-columns:1.5fr 2fr 1.5fr ;
+                        grid-template-columns:1fr 2fr 2fr ;
                         grid-template-rows:repeat(3,1fr);
                         grid-template-areas:
-                        'headline headline headline'
+                        'nav headline headline'
                         'nav img text'
-                        'nav img text';
+                        'nav img textnav';
                     }
                     .noselect{
                         -webkit-touch-callout: none; /* iOS Safari */
@@ -115,14 +112,14 @@ export default ({query}) => {
                     }
                     p{
                         width:60%;
-                        font-size:1.4em;
+                        font-size:1em;
                         white-space: pre-line;
                         margin:0;
                         padding:0;
                         color:#535353;
                     }
                     h2{
-                        font-size:5em;
+                        font-size:4em;
                         padding:0;
                         margin:0;
                         text-align:center;
@@ -131,13 +128,14 @@ export default ({query}) => {
                     .textPlacement{
                         grid-area:text;
                         display:flex;
-                        align-items:center;
+                        align-items:flex-start;
                         justify-content:flex-start;
                         flex-direction:column;
                         margin:0;
                         padding:0;
                         overflow-y:scroll;
                         overflow-x:hidden;
+                        padding-bottom:0.5em;
 
                     }
                     .imageContainer{
@@ -146,6 +144,7 @@ export default ({query}) => {
                         display:flex;
                         align-items:flex-end;
                         justify-content:center;
+                        padding-bottom:0.5em;
                     }
                     img{
 
@@ -157,16 +156,16 @@ export default ({query}) => {
                         grid-area:headline;
                         display:flex;
                         align-content:center;
-                        justify-content:center;
+                        justify-content:flex-start;
+                        margin-top:5%;
                         
                     }
                     h1{
                         padding:0;
                         margin:0;
-                        font-size:8em;
-                        max-width:4em;
+                        font-size:7em;
                         font-family: 'Work Sans', sans-serif;
-                        font-weight:100;
+                        font-weight:500;
                         text-decoration:underline;
                         text-decoration-color: #535353;
                         color:#535353;
@@ -197,8 +196,7 @@ export default ({query}) => {
                         .navBarDesktop{
                             grid-area: navmenu;
                             justify-content:center;
-
-                         }
+                        }
                         .menuPlacement{
                             margin:0;
                             padding:0;
@@ -211,9 +209,6 @@ export default ({query}) => {
                         }
                         #headlinePlacement{display:none;}
                         .languageToggleContainer{display:none;}
-                        .border{
-                            display:none;
-                        }
                         .gridContainer{
                             height:auto;
                             width:100vw;
