@@ -49,13 +49,13 @@ export const InterestsContainer = ({style, content}) => {
                     display:grid;
                     justify-content:space-between;
                     align-items:center;
-                    height:59vh;
+                    height:100%;
                     width:90%;
                     border: solid 0.5em ${style.standard.border};
                     margin:0 5% 0 5%;
                     padding:0 5%;
                     grid-template-columns:1.2fr 0.8fr;
-                    grid-template-rows: 2fr;
+                    grid-template-rows: 1fr;
                     grid-template-areas:
                     'text img'
                 }

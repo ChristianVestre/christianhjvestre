@@ -8,11 +8,17 @@ import React from "react";
 import { DrawerContent } from "../components/shared/drawerContent";
 import { MobileBurgerMenu } from "../components/shared/mobileBurgerMenu";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export default ({query}) => {
     const [{ christian,menu, language }, setDataState] = useContext(DataContext) as any;
     const [{ style, randomeImageNumber},setUiState] = useContext(UiContext) as any;
     const [drawerState,setDrawerState] = useState(false)
+    const router = useRouter()
+    const handleClick = (page) => {
+        router.push(page, page == "/index" ? "/" : page)
+    }
+
     let isMobile =typeof document != 'undefined' ? window.matchMedia('(max-width: 760px)').matches: false;
     const DrawerImageArray = ["christian/Christian.svg", "christian/ChristianReading.svg", "christian/ChristianResume.svg", "christian/ChristianStudying.svg"]
     const handleDrawerOpen = () => {
@@ -51,14 +57,15 @@ export default ({query}) => {
             <section className="textPlacement">
                 <h2>{christian.text[language].headline}</h2>
                 <p >{christian.text[language].content}</p>
+                <nav>
+                    <ul>
+                        <li className="listButton" onClick={() => handleClick("/work")}><p>{christian.text[language].textLinks.work}</p></li>
+                        <li className="listButton" onClick={() => handleClick("/resume")}><p>{christian.text[language].textLinks.resume}</p></li>
+                        <li className="listButton" onClick={() => handleClick("/interests")}><p>{christian.text[language].textLinks.interests}</p></li>
+                    </ul>
+                </nav>
             </section>
-            <nav>
-                <ul>
-                    <li>{christian.text[language].textLinks.work}</li>
-                    <li>{christian.text[language].textLinks.resume}</li>
-                    <li>{christian.text[language].textLinks.interests}</li>
-                </ul>
-            </nav>
+
             <section className="languageToggleContainer">
                     <LanguageToggle setDataState={setDataState} language={language} style={style} fontSize={4} />
             </section>
@@ -77,6 +84,28 @@ export default ({query}) => {
 
                     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500;600&display=swap');
                     #navBarMobile { display: none; }
+                    ul{
+                        list-style-type: none;
+                    }
+                    .listButton{
+                        display:flex;
+                        flex-direction:row;
+                        cursor:pointer;
+                        font-size:1.1em;
+                        font-family: 'Work Sans', sans-serif;
+                        font-weight:600;
+                        margin-top:5%;
+                        color:${style.standard.text};
+                    }
+                    .listButton:before{
+                        display: block;
+                        content: ' ';
+                        background-image: url('./Arrow.svg');
+                        background-size: 28px 28px;
+                        height: 28px;
+                        width: 28px;
+                        margin-right:1em;
+                    }
                     .languageToggleContainer{
                         position:absolute;
                         top:1vh;
@@ -90,11 +119,11 @@ export default ({query}) => {
                         width:100vw;
                         display: grid;
                         grid-template-columns:1fr 2fr 2fr ;
-                        grid-template-rows:repeat(3,1fr);
+                        grid-template-rows:repeat(3,auto);
                         grid-template-areas:
                         'nav headline headline'
                         'nav img text'
-                        'nav img textnav';
+                        'nav img text';
                     }
                     .noselect{
                         -webkit-touch-callout: none; /* iOS Safari */
@@ -135,7 +164,7 @@ export default ({query}) => {
                         padding:0;
                         overflow-y:scroll;
                         overflow-x:hidden;
-                        padding-bottom:0.5em;
+                        padding-top:20%;
 
                     }
                     .imageContainer{
@@ -144,7 +173,6 @@ export default ({query}) => {
                         display:flex;
                         align-items:flex-end;
                         justify-content:center;
-                        padding-bottom:0.5em;
                     }
                     img{
 
@@ -193,9 +221,30 @@ export default ({query}) => {
                     }
 
                     @media only screen and (max-width: 760px) {
+                        ul{
+                            position:relative;
+                            margin:auto;
+                            padding-top:3%;
+                            
+                        }
+                        .listButton{
+                            width:80%;
+                            font-size:0.9em;
+                            margin-left:2%;
+                            margin-top:5%;
+                        }
+                        
+                        .listButton:before{
+                            display: block;
+                            content: ' ';
+                            background-image: url('./Arrow.svg');
+                            background-size: 20px 20px;
+                            height: 20px;
+                            width: 20px;
+                            margin-right:2em;
+                        }
                         .navBarDesktop{
-                            grid-area: navmenu;
-                            justify-content:center;
+                            display:none;
                         }
                         .menuPlacement{
                             margin:0;
@@ -214,11 +263,10 @@ export default ({query}) => {
                             width:100vw;
                             display: grid;
                             grid-template-columns:1fr;
-                            grid-template-rows:0.2fr 1fr auto ;
+                            grid-template-rows:0.1fr 1fr auto ;
                             grid-template-areas:
                             'nav'
                             'text'
-                            'navmenu'
                             'img';
                         }
                         
@@ -255,6 +303,7 @@ export default ({query}) => {
                             color:#535353;
                         }
                         .textPlacement{
+                            padding-top:0;
                             grid-area:text;
                             display:flex;
                             flex-direction:column;

@@ -36,7 +36,7 @@ export const MenuRowButton = ({page,text}) => {
             .contentSection{
                 display:flex;
                 flex-direction:row;
-                padding-right:5em;
+                padding:0 5%;
                 cursor:pointer;
                 margin-top:8vh;
             }

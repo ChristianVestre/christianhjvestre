@@ -17,11 +17,11 @@
         "no":
         {
             "headline":"Hei!",
-            "content":"Christian her. Dette er min personlige nettside, laget for å leke med nye teknologier og vise frem ting jeg har gjort.\n\nJeg er i slutten av 20 årene og har bodd de siste årene i utlandet. Senest i Tyskland men tidligere også i Frankrike, hvor jeg har både tatt utdanning og jobbet.  Jeg elsker å reise, lære språk og utforske verden. Samtidig digger jeg å sitte inne og mekke på ting og funne ut av hvordan det funker.\n\nPå denne nettsiden finner du en portefølje av arbeid jeg har gjort, mitt resumé og litt om forskjellige faglige interesser jeg har.",
+            "content":"Christian her. Jeg er entusiastisk rundt innovasjon, entreprenørskap og data. Dette er min personlige nettside, laget for å leke med nye teknologier og vise frem ting jeg har gjort.\n\nJeg digger å sitte inne og mekke på data og finne ut av hvordan det funker. Når jeg ikke sitter inne på pcen finner du meg ute på reise eller i ferd med å lære meg et nytt språk.\n\nUnder finner du lenker til de forskjellige tingene nettsiden har å by på:",
             "textLinks":{
-                "work":"Sjekk ut prosjekter jeg har jobbet med!",
-                "resume":"Ta en titt på CVen min!",
-                "interests":"Få et innblikk inn i andre interesser jeg har"
+                "work":"Sjekk ut prosjekter jeg har jobbet med",
+                "resume":"Ta en titt på CVen min",
+                "interests":"Få et innblikk hva annet som intereserer meg"
             }
         },
         "en":{
@@ -30,7 +30,7 @@
             "textLinks":{
                 "work":"Have a look into projects I've worked on!",
                 "resume":"Check out my resume!",
-                "interests":"See other interests I have"
+                "interests":"See what other interests I have"
             }
         }
     }

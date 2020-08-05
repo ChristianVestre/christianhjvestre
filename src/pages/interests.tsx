@@ -53,11 +53,11 @@ export default () => {
         
         <style jsx>{`
             .gridContainer{
-                width:100%;
-                height:100%;
+                width:100vw;
+                height:100vh;
                 display:grid;
                 grid-template-columns:1fr;
-                grid-template-rows:0.3fr 0.1fr 0.6fr;
+                grid-template-rows:25% 15% 60%;
                 grid-template-areas:
                 'nav'
                 'subMenu'
