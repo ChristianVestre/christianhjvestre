@@ -159,7 +159,7 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                     width:24vw;
                     padding:0;
                     margin:0;
-                    font-size:1.4em;
+                    font-size:1em;
                     white-space: pre-line;
                     color:${style.standard.text};
                     font-family:'Open sans'

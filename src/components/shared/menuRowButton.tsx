@@ -29,6 +29,7 @@ export const MenuRowButton = ({page,text}) => {
             .buttonContainer{
                 display:flex;
                 flex-direction:column;
+                width:auto;
             }
             .buttonContainer:nth-last-child(1){
                 padding:0;
@@ -36,7 +37,6 @@ export const MenuRowButton = ({page,text}) => {
             .contentSection{
                 display:flex;
                 flex-direction:row;
-                padding:0 5%;
                 cursor:pointer;
                 margin-top:8vh;
             }

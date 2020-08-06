@@ -3,11 +3,11 @@
 import { SubMenuButton } from "./subMenuButton"
 import { useState } from "react"
 
-export const SubMenu = ({data,language, handleClick, style}) => {
+export const SubMenu = ({data,language, handleClick, style, menu}) => {
 
     return(
         <nav className="subMenuContainer">
-            <h2>Quick navigation</h2>
+            <h2>{menu[language].quickNavigation}</h2>
             <ul className="subMenuGrid">
             {data.map((d, i) => {
                 return <SubMenuButton

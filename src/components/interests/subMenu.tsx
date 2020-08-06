@@ -30,7 +30,7 @@ export const SubMenu = ({subMenu, setInterestsState, interestsState, style}) => 
 
                 @media only screen and (max-width: 760px) {
                     .subMenuContainer{
-                        width:100%;
+                        width:90%;
                         height:100%;
                         display:grid;
                         grid-template-columns:1fr 1fr;

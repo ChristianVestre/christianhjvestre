@@ -5,7 +5,7 @@ export const ImageContainer = ({src}) => (
             div{
                 display:flex;
                 justify-content:center;
-                width:20vw;
+                width:20%;
             }
             img{
                 margin:0;

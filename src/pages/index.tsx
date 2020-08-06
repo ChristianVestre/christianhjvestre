@@ -177,7 +177,7 @@ export default ({query}) => {
                     img{
 
                         width:auto;
-                        max-height:90%;
+                        max-height:75%;
                         bottom:0;
                     }
                     .headlinePlacement{

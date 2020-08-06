@@ -51,7 +51,7 @@ export default () => {
                 <LanguageToggle setDataState={setDataState} style={style} language={language} fontSize={4} />
             </div>
             <MobileNavBar style={style} language={language} setDataState={setDataState} handleDrawerOpen={handleDrawerOpen} refKey={topMRef}></MobileNavBar>
-            <SubMenu data={work} language={language} handleClick={handleClick} style={style} />
+            <SubMenu data={work} language={language} handleClick={handleClick} style={style} menu={menu}/>
             {work.map((d, i) => {
                 return <WorkExhibit key={i} index={i} language={language} menu={menu} style={style} data={d[language]} refKey={refs[d[language].headline]} />
             })}

@@ -52,8 +52,9 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     grid-area:headline;
                     display:flex;
                     justify-content:flex-start;
-                    padding: 3% 0 3% 5%;
+                    padding: 5% 0 3.5% 5%;
                     width:100%;
+                    align-items:flex-end;
                 }
                 .textSection{
                     grid-area:text;
@@ -137,7 +138,6 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                     margin:0;
                     padding:0;
                     width:80%;
-                    grid-template-rows:repeat(5, auto);
                 }
                 @media only screen and (max-width: 760px) {
                     #more{

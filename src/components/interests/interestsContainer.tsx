@@ -25,18 +25,17 @@ export const InterestsContainer = ({style, content}) => {
                     text-align: left;
                     text-justify: inter-word;
                     white-space: pre-line;
-                    font-size:1.2em;
+                    font-size:1em;
                 } 
                 h3{
                     font-size:2em;
                     margin:0;
-                    padding:0;
+                    padding:0 0 5% 0;
                 }
                 img{
                     max-height:100%;
                 }
                 .imgContainer{
-                    grid-area:img;
                     width:100%;
                     height:90%;
                     overflow:hidden;
@@ -46,7 +45,7 @@ export const InterestsContainer = ({style, content}) => {
                 }
                 .interestsContainer{
                     grid-area:interestsContainer;
-                    display:grid;
+                    display:flex;
                     justify-content:space-between;
                     align-items:center;
                     height:100%;
@@ -54,21 +53,15 @@ export const InterestsContainer = ({style, content}) => {
                     border: solid 0.5em ${style.standard.border};
                     margin:0 5% 0 5%;
                     padding:0 5%;
-                    grid-template-columns:1.2fr 0.8fr;
-                    grid-template-rows: 1fr;
-                    grid-template-areas:
-                    'text img'
+
                 }
                 @media only screen and (max-width: 760px) {
                     .interestsContainer{
                         width:100%;
                         height:100%;
                         margin:5% 0 0 0;
-                        grid-template-columns:1fr;
-                        grid-template-rows: 1.5fr 0.5fr;
-                        grid-template-areas:
-                        'text'
-                        'img'  
+                        display:flex;
+                        flex-direction:column;
                     }
                     .textContainer{
                         width:100%;
@@ -76,6 +69,7 @@ export const InterestsContainer = ({style, content}) => {
                     }
                     h3{
                         font-size:1.3em;
+                        padding: 5% 0 5% 0;
                     }
                     img{
 
@@ -85,7 +79,6 @@ export const InterestsContainer = ({style, content}) => {
                         font-size:0.9em;
                     }
                     .imgContainer{
-                    grid-area:img;
                     width:100%;
                     height:auto;
                 }
