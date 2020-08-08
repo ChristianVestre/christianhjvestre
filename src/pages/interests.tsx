@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import sizes from 'react-sizes';
-import { UiContextProvider, UiContext } from '../context/uiContext';
-import { DataContextProvider, DataContext } from '../context/dataContext';
+import { UiContext } from '../context/uiContext';
+import { DataContext } from '../context/dataContext';
 import { useContext, useState, useRef } from 'react';
 import { MenuRow } from '../components/shared/menuRow';
 import { LanguageToggle } from '../components/shared/languageToggle';
@@ -11,6 +10,10 @@ import React from 'react';
 import { SwipeableDrawer } from '@material-ui/core';
 import { DrawerContent } from '../components/shared/drawerContent';
 import { MobileNavBar } from '../components/shared/mobileNavBar';
+
+
+
+
 export default () => {
     
     const [{interests, menu,language},setDataState] = useContext(DataContext) as any;
@@ -101,22 +104,22 @@ export default () => {
             <style jsx global>{`
         html,
         body {
-          padding: 0;
-          margin: 0;
-          height:100%;
-          width:100%;
-          scrollbar-width: thin;
-          scrollbar-color: ${style.standard.border} white;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+            padding: 0;
+            margin: 0;
+            height:100%;
+            width:100%;
+            scrollbar-width: thin;
+            scrollbar-color: ${style.standard.border} white;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+                Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+                sans-serif;
         }
 
         * {
-          box-sizing: border-box;
+            box-sizing: border-box;
         }
-      `}</style>
-        </div>
+    `}</style>
+    </div>
     )
 }
 

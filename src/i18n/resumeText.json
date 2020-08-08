@@ -3,7 +3,7 @@
         {
             "no": {
                 "headline": "Freelancearbeid ved siden av studiene hos CamperBoys",
-                "text": "CamperBoys leier ut Campingbiler i München-området. Jeg jobbet for de mens jeg studerte, med både markedsføring og koding. Blant annet utviklet en prototype av en reiseapp (se Reiseapp under arbeid), og en CMS webapp. Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med en investerings avkasting på 20x. Mens jeg jobbet der vant vi den tyske turistforeningens innovasjonspris for startups “Springbrett” i 2019, tok del i LMU universitetet i Munchen sin startup accelerator, og fikk et gründerstipendium gjennom \"Medialab\".",
+                "text": "CamperBoys leier ut Campingbiler i München-området. Mens jeg tok mastergraden jobbet jeg for de med både markedsføring og koding. Blant annet utviklet en prototype av en reiseapp (se Reiseapp under prosjekter), og en CMS webapp (se Content managment system under prosjekter). Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med en avkasting på 20x. Som følge av arbeidet vi gjorde med reiseappen vant vi den tyske turistforeningens innovasjonspris for Start Ups “Springbrett” i 2019. Vi tok også del i LMU universitetet i Munchen sin Start Up accelerator, og fikk et gründerstipendium gjennom “Medialab”.",
                 "logo": "resume/camperboyslogo",
                 "from": "Fra okt. 18",
                 "to": "Til jan. 20"
@@ -19,7 +19,7 @@
         {
             "no": {
                 "headline": "Junior Data Analytiker hos Holidu",
-                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet, hovedsakelig med dataanalyse relatert til markedsføring (Google Analytics, Tablau SQL, Kibana). Arbeidsoppgaver gikk ut på forberedelse og analyse av brukerdata, utvikling av data science algoritmer for forecasting og clustering, samt enklere programmeringsoppgaver. I tillegg arbeidet jeg innimellom på prosjekter som product manager og som designer(se Markedsføringsverktøy under arbeid)",
+                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet, hovedsakelig med analyseoppgaver relatert til markedsføring (Google Analytics, Tablau SQL, Kibana). Arbeidsoppgaver gikk ut på forberedelse og analyse av brukerdata, utvikling av data science algoritmer for forecasting og clustering, samt enklere programmeringsoppgaver. I tillegg arbeidet jeg på prosjekter som product manager og som designer(se Markedsføringsverktøy under prosjekter)",
                 "logo": "resume/holidulogo",
                 "from": "Fra aug. 17",
                 "to": "Til okt. 18"
@@ -99,7 +99,7 @@
         {
             "no": {
                 "headline": "Master i Teknologiledelse ved det Tekniske Universitetet i München",
-                "text": "Jeg har spesialiseringene innovasjon og entreprenørskap og  informatikk. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge (se safewAI under arbeid), og lært mye om empirisk forskningsmetodikk, design thinking, lean startup, agile development og data-drevne beslutninger.",
+                "text": "Jeg har spesialisert meg innenfor innovasjon og entreprenørskap og  informatikk. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge (se safewAI under prosjekter), og lært mye om empirisk forskningsmetodikk, design thinking, lean startup, agile development og data-drevne beslutninger, etnografi og organisasjonsdesign.",
                 "logo": "resume/tumlogo",
                 "from": "Fra okt. 18",
                 "to": "Til aug. 20"

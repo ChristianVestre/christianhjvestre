@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import sizes from 'react-sizes';
-import { UiContextProvider, UiContext } from '../context/uiContext';
-import { DataContextProvider, DataContext } from '../context/dataContext';
+import { UiContext } from '../context/uiContext';
+import { DataContext } from '../context/dataContext';
 import { useContext, useRef, useState, Ref } from 'react';
 import { MenuRow } from '../components/shared/menuRow';
 import { LanguageToggle } from '../components/shared/languageToggle';

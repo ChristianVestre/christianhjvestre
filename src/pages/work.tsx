@@ -1,5 +1,5 @@
 import { LanguageToggle } from "../components/shared/languageToggle"
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { DataContext } from "../context/dataContext";
 import { MenuRow } from "../components/shared/menuRow";
 import { UiContext } from "../context/uiContext";
