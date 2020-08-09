@@ -32,7 +32,6 @@ export default ({query}) => {
             <Head>
                 <title>Christian Vestre</title>
                 <link rel="icon" href="/ansikt.svg" />
-                <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
             <nav id="navBarDesktop" className="navBarDesktop">

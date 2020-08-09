@@ -3,7 +3,7 @@
         {
             "no": {
                 "headline": "Freelancearbeid ved siden av studiene hos CamperBoys",
-                "text": "CamperBoys leier ut Campingbiler i München-området. Mens jeg tok mastergraden jobbet jeg for de med både markedsføring og koding. Blant annet utviklet en prototype av en reiseapp (se Reiseapp under prosjekter), og en CMS webapp (se Content managment system under prosjekter). Videre satt jeg opp og styrte deres søkemaskinsoptimering med fokus på Google Ads og Facebook, med en avkasting på 20x. Som følge av arbeidet vi gjorde med reiseappen vant vi den tyske turistforeningens innovasjonspris for Start Ups “Springbrett” i 2019. Vi tok også del i LMU universitetet i Munchen sin Start Up accelerator, og fikk et gründerstipendium gjennom “Medialab”.",
+                "text": "CamperBoys er en Start Up som leier ut Campingbiler i München-området. Mens jeg tok mastergraden min jobbet jeg for de både med markedsføring og med koding. Blant annet utviklet en reiseapp (se Reiseapp under prosjekter), og et CMS (se Content management system under prosjekter). Videre satte jeg opp og styrte deres online markedsføring, med en avkasting på 20x. Som følge av arbeidet vi gjorde med reiseappen vant vi den tyske turistforeningens innovasjonspris for Start Ups “Springbrett” i 2019. Vi tok også del i LMU universitetet i Munchen sin Start Up accelerator, og fikk et gründerstipendium gjennom “Medialab”.",
                 "logo": "resume/camperboyslogo",
                 "from": "Fra okt. 18",
                 "to": "Til jan. 20"
@@ -18,14 +18,14 @@
         },
         {
             "no": {
-                "headline": "Junior Data Analytiker hos Holidu",
-                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. Basert i Munchen, de startet i 2014 og har nå over 200 ansatte. Jeg jobbet i Business Intelligence teamet, hovedsakelig med analyseoppgaver relatert til markedsføring (Google Analytics, Tablau SQL, Kibana). Arbeidsoppgaver gikk ut på forberedelse og analyse av brukerdata, utvikling av data science algoritmer for forecasting og clustering, samt enklere programmeringsoppgaver. I tillegg arbeidet jeg på prosjekter som product manager og som designer(se Markedsføringsverktøy under prosjekter)",
+                "headline": "Data Analytiker hos Holidu",
+                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. De startet i 2014, har nå over 200 ansatte og er basert i München. Jeg jobbet som analytiker, hovedsakelig med analyseoppgaver relatert til markedsføring (Google Analytics, Tableau SQL, Kibana). Typiske arbeidsoppgaver gikk ut på ting som forberedelse og analyse av brukerdata, utvikling av data science algoritmer for forecasting og clustering, samt enklere programmeringsoppgaver. I tillegg arbeidet jeg på prosjekter som product manager og som designer(se Markedsføringsverktøy under prosjekter).",
                 "logo": "resume/holidulogo",
                 "from": "Fra aug. 17",
                 "to": "Til okt. 18"
             },
             "en": {
-                "headline": "Junior Data Analyst at Holidu",
+                "headline": "Data Analyst at Holidu",
                 "text": "Holidu is a search engine for vacation rentals and one of the fastest growing startups in Germany. Based in Munich, they started in 2014 and now have over 200 employees. I worked in the Business Intelligence team, mostly on topics related with marketing. Some examples of tasks that I was charged with: preparing data requested from others, developing algorithms to predict future value and demand for products, as well as simple programming tasks. Once in a while I also worked on projects as product manager and as designer (see Holidu marketing tools under work)",
                 "logo": "resume/holidulogo",
                 "from": "From aug. 17",
@@ -34,14 +34,14 @@
         },
         {
             "no": {
-                "headline": "Junior Online Marketing Manager for det Nordiske Markedet hos Holidu",
-                "text": "Jeg jobbet i marketsføringsteamet hos Holidu, hvor jeg var ansvarlig for å styre  søkemotormarkedsføringen så vell som displaymarketsføringen for Norge, Sverige og Storbritannia. Det involverte mye manuelt arbeid, særlig excel analyser som jeg i stor del automatiserte. I tillegg laget jeg jevnlig analyser basert på Google Analytics data så vel som egeninnsamlet brukerdata.",
+                "headline": "Online Marketing Manager for det Nordiske Markedet hos Holidu",
+                "text": "Jeg jobbet i marketsføringsteamet hos Holidu, hvor jeg var ansvarlig for å styre  søkemotormarkedsføringen så vell som displaymarketsføringen for Norge, Sverige og Storbritannia. En annen stor del av mine oppgaver var å kode scripts og makroer for å automatisere tidkrevende excel arbeider, og innhente data fra APIer.",
                 "logo": "resume/holidulogo",
                 "from": "Fra apr. 17",
                 "to": "Til jul. 17"
             },
             "en": {
-                "headline": "Junior Online Marketing Manager for the Nordics at Holidu",
+                "headline": "Online Marketing Manager for the Nordics at Holidu",
                 "text": "I worked in the marketing team at Holidu, where I was responsible for managing the SEA and SEO, as well as the display marketing for Norway, Sweden and the UK. It involved a lot of manual work, especially excel work that I took the initiative to automate.",
                 "logo": "resume/holidulogo",
                 "from": "Fra apr. 17",
@@ -51,7 +51,7 @@
         {
             "no": {
                 "headline": "Norsk Country Manager praktikant hos Holidu",
-                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å automatisere en rekke tidkrevende prosesser.",
+                "text": "Jeg ble ansatt hos Holidu GmbH i München for å starte deres norske nettside. Det medbar å være ansvarlig for oversettelse av nettsiden, kontakte potensielle norske partnere for å samarbeide og å sette opp online markedsføringen, både SEO og SEA. I løpet av de seks månedene oppholdet varte tok jeg også initiativ til å starte med en rekke automatiseringsarbeider.",
                 "logo": "resume/holidulogo",
                 "from": "Fra okt. 16",
                 "to": "Til mar. 17"
@@ -99,7 +99,7 @@
         {
             "no": {
                 "headline": "Master i Teknologiledelse ved det Tekniske Universitetet i München",
-                "text": "Jeg har spesialisert meg innenfor innovasjon og entreprenørskap og  informatikk. Det har vært en veldig god opplevelse med en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg har tatt fag slik som Tech challenge (se safewAI under prosjekter), og lært mye om empirisk forskningsmetodikk, design thinking, lean startup, agile development og data-drevne beslutninger, etnografi og organisasjonsdesign.",
+                "text": "Jeg har spesialisert meg innenfor innovasjon og entreprenørskap og  informatikk. Studiet har var en veldig god blanding av teoretiske og praktiske fag, med særlig fokus innenfor high-tech. Jeg tok fag som Tech challenge (se safewAI under prosjekter), og lært mye om empirisk forskningsmetodikk, innovasjon, design thinking, lean startup, agile development, data-drevne beslutninger, etnografi og organisasjonsdesig på managment siden. Innenfor informatikk har jeg lært om blockchain, cloud computing og AI, samt god IT arkitektur på store og små prosjekter.",
                 "logo": "resume/tumlogo",
                 "from": "Fra okt. 18",
                 "to": "Til aug. 20"
@@ -131,7 +131,7 @@
         {
             "no": {
                 "headline": "Sommerskole ved Copenhagen Business School",
-                "text": "Etter å ha gått et par år på økonomiutdanningen, savnet jeg å lære om mer på kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology, og møtte andre studenter fra hele verden som var samlet der. De to fagene blusset opp interessen min i design og customer research.",
+                "text": "Etter å ha gått et par år på økonomiutdanningen, ønsket jeg å lære om mer kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology. Jeg fikk også kontakt med studenter fra hele verden. De to fagene blusset opp interessen min i design og customer research, og hadde innvirkning på mitt senere valg av master.",
                 "logo": "resume/cbslogo",
                 "from": "Fra jun. 15",
                 "to": "Til aug. 15"
@@ -147,7 +147,7 @@
         {
             "no": {
                 "headline": "Bachelor (1. & 2. år) i Samfunnsøkonomi og Ledelse ved Université de Toulouse 1 Capitole",
-                "text": "Bacheloren jeg gikk på var en del av et norskt program som hjalp norske studenter med å tilpasse seg studier i Frankrike. Siden studieprogrammet var 100% på Fransk, vi fikk også en del ekstra fransktimer. Selve studiet var krevende og veldig matematisk, med matte og statistikkfag hvert semester og veldig matematisk innrettet mikro- og makroøkonomi. Det la grunnlag for en veldig god tallforståelse, noe jeg har dratt god nytte av senere, særlig innenfor kvantitative forskningsmetodikk.",
+                "text": "Siste år av bacheloren tok jeg i Paris, jeg byttet universitet fordi det var en mulighet til å bo i Paris som student. Samtidig ønsket jeg også å ha et annet perspektiv på økonomi enn det veldig matematiske perspektivet jeg hadde fra Toulouse. I Paris hadde jeg fortsatt statistikk og økonometri kurs, men i tillegg hadde jeg fag som økonomisk idehistorie og byråteori. Studiet var fortsatt 100% på fransk.",
                 "logo": "resume/ut1logo",
                 "from": "Fra sep. 13",
                 "to": "Til jun. 15"
