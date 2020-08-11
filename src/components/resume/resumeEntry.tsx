@@ -279,6 +279,16 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                             h3{
                                 font-size:1.4em;
                             }
+                            .resumeEntryContainer{
+                                width:100%;
+                                height:auto;
+                                display:grid;
+                                grid-template-columns:minmax(8ch,1fr) 1fr 1fr 5fr;
+                                grid-template-rows:0.3fr 0.7fr;
+                                grid-template-areas:
+                                'dates graphics logo headline'
+                                'dates graphics logo text'
+                            }
                 }
 
                 }
