@@ -65,6 +65,19 @@ export const SubMenuButton = ({headline, handleClick, style}) => {
                     text-justify:flex-start;    
                 }
                 }
+                @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                        h3{
+                            font-size:2em;
+                        }
+                        .subMenuText{
+                            margin:0;
+                            padding:0;
+                            font-size:1em;
+                            font-family: 'Open sans';
+                            font-weight: 300;
+                            color:${style.standard.text}
+                        }
+                    }
                 `}</style>
         </li>
     )

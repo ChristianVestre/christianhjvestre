@@ -100,6 +100,20 @@ export default () => {
                     display:none;
                 }
             }
+            @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                            .gridContainer{
+                                width:100%;
+                                height:auto;
+                                display:grid;
+                                grid-template-columns:1fr;
+                                grid-template-rows:0.1fr 0.2fr 1fr;
+                                grid-template-areas:
+                                'nav'
+                                'subMenu'
+                                'interestsContainer'
+                            }
+                }
+
             `}</style>
             <style jsx global>{`
         html,

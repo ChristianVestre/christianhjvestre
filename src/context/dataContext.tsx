@@ -9,7 +9,7 @@ const DataContext = React.createContext([{}, () => { }]);
 
 const DataContextProvider = ({children}) => {
     const [data,setDataState] = useState({
-        language:"no",
+        language:"en",
         christian:christianText,
         work:workText,
         menu:menuText,

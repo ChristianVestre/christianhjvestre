@@ -85,7 +85,12 @@ export const MenuRowButton = ({page,text}) => {
                         -ms-user-select: none; /* Internet Explorer/Edge */
                         user-select: none;
                     }
-
+                    @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                        h3{
+                            font-size:2em;
+                        }
+                    }
+        }
             `}</style>
     </li>)
 }

@@ -299,7 +299,14 @@ export const WorkExhibit = ({ data,menu ,style,refKey,index,language }) => {
                         
                     }
                 }
-
+                @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                            .textContainer{
+                                width:55%;
+                            }
+                            p{
+                                width:80%;
+                            }
+                }
                 `}</style>
         </article>
     )

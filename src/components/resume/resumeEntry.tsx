@@ -71,7 +71,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 p{
                     margin:0;
                     padding:0;
-                    font-size:1.2em;
+                    font-size:1.1em;
                     white-space: pre-line;
                     font-family:'Open sans';
                     font-weight:300;
@@ -126,7 +126,7 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 }
                 .resumeEntryContainer{
                     width:100%;
-                    height:50vh;
+                    height:40vh;
                     display:grid;
                     grid-template-columns:1fr 1fr 1fr 5fr;
                     grid-template-rows:0.3fr 0.7fr;
@@ -269,6 +269,18 @@ export const ResumeEntry = ({data,style, language,menu}) => {
                 }
                 
                     }
+                @media only screen and (max-width: 1450px) and (min-width: 760px)  {
+                            p{
+                                font-size:1em;
+                            }
+                            .resumeEntryContainer{
+                                height:auto;
+                            }
+                            h3{
+                                font-size:1.4em;
+                            }
+                }
+
                 }
                 `}</style>
         </article>

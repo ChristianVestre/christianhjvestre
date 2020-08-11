@@ -83,6 +83,15 @@ export const InterestsContainer = ({style, content}) => {
                     height:auto;
                 }
                 }
+                @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                    .interestsContainer{
+                    width:100%;
+                    border: solid 0.5em ${style.standard.border};
+                    padding:0;
+                    margin:0;
+
+                }
+                }
                 `}</style>
         </div>
     )

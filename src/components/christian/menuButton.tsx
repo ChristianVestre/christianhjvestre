@@ -98,6 +98,26 @@ export const MenuButton = ({ page, text }) => {
                             padding:0;
                         }
                     }
+                    @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                        h3{
+                            font-size:0.9em;
+                        }
+                        .selected{
+                            display:${ page === pathname? "block":  "none"};
+                            height:1em;
+                            width:0.1em;
+                            background:${ page === pathname? style.standard.border:  "transparent"};
+                            align-self:center;
+                            margin:0;
+                            margin-right:0.3em;
+                        }
+                        div{
+                            padding-left:1em;
+                        }
+                        .textPlacement{
+                            width:80%;
+                        }
+                    }
             `}</style>
         </li>)
 }

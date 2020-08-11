@@ -174,7 +174,6 @@ export default ({query}) => {
                         justify-content:center;
                     }
                     img{
-
                         width:auto;
                         max-height:75%;
                         bottom:0;
@@ -311,6 +310,8 @@ export default ({query}) => {
                         img{
                             max-width:90%;
                             height:auto;
+                            max-height:none;
+                            padding-top:5%;
                         }
                         .headlinePlacement{
                             position:relative;
@@ -353,7 +354,43 @@ export default ({query}) => {
                             margin:0;
                             font-family: 'Work Sans', sans-serif;
                             color:#535353;
-
+                        }
+                    }
+                        @media only screen and (max-width: 1300px) and (min-width: 760px)  {
+                            img{
+                                max-width:90%;
+                                height:auto;
+                            }
+                            .navBarDesktop{
+                                align-items:flex-start;
+                                justify-content:flex-start;
+                            }
+                            .gridContainer{
+                                height:100vh;
+                                width:100vw;
+                                display: grid;
+                                grid-template-columns:1fr 2fr 2fr ;
+                                grid-template-rows:repeat(3,auto);
+                                grid-template-areas:
+                                'headline headline headline'
+                                'nav img text'
+                                'nav img text';
+                            }
+                            .headlinePlacement{
+                                align-items:center;
+                                justify-content:center;
+                            }
+                            p{
+                                width:80%;
+                                font-size:1em;
+                                white-space: pre-line;
+                                margin:0;
+                                padding:0;
+                                color:#535353;
+                            }
+                            h1{
+                                font-size:5em;
+                            }
                         }
 
                     }
