@@ -3,7 +3,7 @@
         {
             "no": {
                 "headline": "Freelancearbeid ved siden av studiene hos CamperBoys",
-                "text": "CamperBoys er en Start Up som leier ut Campingbiler i München-området. Mens jeg tok mastergraden min jobbet jeg for de både med markedsføring og med koding. Blant annet utviklet en reiseapp (se Reiseapp under prosjekter), og et CMS (se Content management system under prosjekter). Videre satte jeg opp og styrte deres online markedsføring, med en avkasting på 20x. Som følge av arbeidet vi gjorde med reiseappen vant vi den tyske turistforeningens innovasjonspris for Start Ups “Springbrett” i 2019. Vi tok også del i LMU universitetet i Munchen sin Start Up accelerator, og fikk et gründerstipendium gjennom “Medialab”.",
+                "text": "Camperboys er en Startup som leier ut Campingbiler i München-området. Mens jeg tok mastergraden min jobbet jeg for de både med markedsføring og med koding. Blant annet utviklet en reiseapp (se Reiseapp under prosjekter), og et CMS (se Content management system under prosjekter). Videre satte jeg opp og styrte deres online markedsføring, med en avkasting på 20x. Som følge av arbeidet vi gjorde med reiseappen vant vi den tyske turistforeningens innovasjonspris for Startups. Vi tok også del i LMU universitetet i Munchen sin Startup accelerator, og fikk et gründerstipendium gjennom \"Medialab\".",
                 "logo": "resume/camperboyslogo",
                 "from": "Fra okt. 18",
                 "to": "Til jan. 20"
@@ -11,7 +11,7 @@
             "en": {
                 "headline": "Freelance work alongside studies at CamperBoys",
                 "logo": "resume/holidulogo",
-                "text": "CamperBoys is a Campervan rental start-up founded in 2018 by a couple of friends of mine, located at the airport in Munich. For them I developed a prototype of a travel itinerary app (see Camperboy's travel app under work). Additionally, I set up and managed their search engine optimization, focusing mainly on Google Ads and Facebook, with good results and a return of investment of 20x. While I worked there, we won the German Tourist Association's innovation award for startups “Springbrett” in 2019, and we took part in the LMU University and Media Lab startup accelerators.",
+                "text": "CamperBoys is a Startup that rents out Campervans in the Munich area. While taking my master's degree, I worked on both marketing and coding for them. Among other things, I developed a travel app (see Travel app under work), and a CMS (see Content management system under work). Furthermore, I set up and managed their online marketing, with a return on investment of 20x. As a result of the work we did with the travel app, we won the German Tourist Association's innovation award for Startups. We also took part in the LMU University in Munich's Startup accelerator, and received an entrepreneurship stipend through \"Medialab\"",
                 "from": "Fra okt. 18",
                 "to": "Til jan. 20"
             }
@@ -19,14 +19,14 @@
         {
             "no": {
                 "headline": "Data Analytiker hos Holidu",
-                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende startupene i Tyskland. De startet i 2014, har nå over 200 ansatte og er basert i München. Jeg jobbet som analytiker, hovedsakelig med analyseoppgaver relatert til markedsføring (Google Analytics, Tableau SQL, Kibana). Typiske arbeidsoppgaver gikk ut på ting som forberedelse og analyse av brukerdata, utvikling av data science algoritmer for forecasting og clustering, samt enklere programmeringsoppgaver. I tillegg arbeidet jeg på prosjekter som product manager og som designer(se Markedsføringsverktøy under prosjekter).",
+                "text": "Holidu er en søkemotor for ferieboliger og en av de raskest voksende Startupene i Tyskland. De startet i 2014, har nå over 200 ansatte og er basert i München. Jeg jobbet som analytiker, hovedsakelig med analyseoppgaver relatert til markedsføring (Google Analytics, Tableau SQL, Kibana). Typiske arbeidsoppgaver gikk ut på ting som forberedelse og analyse av brukerdata, utvikling av data science algoritmer for forecasting og clustering, samt enklere programmeringsoppgaver. I tillegg arbeidet jeg på prosjekter som product manager og som designer(se Markedsføringsverktøy under prosjekter).",
                 "logo": "resume/holidulogo",
                 "from": "Fra aug. 17",
                 "to": "Til okt. 18"
             },
             "en": {
                 "headline": "Data Analyst at Holidu",
-                "text": "Holidu is a search engine for vacation rentals and one of the fastest growing startups in Germany. Based in Munich, they started in 2014 and now have over 200 employees. I worked in the Business Intelligence team, mostly on topics related with marketing. Some examples of tasks that I was charged with: preparing data requested from others, developing algorithms to predict future value and demand for products, as well as simple programming tasks. Once in a while I also worked on projects as product manager and as designer (see Holidu marketing tools under work)",
+                "text": "Holidu is a search engine for holiday homes and one of the fastest growing startups in Germany. They started in 2014, are based in Munich, and have now over 200 employees. I worked as an analyst, mainly with analytics tasks related to marketing (Google Analytics, Tableau SQL, Kibana. Typical work tasks included preparation and analysis of user data, development of data science algorithms for forecasting and clustering, as well as simpler programming tasks. In addition, I worked on projects as a product manager and as a designer (see Marketing tools under projects).",
                 "logo": "resume/holidulogo",
                 "from": "From aug. 17",
                 "to": "To okt. 18"
@@ -42,7 +42,7 @@
             },
             "en": {
                 "headline": "Online Marketing Manager for the Nordics at Holidu",
-                "text": "I worked in the marketing team at Holidu, where I was responsible for managing the SEA and SEO, as well as the display marketing for Norway, Sweden and the UK. It involved a lot of manual work, especially excel work that I took the initiative to automate.",
+                "text": "I worked in the marketing team at Holidu, where I was responsible for managing the search engine marketing as well as the display marketing for Norway, Sweden and the UK. Another big part of my time was spent coding scripts and macros to automate time consuming excel work, as well as retrieving data from APIs.",
                 "logo": "resume/holidulogo",
                 "from": "Fra apr. 17",
                 "to": "To jul. 17"
@@ -58,7 +58,7 @@
             },
             "en": {
                 "headline": "Norwegian country manager intern at Holidu",
-                "text": "I joined Holidu GmbH in Munich to launch their Norwegian domain. It involved translating the website, contacting potential Norwegian partners to form partnerships and set up online marketing, both SEO and SEA. During the six months stay I also took the initiative to automate a number of time consuming excel processes.",
+                "text": "I was hired by Holidu GmbH in Munich to launch their Norwegian website. It involved being responsible for translations, contacting potential Norwegian partners for potential collaboration and set up online marketing, both SEO and SEA. During the six months I also initiated automation in a number of areas.",
                 "logo": "resume/holidulogo",
                 "from": "From oct. 16",
                 "to": "To mar. 17"
@@ -83,14 +83,14 @@
         {
             "no": {
                 "headline": "Sommerjobb hos Direktoratet for Forvaltning og IKT i Oslo (Digitaliseringsdirektoratet)",
-                "text": "Jeg var sommervikar hos Difi sommerne 12,13, 15 og 16. Alle årene unntatt det første jobbet jeg med å lage statistiske analyser over offentlige innkjøpsvaner i excel. Det første året jobbet jeg i administrasjonsavdelingen i arkivet.",
+                "text": "Jeg var sommervikar hos Difi sommerne 12,13, 15 og 16. Alle årene unntatt det første jobbet jeg med å lage statistiske analyser over offentlige innkjøpsvaner i excel. Det første året jobbet jeg i administrasjonsavdelingen med å organisere arkivet.",
                 "logo": "resume/difilogo",
                 "from": "Fra jun. 12",
                 "to": "Til aug. 16"
             },
             "en": {
                 "headline": "Summer internship at the Agency for Public Administration and IT",
-                "text": "I was a summer intern at Difi in the summers of 12, 13, 15 and 16. The first year I worked on reorganising the archive and sorting all of Difis’ publications. The other years I worked in the procurement department making statistical reports on public procurement habits.",
+                "text": "I was a summer intern at Difi in the summers of 2012, 13, 15 and 16. In all except the first year, I worked on making statistical reports of public purchasing habits in excel. The first year I worked in the administration department reorganizing the archive.",
                 "logo": "resume/difilogo",
                 "from": "From jun. 12",
                 "to": "To aug. 16"
@@ -106,7 +106,7 @@
             },
             "en": {
                 "headline": "Master in Management and Technology at the Technical University of Munich",
-                "text": "A very flexible master with plenty of different opportunities for specialization.The flexibility was the main point that attracted me to the master. I chose to specialize in innovation and entrepreneurship and informatics, which suited my interests. It has been a very good experience with a very good mix of theoretical and practical subjects, with a special focus on high-tech. I have taken subjects such as Tech challenge (see safewAI under work), Economics of innovation, Out of the box, practical approaches to decision making, Cultural analysis and New forms of organizing on the management side. In informatics I took subjects such as Software engineering, Blockchain and Cloud Computing.",
+                "text": "I specialize in innovation and entrepreneurship and informatics. The program has been a very good mix of theoretical and practical subjects, with special focus on high-tech. I took subjects such as Tech challenge (see safewAI under work), and learned a lot about empirical research methodology, innovation, design thinking, lean startup, agile development, data-driven decisions, ethnography and organizational design on the management side. In informatics, I learned about blockchain, cloud computing and AI, as well as good IT architecture for both small and big projects.",
                 "logo": "resume/tumlogo",
                 "from": "From oct. 18",
                 "to": "To aug. 20"
@@ -115,14 +115,14 @@
         {
             "no": {
                 "headline": "Bachelor (3. år) i Samfunnsøkonomi og Ledelse ved Université de Paris 1 Panthéon Sorbonne",
-                "text": "Siste år av bacheloren tok jeg i Paris, jeg byttet universitet fordi det var en mulighet til å bo i Paris som student. Samtidig ønsket jeg også å ha et annet perspektiv på økonomi enn det veldig matematiske perspektivet jeg hadde fra Toulouse. I Paris hadde jeg fortsatt statistikk og økonometri kurs, men i tillegg hadde jeg fag som økonomisk idehistorie. Studiet var fortsatt 100% på fransk.",
+                "text": "Siste år av bacheloren tok jeg i Paris, jeg byttet universitet fordi det var en mulighet til å bo i Paris som student. Samtidig ønsket jeg også å ha et annet perspektiv på økonomi enn det veldig matematiske perspektivet jeg hadde fra Toulouse. I Paris hadde jeg fortsatt statistikk og økonometri kurs, men i tillegg hadde jeg fag som økonomisk idehistorie og byråteori. Studiet var fortsatt 100% på fransk.",
                 "logo": "resume/up1logo",
                 "from": "Fra jun. 16",
                 "to": "Til aug. 16"
             },
             "en": {
                 "headline": "Bachelor (3rd year) in Economics and Management at Université de Paris 1 Panthéon Sorbonne",
-                "text": "I took the last year of my bachelor's degree in Paris. I changed universities because it was an excellent opportunity to live in Paris as a student. At the same time, I also wanted to have a different perspective on economics than the very mathematical perspective they had in Toulouse. In Paris I still had statistics and econometrics courses, but in addition I had subjects such as economic idea history, which I found very interesting. The study was still 100% in French, and I really enjoyed the courses there.",
+                "text": "The last year of my bachelor's I took in Paris, I changed universities because it was an opportunity to live in Paris as a student. At the same time, I also wanted to have a different perspective on economics than the very mathematical one I had in Toulouse. In Paris I still had statistics and econometrics courses, but in addition I had subjects such as history of economic thought and agency theory. The degree was still 100% in French.",
                 "logo": "resume/up1logo",
                 "from": "From jun. 16",
                 "to": "To aug. 16"
@@ -130,15 +130,15 @@
         },
         {
             "no": {
-                "headline": "Sommerskole ved Copenhagen Business School",
-                "text": "Etter å ha gått et par år på økonomiutdanningen, ønsket jeg å lære om mer kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology. Jeg fikk også kontakt med studenter fra hele verden. De to fagene blusset opp interessen min i design og customer research, og hadde innvirkning på mitt senere valg av master.",
+                "headline": "Sommeruniversitetsprogram ved Copenhagen Business School",
+                "text": "Etter å ha gått et par år på økonomiutdanningen, ønsket jeg å lære om mer kvalitative områder. Jeg tok 2 fag i løpet av sommeren, Psychology of decision making og Business anthropology. De to fagene blusset opp interessen min i design og customer research, og hadde innvirkning på mitt senere valg av master.",
                 "logo": "resume/cbslogo",
                 "from": "Fra jun. 15",
                 "to": "Til aug. 15"
             },
             "en": {
-                "headline": "Summerschool at copenhagen business school",
-                "text": "After spending a couple of years doing economics, I missed learning more about qualitative areas. I took 2 subjects over the summer at CBS, Psychology of decision making and Business anthropology, and met other students from all over the world who were gathered there. The two subjects ignited my interest in design and customer research.",
+                "headline": "International Sommer University Program at Copenhagen Business school",
+                "text": "After spending a couple of years doing economics, I wanted to learn about more management. I took 2 subjects during the summer, Psychology of decision making and Business anthropology. The subjects I took ignited my interest in design and customer research, and had an impact when I chose my master's degree.",
                 "logo": "resume/cbslogo",
                 "from": "From jun. 15",
                 "to": "To aug. 15"
@@ -147,14 +147,14 @@
         {
             "no": {
                 "headline": "Bachelor (1. & 2. år) i Samfunnsøkonomi og Ledelse ved Université de Toulouse 1 Capitole",
-                "text": "Siste år av bacheloren tok jeg i Paris, jeg byttet universitet fordi det var en mulighet til å bo i Paris som student. Samtidig ønsket jeg også å ha et annet perspektiv på økonomi enn det veldig matematiske perspektivet jeg hadde fra Toulouse. I Paris hadde jeg fortsatt statistikk og økonometri kurs, men i tillegg hadde jeg fag som økonomisk idehistorie og byråteori. Studiet var fortsatt 100% på fransk.",
+                "text": "Bacheloren jeg gikk på var en del av et norskt program som hjalp norske studenter med å tilpasse seg studier i Frankrike. Siden studieprogrammet var 100% på Fransk, vi fikk også en del ekstra fransktimer. Selve studiet var krevende og veldig matematisk, med matte og statistikkfag hvert semester og veldig matematisk innrettet mikro- og makroøkonomi. Det ga meg god teft rundt tallforståelse, noe jeg har dratt god nytte av senere, særlig innenfor kvantitative forskningsmetodikk.",
                 "logo": "resume/ut1logo",
                 "from": "Fra sep. 13",
                 "to": "Til jun. 15"
             },
             "en": {
                 "headline": "Bachelor (1st & 2nd year) in Economics and Management at Université de Toulouse 1 Capitole",
-                "text": "The bachelor I attended was part of a Norwegian program that helped Norwegian students adapt to study in France. Since the study program was 100% in French, we also got some extra French lessons. The study itself was demanding and very mathematical, with math and statistics subjects each semester and very mathematically oriented micro- and macroeconomics. It laid the foundation for a very good understanding of numbers, something I have benefited from later, especially when doing quantitative research.",
+                "text": "My bachelor's degree was part of a Norwegian program that helped Norwegian students adapt to studies in France. Since the study program was 100% in French, we also got some extra French lessons. The program itself was demanding and very mathematical, with math and statistics subjects each semester and very mathematically oriented micro- and macroeconomics. It laid the foundation for a very good understanding of numbers, something I have benefited from later, especially in quantitative research methodology.",
                 "logo": "resume/ut1logo",
                 "from": "From sep. 13",
                 "to": "To jun. 15"
@@ -163,14 +163,14 @@
         {
             "no": {
                 "headline": "Forbredelsesår til Bachelor i Samfunnsøkonomi og Ledelse",
-                "text": "Vi dro ned til Toulouse og hadde intensivt med franskkurs og mer avansert matematikk og statistikk enn hva vi hadde hatt på videregående skole. Hele året var fylt med ekstrafag for å forberede oss på samfunnsøkonomistudier i Frankrike på fransk.",
+                "text": "Vi startet programmet i Toulouse med intensivt franskkurs og mer avansert matematikk og statistikk enn hva vi hadde hatt på videregående skole. Hele året var fylt med ekstrafag for å forberede oss på samfunnsøkonomistudier i Frankrike på fransk.",
                 "logo": "resume/ut1logo",
                 "from": "Fra aug. 12",
                 "to": "Til jun. 13"
             },
             "en": {
                 "headline": "Preparation year for a bachelor's degree in Economics and Management at Université de Toulouse 1 Capitole",
-                "text": "We went to Toulouse and had an intensive French course and more advanced mathematics and statistics than we had had in high school back in Norway. The whole year was filled with extra subjects to prepare us for economics studies in France in French.",
+                "text": "We started the program in Toulouse with an intensive French course, as well as supplementary mathematics and statistics courses to bring us up to scratch in those subjects. The whole year was filled with extra subjects to prepare us for economics studies in France in French.",
                 "logo": "resume/ut1logo",
                 "from": "From aug. 12",
                 "to": "Til jun. 13"
@@ -179,14 +179,14 @@
         {
             "no": {
                 "headline": "Årsenhet i Fransk på Universitetet i Oslo",
-                "text": "Jeg gjorde det dårlig i Fransk på videregående skole, så da jeg trengte mer tid for å finne ut av hva jeg egentlig ville studere, tok jeg muligheten for å ta en årsenhet i Fransk for å forbedre språket. Studiet innhold språkfag, men også fag som fransk historie og litteratur.",
+                "text": "Jeg gjorde det dårlig i Fransk på videregående skole, så da jeg trengte mer tid for å finne ut av hva jeg ville studere, tok jeg mulighet til å ta et år med Fransk på universitetet. Studiet innhold språkfag, men også fag som Fransk historie og litteratur.",
                 "logo": "resume/uiologo",
                 "from": "Fra sep. 11",
                 "to": "Til jun. 12"
             },
             "en": {
                 "headline": "1 year program in French at the University of Oslo",
-                "text": "I did poorly in French in high school, so when I needed more time to figure out what I really wanted to study, I took the opportunity to improve my French for a year. The program includes language subjects as well as French history and literature.",
+                "text": "I did poorly in French in high school, so when I needed more time to figure out what I really wanted to study, I took the opportunity to improve my French at university. The program includes language subjects alongside subjects such as French history and literature.",
                 "logo": "resume/uiologo",
                 "from": "From sep. 11",
                 "to": "To jun. 12"
@@ -202,7 +202,7 @@
             },
             "en": {
                 "headline": "High school at Lambertseter VGS in Oslo ",
-                "text": "Specialization in natural science with electives such as physics, IT, Psychology and History and Philosophy. I went out with an average of 4.8 after doing well in history, psychology and Norwegian orally, but poorly in language subjects such as Nynorsk and French.",
+                "text": "I specialized in natural sciences with electives such as physics, IT, psychology and history and philosophy. I finished with an average of 4.8 out of 6 after having done well in history, psychology and oral Norwegian, but weak in languages such as Nynorsk and French.",
                 "logo": "resume/lambertlogo",
                 "from": "From aug. 08",
                 "to": "To jun. 11"

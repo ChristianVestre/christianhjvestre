@@ -9,7 +9,7 @@
         "seeLess":"se mindre",
         "seeMore":"se mer",
         "skills":"Ferdigheter",
-        "quickNavigation":"Rask navigasjon"
+        "quickNavigation":"Rask navigasjon:"
     },
     "en":{
         "christian":"Christian",
@@ -21,6 +21,6 @@
         "seeLess":"see less",
         "seeMore":"see more",
         "skills":"Skills",
-        "quickNavigation":"Quick Navigation"
+        "quickNavigation":"Quick Navigation:"
     }
 }

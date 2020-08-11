@@ -17,7 +17,7 @@
         "no":
         {
             "headline":"Hei!",
-            "content":"Jeg er Christian – entusiast når det gjelder innovasjon, entrepenørskap og data.\n\nDette er en nettside som jeg har laget for å leke med nye teknologier og vise frem ting jeg har gjort.\n\nJeg digger å mekke med data og finne ut hvordan ting virker. Når jeg ikke sitter foran PC-en finner du meg på joggetur, i utlandet et eller annet sted, eller i ferd med å lære meg nye språk.\n\nNedenfor kan du ",
+            "content":"Jeg er Christian – entusiast når det gjelder innovasjon, entrepenørskap og data.\n\nDette er en nettside som jeg har laget for å vise frem ting jeg har gjort.\n\nJeg liker å mekke med data og finne ut hvordan ting virker. Når jeg ikke sitter foran PC-en finner du meg på joggetur, i utlandet et eller annet sted, eller i ferd med å lære meg nye språk.\n\nNedenfor kan du:",
             "textLinks":{
                 "work":"sjekk ut prosjekter jeg har jobbet med",
                 "resume":"ta en titt på CVen min",
@@ -26,11 +26,11 @@
         },
         "en":{
             "headline":"Hi!",
-            "content":"Christian here. This is my personal website. I made it with the purpose of playing with new technologies and to be able to show thing that I've done.\n\nI'm at the end of my 20s, and I have lived abroad the last years. Lately in Germany, but earlier also in France, where I have both taken degrees and worked. I love to travel, to learn languages and explore the world. At the same time, I also find it rewarding to sit inside and fiddle with stuff to figure out how they work.\n\nOn this website you'll find my work portfolio, my resumé and a bit and pieces related interests I have.", 
+            "content":"My name is Christian, I’m enthusiastic when it comes to innovation, entrepreneurship and data.\n\nI have created this website to showcase my work and experience. \n\nI like to fiddle with computers and figure out how things work. When I'm not sitting in front of the computer, you can find me jogging, traveling abroad, or learning new languages. \n\nNext you can:", 
             "textLinks":{
-                "work":"Have a look into projects I've worked on",
-                "resume":"Check out my resume",
-                "interests":"See what other interests I have"
+                "work":"have a look into projects I've worked on",
+                "resume":"check out my resume",
+                "interests":"see what other interests I have"
             }
         }
     }
