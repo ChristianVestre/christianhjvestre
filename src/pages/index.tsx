@@ -391,6 +391,20 @@ export default ({query}) => {
                             h1{
                                 font-size:5em;
                             }
+                            .textPlacement{
+                                grid-area:text;
+                                display:flex;
+                                align-items:flex-start;
+                                justify-content:flex-start;
+                                flex-direction:column;
+                                margin:0;
+                                padding:0;
+                                overflow-y:scroll;
+                                overflow-x:hidden;
+                            }
+                            .imageContainer{
+                                align-items:center;
+                            }
                         }
 
                     }
