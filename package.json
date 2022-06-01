@@ -16,7 +16,7 @@
     "react-scroll": "^1.7.16",
     "react-sizes": "^2.0.0",
     "react-slick": "^0.26.1",
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "slick-carousel": "^1.8.1",
     "vercel": "^19.1.1"
   },
